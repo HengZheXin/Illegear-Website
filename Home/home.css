@@ -137,7 +137,7 @@ html {
     text-decoration: none;
     border: 1px solid white;
     font-size: 13px;
-    padding: 20px 38px;
+    padding: 15px 35px;
     color: white;
     display: inline-block;
     margin-top: 3%;
@@ -186,7 +186,7 @@ html {
     text-decoration: none;
     border: 1px solid white;
     font-size: 13px;
-    padding: 20px 38px;
+    padding: 15px 35px;
     color: white;
     display: inline-block;
     margin-top: 3%;
@@ -243,7 +243,7 @@ html {
     text-decoration: none;
     border: 1px solid white;
     font-size: 13px;
-    padding: 20px 38px;
+    padding: 15px 35px;
     color: white;
     display: inline-block;
     margin-top: 3%;
@@ -256,4 +256,39 @@ html {
     background: white;
     transition: .7s;
     color: black;
+}
+
+/* Section 6 */
+
+.section6{
+    background-color: grey;
+}
+
+.home_upcoming_event{
+    max-width: 100%;
+	margin: auto;
+	position: relative;
+    width: 100%;
+    text-align: center;
+}
+
+.home_upcoming_event h1{
+    font-size: 45px;
+    color: white;
+}
+
+.home_upcoming_event .events img{
+    display: inline-block;
+    padding: 10px;
+   
+}
+
+.home_upcoming_event .events h3{
+    font-family:'Times New Roman', Times, serif;
+    font-size: 17px;
+}
+
+.home_upcoming_event .event_details{
+    
+    width: 400px;
 }
