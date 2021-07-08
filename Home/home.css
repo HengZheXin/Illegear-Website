@@ -84,49 +84,56 @@ html {
 
 /* Section 3 */
 
-.about_us{
+.home_about_us{
 	max-width: 100%;
 	margin: auto;
 	position: relative;
-	min-height: 1px;
     width: 100%;
     background-color: grey;
     display: inline-block;
 }
 
-.about_us .left_pic{
+.home_about_us .left_pic{
     width: 50%;
 }
 
-.about_us .left_pic h2{
-    width: 48%;
+.home_about_us .left_pic img{
+    position: relative;
+    margin-left: 374px;
+    margin-top: -80%;
+}
+
+.home_about_us .left_pic h2{
+    width: 50%;
     height: 550px;
     margin-top: 140px;
     background-color: white;
     text-align: center;
-    font-size: 37px;
+    line-height: 500px;
+    vertical-align: middle;
+    font-size: 42px;
     font-family: 'Times New Roman', Times, serif;
 }
 
-.about_us .right_text{
+.home_about_us .right_text{
     float: right;
     padding-right: 150px;
     margin-top: -470px;
     color: white;
 }
 
-.about_us .right_text h2{
+.home_about_us .right_text h2{
     font-size: 45px;
     padding-top: 30px;
     padding-bottom: 25px;
 }
 
-.about_us .right_text p{
+.home_about_us .right_text p{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 16px;
 }
 
-.about_us .right_text a{
+.home_about_us .right_text a{
     text-decoration: none;
     border: 1px solid white;
     font-size: 13px;
@@ -138,7 +145,113 @@ html {
     text-transform: uppercase;
 }
 
-.about_us .right_text a:hover{
+.home_about_us .right_text a:hover{
+    background-color: rgb(105, 105, 97);
+    background: white;
+    transition: .7s;
+    color: black;
+}
+
+/* Section 4 */
+
+.section4{
+    background-color: grey;
+}
+
+.home_services{
+	max-width: 100%;
+	margin: auto;
+	position: relative;
+    width: 100%;
+    display: inline-block;
+}
+
+.home_services .left_text{
+    width: 50%;
+    float: left;
+    padding-left: 120px;
+    color: white;
+}
+
+.home_services .left_text h1{
+    font-size: 45px;
+}
+
+.home_services .left_text p{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 16px;    
+}
+
+.home_services .left_text a{
+    text-decoration: none;
+    border: 1px solid white;
+    font-size: 13px;
+    padding: 20px 38px;
+    color: white;
+    display: inline-block;
+    margin-top: 3%;
+    font-family: poppins;
+    text-transform: uppercase;
+}
+
+.home_services .left_text a:hover{
+    background-color: rgb(105, 105, 97);
+    background: white;
+    transition: .7s;
+    color: black;
+}
+
+.home_services .right_pic{
+    margin-top: 20px;
+}
+
+/* Section 5 */
+
+.section5{
+    background-color: grey;
+}
+
+.home_community{
+	max-width: 100%;
+	margin: auto;
+	position: relative;
+    width: 100%;
+    display: inline-block;
+}
+
+.home_community .left_pic{
+    margin-top: 100px;
+}
+
+.home_community .right_text{
+    float: right;
+    padding-right: 150px;
+    margin-top: -300px;
+    color: white;
+}
+
+.home_community .right_text h1{
+    font-size: 45px;
+}
+
+.home_community .right_text p{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 16px;    
+}
+
+.home_community .right_text a{
+    text-decoration: none;
+    border: 1px solid white;
+    font-size: 13px;
+    padding: 20px 38px;
+    color: white;
+    display: inline-block;
+    margin-top: 3%;
+    font-family: poppins;
+    text-transform: uppercase;
+}
+
+.home_community .right_text a:hover{
     background-color: rgb(105, 105, 97);
     background: white;
     transition: .7s;
