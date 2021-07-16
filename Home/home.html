@@ -7,133 +7,137 @@
         <link rel = "stylesheet" href="Home.css">
     </head>
 
-<!-- Section 1 -->
-
     <body>
-        <div class="banner-area">
+
+<!-- Header -->
+
+        <div class="header-area">
             <header>
                 
             </header>
            
 
-            <div class="banner-text">
-                <p>Meet Different Gaming Friends</p><br/>
-                <h2>IGS Community</h2><br/>
-                <hr style="width: 120px; margin: auto">
-                <a href="">BOOK APPOINTMENT</a>
+            <div class="header-text">
+                <h2><ins>IGS</ins> Society</h2><br/>
+                <p>Sample text. Click to selec the text box. Click again or</p>
+                <p>double clock to start editing the text.</p>
             </div>
         </div>
 
-<!-- Section 2-->
+<!-- Section 1-->
 
-        <section class="info">
-            <div class="section2">
-                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-                <div class="detail">
-                    <i style="font-size:24px" class="fa">&#xf095;</i>
-                    <a>123-456-789</a>
-                </div>
-                <div class="detail">
-                    <i style="font-size:24px" class="fa">&#xf0e0;</i>
-                    <a>contact@example.com</a>
-                </div>
-                <div class="detail">
-                    <i style="font-size:24px" class="fa">&#xf041;</i>
-                    <a>Fifth Avenue, New York</a>
-                </div>
+        <section class="section1">
+            <div class="special">
+                <p><b>WHAT'S SO SPECIAL ABOUT</b></p>
+                <h1>Our Society</h1>
+            </div>
+            <div class="description">
+                <p>Dictum sit amet justo donec enim diam vulputate. Sociis natoque penatibus et</p>
+                <p>magnis dis parturient. Molestie ac feugiat sed lectus vestibulum mattis. Vitae</p>
+                <p>Dictum sit amet justo donec enim diam vulputate. Sociis natoque penatibus et</p>
+                <p>Dictum sit amet justo donec enim diam vulputate. Sociis natoque penatibus et</p>
+                <p>Dictum sit amet justo donec enim diam vulputate. Sociis natoque penatibus et</p>
+            </div>
+            <div class="sec1pic">
+                <img src="images/section1pic.png" alt="ps_controller" style="width: 27%">
             </div>
         </section>
 
-<!--Section 3-->
+<!-- Section 2 -->
+        
+        <section class="section2">
+            <div class="slider">
+                <div class="slides">
+                    <input type="radio" name="radio-btn" id="radio1">
+                    <input type="radio" name="radio-btn" id="radio2">
+
+                    <div class="slide first">
+                        <img src="images/slide1.png" alt="">
+                    </div>   
+                    <div class="slide">
+                        <img src="images/slide2.png" alt="">
+                    </div>
+
+                    <div class="navigation-auto">
+                        <div class="auto-btn1"></div>
+                        <div class="auto-btn2"></div>
+                    </div>
+                </div>
+
+                <div clas="navigation-manual">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
+                </div>
+            </div>
+
+            <script type="text/javascript">
+                var counter = 1;
+                setInterval(function(){
+                    document.getElementById('radio' + counter).checked = true;
+                    counter++;
+                    if(counter > 2){
+                        counter = 1;
+                    }
+                }, 5000);
+            </script>
+        </section>
+
+<!-- Section 3 -->
 
         <section class="section3">
-            <div class="home_about_us">
-                <div class="left_pic">
-                    <h2>ABOUT US<hr style="width:18%; margin: auto; margin-top: -190px"></h2>
-                    <img src="images/try1.jpg" alt="gamingpic" style="width: 50%; height: 565px; padding-bottom: 15px;">
-                </div>
-                <div class="right_text">
-                    <h2>IGS SOCIETY</h2>
-                    <p>Ut rutrum scelerisque tortor, ac tempor tortor feugiat vitae. Etiam</p><br>
-                    <p>varius erat at tristique tristique. Maecenas convallis, nisi at</p><br>
-                    <p>iaculis scelerisque, arcu leo viverra mauris, quis semper nisi nisi</p><br><br>
-                    <a href="">KNOW MORE</a>
-                </div>
+            <div class="ps4-back">
+                <img src="images/ps4-back.png" style="width: 100%">
+            </div>
+            <div class="ps4-front">
+                <img src="images/ps4-front.png" style="width: 550px; height: 670px;">
+            </div>
+            <div class="sec3nav">
+                <a href=""><b>GAMING TOURNAMENT</b></a><br><br>
+                <a href=""><b>GAME TRENDS</b></a><br><br>
+                <a href=""><b>LATEST NEWS</b></a><br><br>
+                <a href=""><b>ABOUT US</b></a><br><br>
             </div>
         </section>
 
 <!-- Section 4 -->
 
         <section class="section4">
-            <div class="home_services">
-                <div class="left_text">
-                    <br><br><br><br><br><br><br>
-                    <h2>Services<br><br><hr style="width: 13%"></h2><br>
-                    <h1>GAMING</h1><br>
-                    <p>Ut rutrum scelerisque tortor, ac tempor tortor feugiat vitae. Etiam</p><br>
-                    <p>varius erat at tristique tristique. Maecenas convallis, nisi at</p><br>
-                    <p>iaculis scelerisque, arcu leo viverra mauris, quis semper nisi nisi</p><br>
-                    <p>semper nisi nisi ut tellus. Suspendisse ut massa ac lacus</p><br><br>
-                    <a href="">KNOW MORE</a>
-                </div>
-                <div class="right_pic">
-                    <img src="images/home_services_pic.jpeg" alt="gamingpic2" style="width: 50%; height: 550px;">
-                </div>
+            <div class="sec4-h1">
+                <h1><b>Join our community now and</b></h1>
+                <h1><b>discuss about popular games</b></h1>
+            </div>
+            <div class="sec4-p">
+                <p><b>COME BACK EVERY MONTH TO</b></p>
+                <p><b>CHECK OUT OUR NEWEST UPDATES</b></p>
             </div>
         </section>
-    </body>
 
 <!-- Section 5 -->
 
-    <section class="section5">
-        <div class="home_community">
-            <div class="left_pic">
-                <img src="images/home_community.jpeg" alt="gamingpic3" style="width: 50%; height: 400px;">
+        <section class="section5">
+            <div class="sec5header">
+                <h1>OUR GAME COMMUNITY</h1>
+                <p><i>nfaoffnffj kffa ak pfawjafa fahwofnoaf hafafaf</i></p>
+                <p><i>nfaoffnffj kffa ak pfhfawff wfa</i></p><br><br>
             </div>
-            <div class="right_text">
-                <h2>Services<br><br><hr style="width: 18%"></h2><br>
-                <h1>COMMUNITY</h1><br>
-                <p>Ut rutrum scelerisque tortor, ac tempor tortor feugiat vitae. Etiam</p><br>
-                <p>varius erat at tristique tristique. Maecenas convallis, nisi at</p><br>
-                <p>iaculis scelerisque, arcu leo viverra mauris, quis semper nisi nisi</p><br><br>
-                <a href="">KNOW MORE</a>
-        </div>
-    </section>
-
-<!-- Section 6 -->
-
-    <section class="section6">
-        <div class="home_upcoming_event">
-            <div class="events">
-                <br><br><br><br><br><br><br><br><br><br><br>
-                <h1>UPCOMING EVENT<br><br><hr style="width: 7%; margin: auto;"></h1><br>
-                
-                
-                <div class="event_details">
-                    <img src="images/upcomingevent.jpeg" alt="upcomingevent1" style="width: 400px; height: 200px">
-                    <h3>Wine, Food and Music Party</h3>
-                    <i style="font-size:24px" class="fa">&#xf073;</i>
-                    <a>Sat 14/05/2021</a>
-                    <i style="font-size:24px" class="fa">&#xf017;</i>
-                    <a>21:00</a>
-
-                    <img src="images/upcomingevent.jpeg" alt="upcomingevent1" style="width: 400px; height: 200px">
-                    <h3>Kiera Whalen Sings Live</h3>
-                    <i style="font-size:24px" class="fa">&#xf073;</i>
-                    <a>Sat 14/05/2021</a>
-                    <i style="font-size:24px" class="fa">&#xf017;</i>
-                    <a>21:00</a>
-
-                    <img src="images/upcomingevent.jpeg" alt="upcomingevent1" style="width: 400px; height: 200px">
-                    <h3>Athan Travis - Live Concert</h3>
-                    <i style="font-size:24px" class="fa">&#xf073;</i>
-                    <a>Sat 14/05/2021</a>
-                    <i style="font-size:24px" class="fa">&#xf017;</i>
-                    <a>21:00</a>
-                </div>
+            <div class="row1">
+                <img src="images/lol.jpg" alt="League of Legends">
+                <img src="images/genshin.jpg" alt="Genshin Impact">
+                <img src="images/valorant.png" alt="Valorant">
             </div>
-        </div>
-    </section>
+            <div class="row2">
+                <img src="images/mobilelegends.png" alt="Mobile Legends: Bang Bang">
+                <img src="images/apexlegends.png" alt="Apex Legends">
+                <img src="images/pubg.png" alt="PUBG Mobile">
+            </div>
+            <div class="row3">
+                <img src="images/amongus.jpg" alt="Among Us">
+                <img src="images/rainbowsix.jpg" alt="Rainbox Six Siege">
+                <img src="images/fortnite.jpg" alt="Fortnite">
+            </div>
+        </section>
 
+
+    </body>
 
 </html>
