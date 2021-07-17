@@ -50,31 +50,91 @@
 
 /*Section 3*/
 .section-3{
-    position: relative;
+    position: absolute;
     width:100%;
-}
-.section-3 .pic-1 img{
-    margin-left: 600px;
-    margin-top:-100px;
-    position:absolute;
-
+    background-color: blueviolet;
+    margin-top: 400px;
+    height: 575px;
+    
 }
 .section-3 .text-1 p{
     background-color: lightgrey;
     width: 290px;
     border: 15px white;
     padding: 30px;
-    padding-top: 200px;
+    padding-top: 180px;
     margin: 20px;
-    margin-top: 200px;
-    margin-left: 270px;
+    margin-top: -240px;
+    margin-left: 265px;
     height: 375px;
     font-size: 18px;
     font-family:'Times New Roman', Times, serif;
 }
+.section-3 .text-2 p{
+    float:right;
+    background-color: grey;
+    width: 300px;
+    border: 15px white;
+    padding: 30px;
+    padding-top: 50px;
+    margin: 20px;
+    margin-top: -445px;
+    margin-right: 260px;
+    height: 440px;
+    font-size: 18px;
+    font-family:'Times New Roman', Times, serif;
+}
+.section-3 .address p{
+    text-align: center;
+    margin-top: -130px;
+}
+.section-3 .address a{
+    color: black;
+    text-decoration: none;
+}
+.section-3 .address a:hover{
+    color:blue;
+}
+.section-3 .pic-1 img{
+    margin-left: 600px;
+    margin-top:-340px;
+    position:absolute;
+}
 .section-3 .pic-2 img{
     position: absolute;
     margin-left: 308px;
-    margin-top: 65px;
+    margin-top: -190px;
     background-color: lightgrey;
+}
+.section-3 .pic-3 img{
+    float:right;
+    margin-right: 260px;
+    margin-top: -230px;
+}
+.section-3 .pic-4 img{
+    float: right;
+    margin-right: 40px;
+    margin-top: -90px;
+    background-color: black;
+    width: 325px;
+    border: 15px white;
+    padding: 30px;
+    height: 460px;
+    padding:35px;
+    padding-top: 140px;
+    padding-bottom: 140px;
+}
+.section-3 .pic-5 img{
+    margin-left: 265px;
+    margin-top: 20px;
+}
+.section-3 .fb img{
+    margin-left: 680px;
+    margin-top: 30px;
+    position:absolute; 
+}
+.section-3 .insta img{
+    margin-left: 800px;
+    margin-top :33px;
+
 }
