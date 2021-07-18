@@ -46,40 +46,63 @@
 <!-- Section 2 -->
         
         <section class="section2">
-            <div class="slider">
-                <div class="slides">
-                    <input type="radio" name="radio-btn" id="radio1">
-                    <input type="radio" name="radio-btn" id="radio2">
-
-                    <div class="slide first">
-                        <img src="images/slide1.png" alt="">
-                    </div>   
-                    <div class="slide">
-                        <img src="images/slide2.png" alt="">
-                    </div>
-
-                    <div class="navigation-auto">
-                        <div class="auto-btn1"></div>
-                        <div class="auto-btn2"></div>
-                    </div>
+            <div class="slideshow-container">
+                <br><br><br><br>
+                <div class="mySlides fade">
+                  <img src="images/slide1.png" style="width:60%; height:500px; margin-left: 200px">
+                  <div class="slidetext">Caption Text</div>
                 </div>
-
-                <div clas="navigation-manual">
-                    <label for="radio1" class="manual-btn"></label>
-                    <label for="radio2" class="manual-btn"></label>
+                
+                <div class="mySlides fade">
+                  <img src="images/slide2.png" style="width:60%; height:500px; margin-left: 200px">
+                  <div class="slidetext">Caption Two</div>
                 </div>
-            </div>
-
-            <script type="text/javascript">
-                var counter = 1;
-                setInterval(function(){
-                    document.getElementById('radio' + counter).checked = true;
-                    counter++;
-                    if(counter > 2){
-                        counter = 1;
-                    }
-                }, 5000);
-            </script>
+                
+                <div class="mySlides fade">
+                  <img src="images/slide1.png" style="width:60%; height:500px; margin-left: 200px">
+                  <div class="slidetext">Caption Three</div>
+                </div>
+                
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                
+                </div>
+                <br><br>
+                
+                <div style="text-align:center">
+                  <span class="dot" onclick="currentSlide(1)"></span> 
+                  <span class="dot" onclick="currentSlide(2)"></span> 
+                  <span class="dot" onclick="currentSlide(3)"></span> 
+                </div>
+                <br><br><br><br>
+                <script>
+                var slideIndex = 1;
+                showSlides(slideIndex);
+                
+                function plusSlides(n) {
+                  showSlides(slideIndex += n);
+                }
+                
+                function currentSlide(n) {
+                  showSlides(slideIndex = n);
+                }
+                
+                function showSlides(n) {
+                  var i;
+                  var slides = document.getElementsByClassName("mySlides");
+                  var dots = document.getElementsByClassName("dot");
+                  if (n > slides.length) {slideIndex = 1}    
+                  if (n < 1) {slideIndex = slides.length}
+                  for (i = 0; i < slides.length; i++) {
+                      slides[i].style.display = "none";  
+                  }
+                  for (i = 0; i < dots.length; i++) {
+                      dots[i].className = dots[i].className.replace(" active", "");
+                  }
+                  slides[slideIndex-1].style.display = "block";  
+                  dots[slideIndex-1].className += " active";
+                }
+                </script>
         </section>
 
 <!-- Section 3 -->
@@ -185,12 +208,12 @@
 <!-- Section 6 -->
         <section class="section6">
             <div class="leftpic">
-                <img src="images/bottomlogo.png" alt="Logo" style="width: 200px">
+                <img src="images/bottomlogo.png" alt="Logo">
             </div>
             <div class="righttext">
-                <h1>JOIN OUR SOCIETY</h1>
+                <h1>JOIN OUR SOCIETY</h1><br>
                 <p>We will be always a "house of players" at our core, the NPC began to speak to</p>
-                <p>us about a vision for community</p>
+                <p>us about a vision for community.</p><br><br><br>
                 <a href="">LEARN MORE</a>
             </div>
         </section>

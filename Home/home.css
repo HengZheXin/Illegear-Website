@@ -52,6 +52,7 @@ body{
 .section1{
     background-color: rgb(26, 25, 25);
     color: white;
+    position: relative;
 }
 
 .special{
@@ -90,97 +91,83 @@ body{
 
 /* Section 2 */
 .section2{
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: black;
+    background-color: rgb(26, 25, 25);
 }
 
-.slider{
-    width: 800px;
-    height: 500px;
-    border-radius: 10px;
-    overflow: hidden;
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
 }
 
-.slides{
-    width: 500%;
-    height: 500px;
-    display: flex;
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
 }
 
-.slides input{
-    display: none;
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
 }
 
-.slide img{
-    width: 800px;
-    height: 500px;
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
 }
 
-.navigation-manual{
-    position: absolute;
-    width: 800px;
-    margin-top: -40px;
-    display: flex;
-    justify-content: center;
+.slidetext {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
 }
 
-.manual-btn{
-    border: 2px solid white;
-    position: absolute;
-    padding: 5px;
-    margin-top: -40px;
-    margin-left: 420px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 0s;
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
 }
 
-.manual-btn:not(:last-child){
-    margin-right: 40px;
+.active, .dot:hover {
+  background-color: #717171;
 }
 
-.manual-btn:hover{
-    background: white;
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
 }
 
-#radio1:checked ~ .first{
-    margin-left: 0;
-}
-#radio2:checked ~ .first{
-    margin-left: -20%;
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
 }
 
-.navigation-auto{
-    position: absolute;
-    display: flex;
-    width: 800px;
-    justify-content: center;
-    margin-top: 460px;
-}
-
-.navigation-auto div{
-    border: 2px solid white;
-    padding: 5px;
-    border-radius: 10px;
-    transition: 0s;
-}
-
-.navigation-auto div:not(:last-child){
-    margin-right: 40px;
-}
-
-#radio1:checked ~ .navigation-auto .auto-btn1{
-    background: white;
-}
-#radio2:checked ~ .navigation-auto .auto-btn2{
-    background: white;
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
 }
 
 /* Section 3 */
+
 .ps4-front img{
     position: absolute;
     margin-top: -760px;
@@ -306,12 +293,39 @@ body{
 .section6{
     background-color: rgb(54, 53, 53);
     width: 100%;
+    height: 80vh;
+    position: relative;
+    margin-top: 1150px;
 }
 
 .leftpic{
     width: 55%;
+    padding-top: 100px;
+}
+
+.leftpic img{
+    width: 100%;
 }
 
 .righttext{
     width: 45%;
+    float: right;
+    margin-top: -370px;
+    color: white;
+    text-align: center;
+}
+
+.righttext h1{
+    font-size: 55px;
+}
+
+.righttext p{
+    font-size: 19px;
+}
+
+.righttext a{
+    text-decoration: none;
+    border: 1px solid white;
+    background: white;
+    padding: 17px 60px;
 }
