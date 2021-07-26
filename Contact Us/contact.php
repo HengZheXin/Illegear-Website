@@ -3,11 +3,14 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link rel="stylesheet" href="contact.css">
+        <link rel="stylesheet" href="../ShareDesign/styles.css">
         <title>Bootstrap Web Design</title>
-        <?php require 'styles.php'; ?><!--css links. file found in utils folder-->
-        <?php require 'scripts.php'; ?><!--js links. file found in utils folder-->
+        <?php require '../ShareDesign/styles.php'; ?><!--css links. file found in utils folder-->
+        <?php require '../ShareDesign/scripts.php'; ?><!--js links. file found in utils folder-->
     </head>
     <body>
+
+    <?php require '../ShareDesign/header.php'; ?>
 
 
     <div class="banner-area">

@@ -3,6 +3,7 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link rel="stylesheet" href="login.css">
+        <link rel="stylesheet" href="../ShareDesign/styles.css">
         <title></title>
         <style>
             span.error{
@@ -14,6 +15,8 @@
     </head>
     <body>
 
+
+    <?php require '../ShareDesign/header.php'; ?>
 
     <div class="banner-area">
            <div class="banner-text">

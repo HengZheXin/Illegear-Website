@@ -3,15 +3,18 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link rel="stylesheet" href="register.css">
+        <link rel="stylesheet" href="../ShareDesign/styles.css">
         <title></title>
         <?php require 'styles.php'; ?><!--css links. file found in utils folder-->
         <?php require 'scripts.php'; ?><!--js links. file found in utils folder-->
     </head>
     <body>
 
-
+    <?php require '../ShareDesign/header.php'; ?>
+    
     <div class="banner-area">
            <div class="banner-text">
+           <br><br><br>
                <p>IGS Society</p><br/>
                <hr class="hr-s3" style="width: 80px; margin: auto"/><br/>
                <h2>Our Society</h2><br/>
