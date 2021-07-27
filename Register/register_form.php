@@ -28,8 +28,19 @@
             <div class = "container">
                 <div class ="col-md-6 col-md-offset-3">
                     <form action="register.php" class ="form-group" method="POST">
-                        <div class="form-group">
+                    <div class="form-group">
                         <br><br><br><br>
+                            <label for="scode">Security Code: </label>
+                            <input type="text"
+                                   id="scode"
+                                   name="scode"
+                                   class="form-control"
+                                   >
+                            <span class="error">
+                                <?php if (isset($errors['scode'])) echo $errors['scode']; ?>
+                            </span>
+                        </div>
+                        <div class="form-group">
                             <label for="username">Username: </label>
                             <input type="text"
                                    id="username"

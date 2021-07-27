@@ -1,5 +1,5 @@
 <?php
-require_once 'functions.php';
+require_once 'function.php';
 require_once 'User.php';
 require_once 'DB.php';
 require_once 'UserTable.php';
@@ -12,15 +12,25 @@ start_session();
 try {
     $formdata = array();
     $errors = array();
+    $ori_scode = "abc123";
     
     $input_method = INPUT_POST;
 
+    $formdata['scode'] = filter_input($input_method, "scode", FILTER_SANITIZE_STRING);
     $formdata['username'] = filter_input($input_method, "username", FILTER_SANITIZE_STRING);
     $formdata['password'] = filter_input($input_method, "password", FILTER_SANITIZE_STRING);
     $formdata['cpassword'] = filter_input($input_method, "cpassword", FILTER_SANITIZE_STRING);
 
     // throw an exception if any of the form fields 
     // are empty
+    if (empty($formdata['scode'])) {
+        $errors['scode'] = "Security code required";
+    }
+    if (!empty($formdata['scode']) 
+            && $formdata['scode'] != $ori_scode) {
+        $errors['scode'] = "Invalid security code!";
+    }
+
     if (empty($formdata['username'])) {
         $errors['username'] = "Username required";
     }
@@ -39,12 +49,13 @@ try {
     // then throw an exception
     if (!empty($formdata['password']) && !empty($formdata['cpassword']) 
             && $formdata['password'] != $formdata['cpassword']) {
-        $errors['password'] = "Passwords must match";
+        $errors['password'] = "Passwords must match!";
     }
 
     if (empty($errors)) {
         // since none of the form fields were empty, 
         // store the form data in variables
+        $scode = $formdata['scode'];
         $username = $formdata['username'];
         $password = $formdata['password'];
         $cpassword = $formdata['cpassword'];
