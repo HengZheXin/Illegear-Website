@@ -10,8 +10,11 @@
     <body>
 
 
+    <?php require '../ShareDesign/header.php'; ?>
+
     <div class="banner-area">
            <div class="banner-text">
+           <br><br>
                <p>IGS Society</p><br/>
                <hr class="hr-s3" style="width: 80px; margin: auto"/><br/>
                <h2>Our Society</h2><br/>
@@ -19,8 +22,6 @@
                <a href="">ABOUT US</a>
            </div>
        </div>
-
-
 
 
 

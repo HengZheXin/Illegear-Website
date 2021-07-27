@@ -13,7 +13,7 @@
         <?php require 'scripts.php'; ?><!--js links. file found in utils folder-->
     </head>
     <body>
-
+    <?php require '../ShareDesign/header.php'; ?>
 
     <div class="banner-area">
            <div class="banner-text">
