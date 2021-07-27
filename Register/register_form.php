@@ -4,8 +4,8 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link rel="stylesheet" href="register.css">
         <title></title>
-        <?php require 'styles.php'; ?><!--css links. file found in utils folder-->
-        <?php require 'scripts.php'; ?><!--js links. file found in utils folder-->
+        <?php require '../ShareDesign/styles.php'; ?><!--css links. file found in utils folder-->
+        <?php require '../ShareDesign/scripts.php'; ?><!--js links. file found in utils folder-->
     </head>
     <body>
 
