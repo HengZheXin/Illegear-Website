@@ -10,7 +10,7 @@
         </script>
     </head>
     <body>
-
+    <?php require '../ShareDesign/header.php'; ?>
 
     <div class="banner-area">
            <div class="banner-text">

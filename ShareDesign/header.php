@@ -29,7 +29,7 @@
                     require_once 'functions.php';
                     echo '<li><a href = "../Home/home.php">Home</a></li>';
                     echo '<li><a href = "../About Us/about.html">About</a></li>';
-                    echo '<li><a href = "../Events/event.php">Events</a></li>';
+                    echo '<li><a href = "../Events/event.html">Events</a></li>';
                     echo '<li><a href = "../Contact Us/contact.php">Contact Us</a></li>';
                     echo '<li class="btnlogout"><a class = "btn btn-default navbar-btn" href = "logout.php">Logout <span class = "glyphicon glyphicon-log-out"></span></a></li>';
                 }  
@@ -37,7 +37,7 @@
                 else {
                     echo '<li><a href = "../Home/home.php">Home</a></li>';
                     echo '<li><a href = "../About Us/about.html">About</a></li>';
-                    echo '<li><a href = "../Events/event.php">Events</a></li>';
+                    echo '<li><a href = "../Events/event.html">Events</a></li>';
                     echo '<li><a href = "../Contact Us/contact.php">Contact Us</a></li>';
                     echo '<button type = "button" class = "btn btn-default navbar-btn" data-toggle = "modal" data-target = "#login">Login <Span class="glyphicon glyphicon-log-in"></span></button>';
                 }
