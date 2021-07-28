@@ -3,18 +3,12 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>IGS Society Events</title>
+        <link rel="stylesheet" href="../Events/event.css">
         <?php require '../ShareDesign/styles.php'; ?><!--css links. file found in utils folder-->
         <?php require '../ShareDesign/scripts.php'; ?><!--js links. file found in utils folder-->
-        <link rel = "stylesheet" type = "text/css" href = "css/bootstrap-theme.css">
-        <link rel = "stylesheet" type = "text/css" href = "css/bootstrap-theme.css.map">
-        <link rel = "stylesheet" type = "text/css" href = "css/bootstrap.css">
-        <link rel = "stylesheet" type = "text/css" href = "css/bootstrap.css.map">
-        <link rel = "stylesheet" type = "text/css" href = "css/style.css">
-        <link rel="stylesheet" href="event.css">
-
-        <!--NavBar-->
         
 
+        <!--NavBar-->
         <meta charset="utf-8"> 
         <meta http—equiv="X—UA—Compatible" conten="IE=edge"> 
         <meta name="description" content=""> 
@@ -35,8 +29,6 @@
             </div>
         </div>
 
-
-        <!--<?php require 'utils/header.php'; ?>--><!--header content. file found in utils folder-->
         <div class="content"><!--body content holder-->
             <div class="container">
                 <div class="col-md-12"><!--body content title holder with 12 grid columns-->
@@ -180,7 +172,6 @@
                 </section>
             </div><!--row div-->
         </div><!--body content div-->
-        <!--<?php require 'utils/footer.php'; ?>--><!--footer content. file found in utils folder-->
     </body>
 
 <!--Footer-->
