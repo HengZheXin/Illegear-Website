@@ -60,6 +60,7 @@
                                 <?php if (isset($errors['password'])) echo $errors['password']; ?>
                             </span>
                         </div>
+                        <p><a href="enter_email.php">Forgot your password?</a></p>
                         <button type = "submit" class = "btn btn-default">Login</button>
                         <br><br><br><br>
                     </form>
