@@ -14,7 +14,7 @@ html {
 
 /* Section 1 */
 .banner-area{
-    background-image: url("images/bgImage1.jpg");
+    background-image: url("images/12.jpg");
     background-position: center center;
     background-size: cover;
     -webkit-background-size: cover;
@@ -64,7 +64,7 @@ html {
     width: 5px;
 	height: 2px;
 	text-align: center;
-    background-color: rgb(255, 127, 127);
+    background-color: rgb(255, 255, 255);
     border: none;
     
 }
