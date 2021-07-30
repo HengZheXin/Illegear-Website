@@ -1,3 +1,48 @@
+<?php
+    
+    
+    if(isset($_POST['submit'])){
+
+        $name = $_POST['fname'];
+        $phone = $_POST['fphone'];
+        $email = $_POST['femail'];
+        $msg = $_POST['comments'];
+
+        $error=array();
+
+        if(empty($name)||empty($phone)||empty($email)||empty($msg)){
+            $error["empty"]="Please fill in the blanks.";
+            $message_sent = false;
+        }
+            if($name = ""){
+                $error["name"]="Please fill in the name.";
+                $message_sent = false;
+            }
+            
+                if(!preg_match("/^[0-9]{10}$/", $phone)){
+                    $error["phone"]="Please fill in the phone number.";
+                    $message_sent = false;
+                }
+                
+                    if(!filter_var($email,FILTER_VALIDATE_EMAIL)){
+                        $error["email"]="Please fill in the email.";
+                        $message_sent = false;
+                    }
+                   
+                        if(!preg_match("/^[a-zA-z\.\,\/]+$/",$msg)){
+                            $error["msg"]="Please fill in the msg.";
+                            $message_sent = false;
+                        }
+                       
+                        
+                    
+                
+            
+                    }
+    
+
+
+?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -6,8 +51,7 @@
         <title>Bootstrap Web Design</title>
         <?php require 'styles.php'; ?><!--css links. file found in utils folder-->
         <?php require 'scripts.php'; ?><!--js links. file found in utils folder-->
-        <script src="function.js">
-        </script>
+        
     </head>
     <body>
     <?php require '../ShareDesign/header.php'; ?>
@@ -50,33 +94,57 @@
                     <img src="https://img.icons8.com/bubbles/50/000000/instagram.png"/>                    
                     </a>
                     </p>
-                </div>
+                </div>  
+
+            <?php
+                
+            if($message_sent == true):
+
+            ?>
+                <h3>Thanks, we'll be in touch</h3>
+
+            <?php 
+
+                else:
+
+            ?>   
+            <?php
+                echo '<ul class="error">';
+                foreach ($error as $value)
+                {
+                    echo "<li>$value</li>";
+                }
+                echo '</ul>';
+            ?>
                 <div class="col-md-6">
-                    <form name="myForm" onsubmit="return validateForm()" method="post">
+                    <form action="contact.php"  method="post" class="myform">
                         <div class="form-group">
                             <label for="Title">Name:</label>
-                            <input type="text" name="fname" id="Title" class="form-control" >
+                            <input type="text" name="fname" id="fname" class="form-control">
                         </div>
                         <div class="form-group">
                             <label for="Title">Phone Number:</label>
-                            <input type="text" name="fphone" id="Title" class="form-control" >
+                            <input type="text" name="fphone" id="fphone" class="form-control" >
                         </div>
                         <div class="form-group">
                             <label for="Title">Email:</label>
-                            <input type="text" name="fmail" id="Title" class="form-control">
+                            <input type="text" name="femail" id="femail" class="form-control">
                         </div>
                         <div class="form-group">
-                            <label for="Comment">Message:</label>
-                            <textarea id="Comment" name="fmsg" rows="10" class="form-control" ></textarea>
+                            <label for="comments">Message:</label>
+                            <textarea id="comments" name="comments" rows="10" class="form-control"></textarea>
                         </div>
-                        <button type="submit" class="btn btn-default pull-right">Send <span class="glyphicon glyphicon-send"></span></button>
+                        <button type="submit" class="btn btn-default pull-right" name="submit" >Send <span class="glyphicon glyphicon-send"></span></button>
                     </form>
                     <br><br><br><br>
                 </div>
+            
             </div>
 			
             
         </div><!--body content div-->
-       
+        <?php
+            endif;
+        ?> 
     </body>
 </html>

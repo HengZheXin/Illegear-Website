@@ -272,7 +272,7 @@ header .modal-body .loginbtn:hover {
 }
 
 header .modal-body .rgsterbtn:hover {
-    background: #2196F3;
+    background: red;
     color: #E3F2FD;
 }
 
@@ -284,6 +284,7 @@ header .modal-body .rgsterbtn:hover {
 
 /*text color for error messages in forms*/
 .error {
+    text-align: center;
     color: #EF5350;
 }
 /*---*/
