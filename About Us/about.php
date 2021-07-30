@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <head>
-    <link rel="stylesheet" href="about.css">
-    <link rel="stylesheet" href="heading.css">
+    <link rel="stylesheet" href="about.css" type="text/css">
+    <link rel="stylesheet" href="heading.css" type="text/css">
     <?php require '../ShareDesign/styles.php'; ?><!--css links. file found in utils folder-->
     <?php require '../ShareDesign/scripts.php'; ?><!--js links. file found in utils folder-->
-</head> 
+</head>
+
+
+
 <body>
 <?php require '../ShareDesign/header.php'; ?>
 

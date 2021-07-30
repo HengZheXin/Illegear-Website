@@ -31,7 +31,7 @@
                     echo '<li><a href = "../About Us/about.php">About</a></li>';
                     echo '<li><a href = "../Events/event.php">Events</a></li>';
                     echo '<li><a href = "../Contact Us/contact.php">Contact Us</a></li>';
-                    echo '<li class="btnlogout"><a class = "btn btn-default navbar-btn" href = "logout.php">Logout <span class = "glyphicon glyphicon-log-out"></span></a></li>';
+                    echo '<li class="btnlogout"><a class = "btn btn-default navbar-btn" href = "../Home/home.php">Logout <span class = "glyphicon glyphicon-log-out"></span></a></li>';
                 }  
                 //links non database contents. *if logged out
                 else {
