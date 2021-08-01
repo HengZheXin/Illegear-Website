@@ -324,6 +324,7 @@ body{
     border: 1px solid white;
     background: white;
     padding: 17px 60px;
+    color: black;
 }
 
 .righttext a:hover{
