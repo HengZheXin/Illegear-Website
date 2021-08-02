@@ -24,6 +24,9 @@ try {
     if (empty($formdata['username'])) {
         $errors['username'] = "Username required";
     }
+    elseif(!preg_match("/^[a-zA-Z0-9]+$/",$formdata['username'])){
+        $errors['username'] = "Username Invalid";
+    }
     //$email = filter_var($formdata['username'], FILTER_VALIDATE_EMAIL);
     //if ($email != $formdata['username']) {
     //    $errors['username'] = "Valid email required required";
@@ -31,6 +34,9 @@ try {
 
     if (empty($formdata['password'])) {
         $errors['password'] = "Password required";
+    }
+    elseif(!preg_match("/^[a-zA-Z0-9]+$/",$formdata['password'])){
+        $errors['password'] = "Password Invalid";
     }
     if (empty($errors)) {
         // since none of the form fields were empty, 

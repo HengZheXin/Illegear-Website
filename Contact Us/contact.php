@@ -55,9 +55,9 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link rel="stylesheet" href="contact.css">
-        <title>Bootstrap Web Design</title>
-        <?php require 'styles.php'; ?><!--css links. file found in utils folder-->
-        <?php require 'scripts.php'; ?><!--js links. file found in utils folder-->
+        <title>Contact Us | IGS Website</title>
+        <?php require 'styles.php'; ?>
+        <?php require 'scripts.php'; ?>
         
     </head>
     <body>
@@ -75,11 +75,11 @@
 
 
        
-        <div class = "content"><!--body content holder-->
+        <div class = "content">
             <div class = "container">
-                <div class = "col-md-12"><!--body content title holder with 12 grid columns-->
+                <div class = "col-md-12">
                 <br><br><br><br>
-                    <h1>Get In Touch</h1><!--body content title-->
+                    <h1>Get In Touch</h1>
                 </div>
             </div>
 			
