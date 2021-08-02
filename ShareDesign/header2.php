@@ -79,9 +79,9 @@
     <nav>
         <a href="../Home/home.php">Home</a>
         <a href="../About Us/about.php">About</a>
-        <a href="../Events/event.php">Events</a>
-        <a href="../Contact Us/contact.php">Contact Us</a>
-        <a href="../Login/login_form.php">Login</a>
+        <a href="../Events 2/event.php">Events</a>
+        <a href="../Contact Us 2/contact.php">Contact Us</a>
+        <a href="../Log in 2/account.php">Login</a>
         <div class="animation start-home"></div>
         <div class="animation start-about"></div>
         <div class="animation start-events"></div>
