@@ -30,25 +30,34 @@
                     <div>
                         <i class="fa fa-home"></i>
                         <span>
-                            <h5>Xyz Road, Abc Building</h5>
-                            <p>Bangalore, Karnataka, IN</p>
+                            <h5>Tunku Abdul Rahman University College</h5>
+                            <p>53300 Kuala Lumpur, Wilayah Persekutuan Kuala Lumpur</p>
                         </span>
                     </div>
                     <div>
                         <i class="fa fa-phone"></i>
                         <span>
-                            <h5>+1 0123456789</h5>
+                            <h5>03-4145 0123</h5>
                             <p>Monday to Saturday 10 Am to 6 Pm</p>
                         </span>
                     </div>
                     <div>
-                        <i class="fa fa-envelope-o"></i>
+                        <i class="fa fa-envelope"></i>
                         <span>
-                            <h5>info@easytutorialspro.com</h5>
+                            <h5>info@igs.com</h5>
                             <p>Email us your query</p>
                         </span>
+                        
                     </div>
+                    <a href="https://www.facebook.com/taruc.igs/">
+                    <img src="https://img.icons8.com/bubbles/50/000000/facebook.png"/>                    
+                    </a>    
+                    <a href="https://www.instagram.com/taruc.igs/">
+                    <img src="https://img.icons8.com/bubbles/50/000000/instagram.png"/>                    
+                    </a>
                 </div>
+                
+            
                 <div class="contact-col">
                     <form method="post" action="contact-form-handler.php">
                     <input type="text" name="name" placeholder="Enter your name" required>
@@ -59,10 +68,11 @@
                     </form> 
                 </div>
             </div>
+        
     </section>
     
     <section class="location">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.368144678623!2d77.55384341419037!3d13.012212417508028!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae3d7f3535d71b%3A0x660d25b66e9fb25c!2sWorld+Trade+Centre!5e0!3m2!1sen!2sin!4v1565255080367!5m2!1sen!2sin" width="720" height="445" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3325.640888374062!2d101.72733233555277!3d3.21611865099729!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc3843bfb6a031%3A0x2dc5e067aae3ab84!2sTunku%20Abdul%20Rahman%20University%20College!5e0!3m2!1sen!2smy!4v1627201902716!5m2!1sen!2smy" width="720" height="445" frameborder="0" style="border:0" allowfullscreen></iframe>
     </section>
 
  
