@@ -16,8 +16,8 @@
             <p>IGS Society</p><br/>
             <hr class="hr-s3" style="width: 80px; margin: auto"/><br/>
             <h2>About Us</h2><br/>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus.​</p>
-            <a href="">VIEW OUR EVENTS</a>
+            <p>Let's Meet Our IGS Society.</p>
+            <a href="../Events/event.php">VIEW OUR EVENTS</a>
         </div>
     </div>
 
