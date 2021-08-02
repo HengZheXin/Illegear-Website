@@ -34,8 +34,8 @@ try {
     if (empty($formdata['username'])) {
         $errors['username'] = "Username required";
     }
-        $username = $_POST['name'];
-        if(!preg_match("/^[a-zA-Z-'\s]+$/",$username)){
+        
+        else if(!preg_match("/^[a-zA-Z-'\s]+$/",$formdata['username'])){
             $errors['username'] = 'Invalid username!';
         }
     //$email = filter_var($formdata['username'], FILTER_VALIDATE_EMAIL);
@@ -56,8 +56,7 @@ try {
             && $formdata['password'] != $formdata['cpassword']) {
         $errors['password'] = "Passwords must match!";
     }
-        $password = $_POST['password'];
-        if(!preg_match("/^[a-zA-Z-'\s]+$/",$password)){
+        else if(!preg_match("/^[a-zA-Z-'\s]+$/",$formdata['password'])){
             $errors['password'] = 'Invalid password!';
         }
 
