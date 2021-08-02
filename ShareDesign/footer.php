@@ -70,7 +70,7 @@
         }
         .footer-col ul li a:hover{
             color: #ffffff;
-            padding-left: 8px;
+            padding-left: 15px;
         }
         .footer-col .social-links a{
             display: inline-block;

@@ -383,15 +383,15 @@ body{
             <div class="slideshow-container">
                 <br><br><br><br>
                 <div class="mySlides fade">
-                  <img src="images/slide1.png" style="width:60%; height:500px; margin-left: 200px">
+                  <img src="images/logo6.png" style="width:70%; height:450px; margin-left: 150px">
                 </div>
                 
                 <div class="mySlides fade">
-                  <img src="images/slide2.png" style="width:60%; height:500px; margin-left: 200px">
+                  <img src="images/slidetry1.png" style="width:70%; height:450px; margin-left: 150px">
                 </div>
                 
                 <div class="mySlides fade">
-                  <img src="images/slide3.png" style="width:60%; height:500px; margin-left: 200px">
+                  <img src="images/slidetry3.png" style="width:70%; height:450px; margin-left: 150px">
                 </div>
                 
                 <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
