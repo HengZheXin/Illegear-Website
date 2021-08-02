@@ -13,8 +13,9 @@
         <?php require '../ShareDesign/scripts.php'; ?><!--js links. file found in utils folder-->
     </head>
     <body>
-    <?php require '../ShareDesign/header2.php'; ?>
-
+        <?php
+            require_once '../ShareDesign/header2.php';
+        ?>
     <div class="banner-area">
            <div class="banner-text">
                <p>IGS Society</p><br/>
@@ -68,3 +69,6 @@
         </div><!--content div-->
     </body>
 </html>
+<?php
+    require_once '../ShareDesign/footer.php';
+?>
