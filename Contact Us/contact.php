@@ -20,7 +20,7 @@
             $error['phone'] = 'Phone number is required!';
         }else{
             $phone = $_POST['phone'];
-            if(!preg_match("/^[0]{1}[1]{1}[0-9]{8,9}$/",$phone)){
+            if(!preg_match("/^[0]{1}[1]{1}[0-9]{1}-[0-9]{7,8}$/",$phone)){
                 $error['phone'] = 'Invalid phone number!';
 
             }
@@ -40,9 +40,12 @@
             $error['comments'] = 'Messages is required!';
         }else{
             $comments = $_POST['comments'];
+            if(!preg_match("/^[a-zA-Z-'\s]+$/",$comments)){
+                $error['comments'] = 'Invalid Message!';
+            }
         }
         //success
-        if(preg_match("/^[a-zA-Z-'\s]+$/",$name) && preg_match("/^[0]{1}[1]{1}[0-9]{8,9}$/",$phone) && filter_var($email, FILTER_VALIDATE_EMAIL) && !empty($_POST['comments']) ){
+        if(preg_match("/^[a-zA-Z-'\s]+$/",$name) && preg_match("/^[0]{1}[1]{1}[0-9]{1}-[0-9]{7,8}$/",$phone) && filter_var($email, FILTER_VALIDATE_EMAIL) && !empty($_POST['comments']) ){
             $message_sent = true;
         }
     }
@@ -110,21 +113,21 @@
                 <form action="contact.php"  method="POST" class="form-group">
                         <div class="form-group">
                             <label for="Title">Name:</label>
-                            <input type="text" name="name" id="name" class="form-control" value="<?php echo $name ?>">
+                            <input type="text" name="name" id="name" class="form-control" placeholder="John" value="<?php echo $name ?>">
                             <div class="error">
                                 <?php echo $error['name']; ?>
                             </div>
                         </div>
                         <div class="form-group">
                             <label for="Title">Phone Number:</label>
-                            <input type="text" name="phone" id="phone" class="form-control" value="<?php echo $phone ?>">
+                            <input type="text" name="phone" id="phone" class="form-control" placeholder="012-3456789" value="<?php echo $phone ?>">
                             <div class="error">
                                 <?php echo $error['phone']; ?>
                             </div>
                         </div>
                         <div class="form-group">
                             <label for="Title">Email:</label>
-                            <input type="text" name="email" id="email" class="form-control" value="<?php echo $email ?>">
+                            <input type="text" name="email" id="email" class="form-control" placeholder="john@gmail.com" value="<?php echo $email ?>">
                             <div class="error">
                                 <?php echo $error['email']; ?>
                             </div>
