@@ -1,9 +1,14 @@
 <html>
 <meta charset="utf-8">
     <style>
+        .nav-img{
+            position: absolute;
+            width: 8%;
+            margin-left: 100px;
+            margin-top: 30px;
+        }
         nav{
             position: relative;
-            margin: 0px auto 0;
             width: 600px;
             height: 50px;
             background-color: transparent;
@@ -30,7 +35,7 @@
             bottom: 0;
             z-index: 0;
             background: white;
-            border-radius: 8px;
+
             transition: all .5s ease 0s;
         }
         a:nth-child(1){
@@ -69,7 +74,8 @@
         
     </style>
 
-
+    <img class="nav-img" src="../ShareDesign/images/Asset 2.png">
+    
     <nav>
         <a href="../Home/home.php">Home</a>
         <a href="../About Us/about.php">About</a>
