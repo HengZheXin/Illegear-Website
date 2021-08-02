@@ -1,73 +1,85 @@
-
 <html>
+<meta charset="utf-8">
     <style>
-        
-    .navbar1 {
-    background-color: #24252A;
-    }
-
-    li, a, button{
-        font-family: "Montserrat", sans-serif;
-        font-weight: 500;
-        font-style: 16px;
-        color: black;
-        text-decoration: none;
-    }
-
-    header{
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        padding: 30px 10%;
-    }
-
-    button{
-        margin-left: 20px;
-        padding: 9px 25px;
-        background-color: white;
-
-        cursor: pointer;
-        transition: all 0.3s ease 0s;
-    }
-
-    button:hover{
-        background-color: rgba(0,136,169,0);
-    }
+        nav{
+            position: relative;
+            margin: 0px auto 0;
+            width: 600px;
+            height: 50px;
+            background-color: transparent;
+            border-radius: 8px;
+            font-size: 0;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            box-shadow: 0 2px 3px 0 rgba(0,0,0,.1);
+            float: right;
+        }
+        nav a{
+            font-size: 15px;
+            text-transform: uppercase;
+            color: white;
+            text-decoration: none;
+            line-height: 50px;
+            position: relative;
+            z-index: 1;
+            display: inline-block;
+            text-align: center;
+        }
+        nav .animation{
+            position: absolute;
+            height: 5px;
+            bottom: 0;
+            z-index: 0;
+            background: white;
+            border-radius: 8px;
+            transition: all .5s ease 0s;
+        }
+        a:nth-child(1){
+            width: 100px;
+        }
+        nav .start-home,a:nth-child(1):hover~.animation{
+            width: 100px;
+            left: 0;
+        }
+        a:nth-child(2){
+            width: 110px;
+        }nav .start-about,a:nth-child(2):hover~.animation{
+            width: 110px;
+            left: 100px;
+        }
+        a:nth-child(3){
+            width: 100px;
+        }nav .start-events,a:nth-child(3):hover~.animation{
+            width: 100px;
+            left: 210px;
+        }
+        a:nth-child(4){
+            width: 160px;
+        }
+        nav .start-contact,a:nth-child(4):hover~.animation{
+            width: 160px;
+            left: 310px;
+        }
+        a:nth-child(5){
+            width: 120px;
+        }
+        nav .start-login,a:nth-child(5):hover~.animation{
+            width: 120px;
+            left: 470px;
+        }
         
     </style>
-    <header>
 
-    <nav class="navbar">
-        <div class="container">
-            <div class="navbar-header"><!--website name/title-->
-                <?php 
-                require_once 'functions.php';
-                echo '<img class="logo" src="../ShareDesign/images/Asset 2.png" alt="logo">';
-                ?>
-            </div>
-            <ul class="nav navbar-nav navbar-right"><!--navigation-->
-                <?php 
-                //links to database contents. *if logged in
-                if(is_logged_in()){
-                    require_once 'functions.php';
-                    echo '<li><a href = "../Home/home.php">Home</a></li>';
-                    echo '<li><a href = "../About Us/about.php">About</a></li>';
-                    echo '<li><a href = "../Events/event.php">Events</a></li>';
-                    echo '<li><a href = "../Contact Us/contact.php">Contact Us</a></li>';
-                    echo '<li class="btnlogout"><a class = "btn btn-default navbar-btn" href = "../Home/home.php">Logout <span class = "glyphicon glyphicon-log-out"></span></a></li>';
-                }  
-                //links non database contents. *if logged out
-                else {
-                    echo '<li><a href = "../Home/home.php">Home</a></li>';
-                    echo '<li><a href = "../About Us/about.php">About</a></li>';
-                    echo '<li><a href = "../Events/event.php">Events</a></li>';
-                    echo '<li><a href = "../Contact Us/contact.php">Contact Us</a></li>';
-                    echo '<button type = "button" class = "btn btn-default navbar-btn" data-toggle = "modal" data-target = "#login">Login <Span class="glyphicon glyphicon-log-in"></span></button>';
-                }
-                ?>
-                
-            </ul>
-        </div><!--container div-->
+
+    <nav>
+        <a href="../Home/home.php">Home</a>
+        <a href="../About Us/about.php">About</a>
+        <a href="../Events/event.php">Events</a>
+        <a href="../Contact Us/contact.php">Contact Us</a>
+        <a href="../Login/login_form.php">Login</a>
+        <div class="animation start-home"></div>
+        <div class="animation start-about"></div>
+        <div class="animation start-events"></div>
+        <div class="animation start-contact"></div>
+        <div class="animation start-login"></div>
     </nav>
-    </header>
 </html>

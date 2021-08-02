@@ -7,13 +7,13 @@
         <style>
             span.error{
                 color: red;
-            }            
+            }           
         </style>  
         <?php require '../ShareDesign/styles.php'; ?><!--css links. file found in utils folder-->
         <?php require '../ShareDesign/scripts.php'; ?><!--js links. file found in utils folder-->
     </head>
     <body>
-    <?php require '../ShareDesign/header.php'; ?>
+    <?php require '../ShareDesign/header2.php'; ?>
 
     <div class="banner-area">
            <div class="banner-text">

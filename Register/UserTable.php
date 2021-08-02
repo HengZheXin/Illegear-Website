@@ -1,6 +1,6 @@
 <?php
 
-require_once 'User.php';
+require_once '../ShareDesign/User.php';
 
 class UserTable {
     private $link;
