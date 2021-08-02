@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+
   <head>
     <meta charset="UTF-8">
     <title> Admin Console Panel  | IGS Society </title>
@@ -10,6 +11,7 @@
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <?php require_once('debug.php'); error_reporting(E_ALL ^ E_NOTICE);?>
    </head>
+
 <body>
   <div class="sidebar">
     <div class="logo-details">
@@ -70,60 +72,71 @@
      </li>
     </ul>
   </div>
+
+
+
+
+  <?php
+    $title = '';
+    $date = '';
+    $desc = '';
+    $img = '';
+    $seats = '';
+
+
+
+  ?>
+
+
+ 
   <section class="home-section">
-      <div class="text">Add Events</div>
+      <div class="text">Add Events<br>
+      <hr class="hr-s3"/></div>
+
       <form action="" method="post">
                 
-                <table width="50%" cellpadding="0" cellspacing="10">
+                <table width="40%" cellpadding="0" cellspacing="10">
 
                     <tr>
-                        <td colspan="2">
-                            <div class="inputSection">       
-                                <label for="eventTitle">Event title</label>
+                        <td colspan="">
+                            <div class="inputSection1">       
+                                <label for="title">Event title</label>
                                 </br>
-                                <?php inputText('eventTitle', $eventTitle, 30); ?>
+                                <?php titleCheck('title', $title, 30); ?>
                             </div>
-                        </td>
-                        
-                        <td colspan="1">
-                            <div class="inputSection">
-                                <label for="eventId">Event ID</label>
+                    
+                            <div class="inputSection2">
+                                <label for="date">Event date</label>
                                 </br>
-                                <input type="text" name="eventId" id="eventId" value="<?php echo $temp_id; ?>" readonly>
+                                <?php dateCheck('date', $date); ?>
                             </div>
                         </td>
                     </tr>
-                    
+
                     <tr>
-                        <td colspan ="3">
+                        <td colspan ="1">
                             <div class="inputSection">
-                                <label for="eventDesc">Event description</label>
+                                <label for="desc">Event description</label>
                                 </br>
-                                <?php inputTextArea('eventDesc', $eventDesc, 400, 10, 50); ?>
+                                <?php descCheck('desc', $desc, 400, 10, 50); ?>
                             </div> 
                         </td>
                     </tr>
-                    
+
                     <tr>
-                        <td>
-                            <div class="inputSection">
-                                <label for="eventDate">Event date</label>
+                        <td colspan ="1">
+                            
+
+                            <div class="inputSection3">       
+                                <label for="img">Event image</label>
                                 </br>
-                                <?php inputDate('eventDate', $eventDate); ?>
+                                <?php imgCheck('img'); ?>
                             </div>
-                        </td>
-                        <td>
-                            <div class="inputSection">
-                                <label for="eventSeat">Seat Availability</label>
+
+                            <div class="inputSection4">
+                                <label for="seats">Seat Availability</label>
                                 </br>
-                                <?php inputNum('eventSeat', $eventSeat, 1, 9999); ?>
-                            </div>
-                        </td>
-                        <td>
-                            <div class="inputSection">       
-                                <label for="eventImg">Event image</label>
-                                </br>
-                                <?php inputImg('eventImg'); ?>
+                                <?php seatsCheck('seats', $seats, 1, 9999); ?>
                             </div>
                         
                         </td>
@@ -132,8 +145,6 @@
                     <tr>
                         <td>
                             <input type="submit" name="upload" value="Add" />
-                        </td>
-                        <td>
                             <input type="button" value="Cancel" onclick="location='#'" />
                         </td>
                     </tr>
