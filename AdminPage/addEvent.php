@@ -32,6 +32,7 @@
        </a>
        <span class="tooltip">User</span>
      </li>
+
      <li>
        <a href="addEvent.php">
          <i class='bx bx-pie-chart-alt-2' ></i>
@@ -53,13 +54,7 @@
        </a>
        <span class="tooltip">Event Participants</span>
      </li>
-     <li>
-       <a href="#">
-         <i class='bx bx-cog' ></i>
-         <span class="links_name">Setting</span>
-       </a>
-       <span class="tooltip">Setting</span>
-     </li>
+
      <li class="profile">
          <div class="profile-details">
            <img class="adminlogo" src="../ShareDesign/images/SmallLogo.png" alt="profileImg">
@@ -68,7 +63,10 @@
              <div class="job">Admin Panel</div>
            </div>
          </div>
-         <i class='bx bx-log-out' id="log_out" ></i>
+
+         <div>
+             <a href="../Home/home.php"><i class='bx bx-log-out' id="log_out"></i></a>
+         </div>
      </li>
     </ul>
   </div>
@@ -76,16 +74,7 @@
 
 
 
-  <?php
-    $title = '';
-    $date = '';
-    $desc = '';
-    $img = '';
-    $seats = '';
-
-
-
-  ?>
+  
 
 
  
@@ -93,32 +82,57 @@
       <div class="text">Add Events<br>
       <hr class="hr-s3"/></div>
 
+
+      <?php
+        $eName = '';
+        $eDate = '';
+        $eDesc = '';
+        $eImage = '';
+        $eSeats = '';
+
+        
+
+      ?>
+
+
       <form action="" method="post">
                 
                 <table width="40%" cellpadding="0" cellspacing="10">
 
+                
+
                     <tr>
                         <td colspan="">
-                            <div class="inputSection1">       
-                                <label for="title">Event title</label>
+                            <div class="hero1">       
+                                <label for="eName">Event name</label>
                                 </br>
-                                <?php titleCheck('title', $title, 30); ?>
+                                <?php 
+                                nameCheck('eName', $eName, 30);
+                                  if (!empty($_POST)) {
+                                  validateName($eName); 
+                                  }
+                                
+                                ?>
                             </div>
                     
-                            <div class="inputSection2">
-                                <label for="date">Event date</label>
+                            <div class="hero2">
+                                <label for="eDate">Event date</label>
                                 </br>
-                                <?php dateCheck('date', $date); ?>
+                                <?php dateCheck('eDate', $eDate); 
+                                validateDate($eDate);
+                                ?>
+                                
                             </div>
                         </td>
                     </tr>
 
                     <tr>
                         <td colspan ="1">
-                            <div class="inputSection">
-                                <label for="desc">Event description</label>
+                            <div class="hero">
+                                <label for="eDesc">Event description</label>
                                 </br>
-                                <?php descCheck('desc', $desc, 400, 10, 50); ?>
+                                <?php descCheck('eDesc', $eDesc, 400, 10, 50);
+                                 validateDesc($eDesc); ?>
                             </div> 
                         </td>
                     </tr>
@@ -127,16 +141,18 @@
                         <td colspan ="1">
                             
 
-                            <div class="inputSection3">       
-                                <label for="img">Event image</label>
+                            <div class="hero3">       
+                                <label for="eImage">Event image</label>
                                 </br>
-                                <?php imgCheck('img'); ?>
+                                <?php imgCheck('eImage');
+                                 validateImage($eImage); ?>
                             </div>
 
-                            <div class="inputSection4">
-                                <label for="seats">Seat Availability</label>
+                            <div class="hero4">
+                                <label for="eSeats">Seat Availability</label>
                                 </br>
-                                <?php seatsCheck('seats', $seats, 1, 9999); ?>
+                                <?php seatsCheck('eSeats', $eSeats, 1, 999);
+                                 validateSeats($eSeats); ?>
                             </div>
                         
                         </td>
@@ -144,8 +160,8 @@
                     
                     <tr>
                         <td>
-                            <input type="submit" name="upload" value="Add" />
-                            <input type="button" value="Cancel" onclick="location='#'" />
+                            <input type="submit" name="submit" value="Add" />
+                            <input type="reset" value="Cancel" onclick="location='#'" />
                         </td>
                     </tr>
                     

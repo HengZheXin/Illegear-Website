@@ -49,13 +49,6 @@
        </a>
        <span class="tooltip">Event Participants</span>
      </li>
-     <li>
-       <a href="#">
-         <i class='bx bx-cog' ></i>
-         <span class="links_name">Setting</span>
-       </a>
-       <span class="tooltip">Setting</span>
-     </li>
      <li class="profile">
          <div class="profile-details">
            <img class="adminlogo" src="../ShareDesign/images/SmallLogo.png" alt="profileImg">
@@ -64,7 +57,9 @@
              <div class="job">Admin Panel</div>
            </div>
          </div>
-         <i class='bx bx-log-out' id="log_out" ></i>
+         <div>
+             <a href="../Home/home.php"><i class='bx bx-log-out' id="log_out"></i></a>
+         </div>
      </li>
     </ul>
   </div>

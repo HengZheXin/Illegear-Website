@@ -8,31 +8,26 @@ input, textarea {
     box-sizing: border-box;
 }
 
-.inputSection1 {
+.hero1 {
     width: 60%;
     float: left;
 }
 
-.inputSection2 {
+.hero2 {
     width: 38%;
     float: right;
 }
 
-.inputSection3 {
+.hero3 {
     width: 60%;
     float: left;
 }
 
-.inputSection4 {
+.hero4 {
     width: 38%;
     float: right;
 }
   
-#eventId {
-    background-color: #D3D3D3;
-    font-weight: bold;
-}
-
 
 input[type=submit] {
     width: 25%;
@@ -46,7 +41,7 @@ input[type=submit] {
     float: left;
 }
 
-input[type=button] {
+input[type=reset] {
     width: 25%;
     background-color: #EFEFEF;
     color: rgb(0, 0, 0);
@@ -66,4 +61,10 @@ textarea {
     width: 100%;
     height: 100px;
     resize: none;
+}
+
+
+.error{
+    color: red;
+    font-size: 13px;
 }

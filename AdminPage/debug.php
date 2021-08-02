@@ -3,7 +3,7 @@
 // INPUT FUNCTIONS //
 
 // Input Function for TEXT
-function titleCheck($name, $value = '', $maxlength = '')
+function nameCheck($name, $value = '', $maxlength = '')
 {
     printf('<input type="text" name="%s" id="%s" value="%s" maxlength="%d" />' . "\n",
            $name, $name, $value, $maxlength);
@@ -37,7 +37,64 @@ function seatsCheck($name, $value = '', $min = '', $max = '') {
     
 }
 
-//function validateTitle
+//function validation
+function validateName($eName){
+    if($eName == NULL)
+    {
+        echo '<div class = "error">'.'Please enter <strong>Event Name</strong>.'.'</div>';
+    }
+    else if(!preg_match("/^[a-zA-Z-'\s]+$/",$eName)){
+        echo '<div class = "error">'.'There are invalid letters in <strong>Event Name</strong>.'.'</div>';
+    }
+
+}
+
+function validateDate($eDate){
+    if($eDate == NULL)
+    {
+        echo '<div class = "error">'.'Please enter <strong>Event Date</strong>.'.'</div>';
+    }
+}
+
+function validateDesc($eDesc){
+    if($eDesc == NULL)
+    {
+        echo '<div class = "error">'.'Please enter <strong>Event Description</strong>.'.'</div>';
+    }
+    else if(!preg_match("/^[a-zA-Z-'\s]+$/",$eDesc)){
+        echo '<div class = "error">'.'There are invalid letters in <strong>Event Description</strong>.'.'</div>';
+    }
+}
+
+function validateImage($eImage){
+    if($eImage == NULL)
+    {
+        echo '<div class = "error">'.'Please insert <strong>Event Image</strong>.'.'</div>';
+    }
+}
+
+function validateSeats($eSeats){
+    if($eSeats == NULL)
+    {
+        echo '<div class = "error">'.'Please enter <strong>Seats Number</strong>.'.'</div>';
+    }
+    else if(!preg_match("/^[1-999-'\s]+$/",$eSeats)){
+        echo '<div class = "error">'.'There are invalid letters in <strong>Seats Number</strong>.'.'</div>';
+    }
+}
+
+
+
+
+
+
+
+
+
+
+    
+
+
 
 
 ?>
