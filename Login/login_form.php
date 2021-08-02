@@ -3,7 +3,7 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link rel="stylesheet" href="login.css">
-        <title></title>
+        <title>Login | IGS Website</title>
         <style>
             span.error{
                 color: red;
@@ -59,6 +59,7 @@
                                 <?php if (isset($errors['password'])) echo $errors['password']; ?>
                             </span>
                         </div>
+                        <p><a href="enter_email.php">Forgot your password?</a></p>
                         <button type = "submit" class = "btn btn-default">Login</button>
                         <br><br><br><br>
                     </form>

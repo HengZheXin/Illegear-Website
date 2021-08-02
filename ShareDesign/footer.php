@@ -78,7 +78,6 @@
             width: 40px;
             background-color: rgba(255,255,255,0.2);
             margin: 0 10px 10px 0;
-
             text-align: center;
             line-height: 40px;
             border-radius: 50%;
@@ -114,15 +113,15 @@
             <div class="row">
                 
                 <div class="footer-col">
-                    <img src = "images/Asset 3.png" style="width:270px; padding-top: 20px; margin-left:20px;">
+                    <img src = "../ShareDesign/images/Asset 3.png" style="width:270px; padding-top: 20px; margin-left:20px;">
                 </div>
                 <div class="footer-col">
                     <h4>Social Objectives</h4>
-                    <a>Detailed Objectives:</a><br>
-                    <a>sharing interests in games can:</a><br>
-                    <a>a. Interact with each others</a><br>
-                    <a>b. Cultivate personal development</a><br>
-                    <a>c. Foster a healthy gaming lifestyle</a>
+                    <p>Detailed Objectives:</p>
+                    <p>sharing interests in games can:</p><br>
+                    <p>a. Interact with each others</p>
+                    <p>b. Cultivate personal development</p>
+                    <p>c. Foster a healthy gaming lifestyle</p>
                 </div>
                 <div class="footer-col">
                     <h4>IGS</h4>

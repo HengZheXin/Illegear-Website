@@ -2,7 +2,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <style>
-    /* Header */
 
 @charset "utf-8";
 
@@ -57,6 +56,11 @@ body{
     padding: 0;
     background: #34495e;
 }
+
+@media (max-width: 820px){
+
+}
+
 /* Section 1 */
 .section1{
     background-color: rgb(26, 25, 25);
@@ -92,12 +96,17 @@ body{
     margin-left: 20%;
 }
 
-
-
 .sec1pic img{
     position: relative;
     margin-left: 950px;
     margin-top: -450px;
+}
+
+@media (max-width: 1000px){
+    .sec1pic img{
+        margin-left: 335px;
+        margin-top: 70px;
+    }
 }
 
 /* Section 2 */
@@ -341,7 +350,7 @@ body{
 
     <head>
         <meta charset = "UTF-8">
-        <title>Home</title>
+        <title>Home | IGS Website</title>
     </head>
 
     <body>
