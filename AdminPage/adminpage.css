@@ -7,6 +7,26 @@ input, textarea {
     border-radius: 4px;
     box-sizing: border-box;
 }
+
+.inputSection1 {
+    width: 60%;
+    float: left;
+}
+
+.inputSection2 {
+    width: 38%;
+    float: right;
+}
+
+.inputSection3 {
+    width: 60%;
+    float: left;
+}
+
+.inputSection4 {
+    width: 38%;
+    float: right;
+}
   
 #eventId {
     background-color: #D3D3D3;
@@ -15,18 +35,31 @@ input, textarea {
 
 
 input[type=submit] {
-    width: 100%;
-    background-color: #4CAF50;
+    width: 25%;
+    background-color: #11101D;
     color: white;
     padding: 14px 20px;
     margin: 8px 0;
-    border: none;
-    border-radius: 4px;
+    border-color: white;
+    border-radius: 10px;
     cursor: pointer;
+    float: left;
+}
+
+input[type=button] {
+    width: 25%;
+    background-color: #EFEFEF;
+    color: rgb(0, 0, 0);
+    padding: 14px 20px;
+    margin: 8px 0;
+    border-radius: 10px;
+    cursor: pointer;
+    float: right;
+    
 }
   
 input[type=submit]:hover {
-    background-color: #45a049;
+    background-color: #4f4e57;
 }
 
 textarea {
