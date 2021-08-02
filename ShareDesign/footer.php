@@ -109,14 +109,12 @@
 
     
     <footer class="footer">
-        <div class="title">
-            <h1>Interactive Gaming Society</h1>
-        </div>
+        
         <div class="container">
             <div class="row">
                 
                 <div class="footer-col">
-                    <img src = "images/Asset 3.png" style="width:250px; padding-top: 20px; margin-left:20px;">
+                    <img src = "images/Asset 3.png" style="width:270px; padding-top: 20px; margin-left:20px;">
                 </div>
                 <div class="footer-col">
                     <h4>Social Objectives</h4>

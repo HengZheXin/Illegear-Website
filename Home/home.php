@@ -1,12 +1,347 @@
 
-
 <!DOCTYPE html>
 <html lang="en">
+<style>
+    /* Header */
+
+@charset "utf-8";
+
+html {
+    background: black;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header */
+.header-area{
+    background-image: url("images/hometry.png");
+    background-position: center center;
+    background-size: cover;
+    -webkit-background-size: cover;
+    height: 100vh;
+    min-height: 100%;
+    box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.3);
+    
+}
+
+.header-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    text-align: center;
+    padding: 35px;
+}
+
+.header-text h2{
+    font-family: sans-serif;
+    font-weight: 800;
+    margin-bottom: 3%;
+    font-size: 80px;
+}
+
+.header-text p{
+    font-size: 22px;
+    font-weight: 1000;
+    line-height: 25px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background: #34495e;
+}
+/* Section 1 */
+.section1{
+    background-color: rgb(26, 25, 25);
+    color: white;
+    position: relative;
+}
+
+.special{
+    background-color: rgba(168, 168, 168, 0.466);
+    border: 0px solid rgba(168, 168, 168, 0.466);
+    font-size: 13px;
+    padding: 50px;
+    display: inline-block;
+    margin-top: 6%;
+    margin-left: 20%;
+    font-family: poppins;
+    line-height: 55px;
+}
+
+.special p{
+    font-size: 16px;
+}
+
+.special h1{
+    font-size: 55px;
+}
+
+.description{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 30px;
+    font-size: 18px;
+    padding: 50px;
+    margin-left: 20%;
+}
+
+
+
+.sec1pic img{
+    position: relative;
+    margin-left: 950px;
+    margin-top: -450px;
+}
+
+/* Section 2 */
+.section2{
+    background-color: rgb(26, 25, 25);
+}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* Section 3 */
+
+.ps4-front img{
+    position: absolute;
+    margin-top: -760px;
+    margin-left: 270px;
+}
+
+.sec3nav{
+    text-align: left;
+    margin-left: 1200px;
+    margin-top: -380px;
+    position: absolute;
+}
+
+.sec3nav a{
+    text-decoration: none;
+    font-size: 23px;
+    color: black;
+    display: inline;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.sec3nav a:hover{
+    color: lightblue;
+    transition: .8s;
+}
+
+/* Section 4 */
+.section4{
+    margin-top: -5px;
+    background-color: lightgrey;
+    width: 100%;
+    height: 40vh;
+    position: relative;
+}
+
+.sec4-h1{
+    position: absolute;
+    text-align: left;
+    margin-left: 300px;
+    margin-top: 80px;
+    font-size: 23px;
+}
+
+.sec4-p{
+    position: absolute;
+    text-align: right;
+    font-size: 25px;
+    font-family: 'Courier New', Courier, monospace;
+    margin-left: 1000px;
+    margin-top: 160px;
+}
+
+/* Section 5 */
+.section5{
+    background-color: rgb(54, 53, 53);
+    color: white;
+    position: relative;
+}
+
+.sec5header{
+    text-align: center;
+}
+
+.sec5header h1{
+    font-size: 50px;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+.sec5header p{
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.row1{
+    position: absolute;
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    place-items: center;
+    background-color: rgb(54, 53, 53);
+}
+
+.rows{
+    position: relative;
+}
+
+.col1, .col2, .col3{
+    position: relative;
+}
+
+.games{
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+    padding: 4px;
+}
+
+.overlay{
+    position: absolute;
+    min-width: 99.5%;
+    height: 98%;
+    top: 0;
+    opacity: 0;
+    background: white;
+}
+
+.text{
+    z-index: 99;
+    font-size: 25px;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30%;
+}
+
+.overlay:hover{
+    opacity: 1;
+    transition: 1s;
+}
+
+/* Section 6 */
+.section6{
+    background-color: rgb(54, 53, 53);
+    width: 100%;
+    height: 80vh;
+    position: relative;
+    margin-top: 1150px;
+}
+
+.leftpic{
+    width: 55%;
+    padding-top: 100px;
+}
+
+.leftpic img{
+    width: 100%;
+}
+
+.righttext{
+    width: 45%;
+    float: right;
+    margin-top: -370px;
+    color: white;
+    text-align: center;
+}
+
+.righttext h1{
+    font-size: 55px;
+}
+
+.righttext p{
+    font-size: 19px;
+}
+
+.righttext a{
+    text-decoration: none;
+    border: 1px solid white;
+    background: white;
+    padding: 17px 60px;
+    color: black;
+}
+
+.righttext a:hover{
+    background: black;
+    color: white;
+    transition: 1s;
+}
+</style>
 
     <head>
         <meta charset = "UTF-8">
         <title>Home</title>
-        <link rel = "stylesheet" href="home.css">
     </head>
 
     <body>
@@ -14,10 +349,10 @@
 <!-- Header -->
 
         <div class="header-area">
-            <header>
-                
-            </header>
-           
+
+        <?php
+            require_once '../ShareDesign/header2.php';
+        ?>
 
             <div class="header-text">
                 <h2><ins>IGS</ins> Society</h2><br/>

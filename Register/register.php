@@ -1,6 +1,6 @@
 <?php
-require_once 'function.php';
-require_once 'User.php';
+require_once '../ShareDesign/functions.php';
+require_once '../ShareDesign/User.php';
 require_once 'DB.php';
 require_once 'UserTable.php';
 
