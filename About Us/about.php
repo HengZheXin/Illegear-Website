@@ -9,8 +9,9 @@
 
 
 <body>
-<?php require '../ShareDesign/header.php'; ?>
-
+        <?php
+            require_once '../ShareDesign/header2.php';
+        ?>
     <div class="banner-area">
         <div class="banner-text">
             <p>IGS Society</p><br/>
@@ -131,3 +132,6 @@
 </body> 
 
 </html>
+<?php
+    require_once '../ShareDesign/footer.php';
+?>
