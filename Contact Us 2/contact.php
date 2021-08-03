@@ -1,3 +1,55 @@
+<?php
+
+    $name = $email = $subject = $message= "";
+    $error = array('name'=>'','email'=>'','subject'=>'','message'=>'');
+
+    if(isset($_POST['submit'])){
+
+        //check name
+        if(empty($_POST['name'])){
+            $error['name'] = 'Name is required!';
+        }else{
+            $name = $_POST['name'];
+            if(!preg_match("/^[a-zA-Z-'\s]+$/",$name)){
+                $error['name'] = 'Invalid name!';
+            }
+        }
+        
+        //check email 
+        if(empty($_POST['email'])){
+            $error['email'] = 'Email is required!';
+        }else{
+            $email = $_POST['email'];
+            if(!filter_var($email, FILTER_VALIDATE_EMAIL)){
+                $error['email'] = 'Invalid email address!';
+
+            }
+        }
+
+        //check subject
+        if(empty($_POST['subject'])){
+            $error['subject'] = 'Subject is required!';
+        }else{
+            $subject = $_POST['subject'];
+            if(!preg_match("/^[a-zA-Z-'\s]+$/",$subject)){
+                $error['subject'] = 'Invalid subject!';
+
+            }
+        }
+
+        //check messages
+        if(empty($_POST['message'])){
+            $error['message'] = 'Messages is required!';
+        }else{
+            $message = $_POST['message'];
+            
+        }
+        //success
+        if(preg_match("/^[a-zA-Z-'\s]+$/",$name) && filter_var($email, FILTER_VALIDATE_EMAIL) && preg_match("/^[a-zA-Z-'\s]+$/",$subject) && !empty($_POST['message'])){
+        }
+    }
+?>
+<!DOCTYPE HTML>
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,49 +74,74 @@
         </div>
     </div>
     
-    
-    
+            
+
     <section class="contact-us">
             <div class="row3">
                 <div class="contact-col">
                     <div>
-                        <i class="fa fa-home"></i>
+                    <img src="https://img.icons8.com/ios/50/fa314a/aclc-college.png"/>                
                         <span>
                             <h5>Tunku Abdul Rahman University College</h5>
                             <p>53300 Kuala Lumpur, Wilayah Persekutuan Kuala Lumpur</p>
                         </span>
                     </div>
+                    
                     <div>
-                        <i class="fa fa-phone"></i>
+                    <img src="https://img.icons8.com/ios/50/fa314a/email.png"/>                   
                         <span>
-                            <h5>03-4145 0123</h5>
-                            <p>Monday to Saturday 10 Am to 6 Pm</p>
-                        </span>
-                    </div>
-                    <div>
-                        <i class="fa fa-envelope"></i>
-                        <span>
-                            <h5>info@igs.com</h5>
+                            <h5>igs.taruc.society@gmail.com</h5>
                             <p>Email us your query</p>
                         </span>
                         
                     </div>
+                    <div>
                     <a href="https://www.facebook.com/taruc.igs/">
-                    <img src="https://img.icons8.com/bubbles/50/000000/facebook.png"/>                    
-                    </a>    
+                    <img src="https://img.icons8.com/ios/50/fa314a/facebook--v1.png"/>    
+                    </a>                        
+                    <span>
+                            <h5>TARUC Interactive Gaming Society</h5>
+                            <p>Meet up our IGS society</p>
+                        </span>
+                        
+                    </div>
+                    <div>
                     <a href="https://www.instagram.com/taruc.igs/">
-                    <img src="https://img.icons8.com/bubbles/50/000000/instagram.png"/>                    
+                    <img src="https://img.icons8.com/ios/50/fa314a/instagram-reel.png"/>
                     </a>
+                        <span>
+                            <h5>taruc.igs</h5>
+                            <p>More event poster on here</p>
+                        </span>
+                        
+                    </div>
                 </div>
+
                 
             
                 <div class="contact-col">
-                    <form method="post" action="contact-form-handler.php">
-                    <input type="text" name="name" placeholder="Enter your name" required>
-                    <input type="email" name="email" placeholder="Enter email address" required>
-                    <input type="text" name="subject" placeholder="Enter your subject" required>
-                    <textarea rows="8" name="message" placeholder="Message" required></textarea>
-                    <button type="submit" class="hero-btn red-btn">Send Message</button>
+                    <form method="POST" action="contact.php">
+                    <label for="Title">Name:</label>
+                    <input type="text" name="name" placeholder="John" value="<?php echo $name ?>">
+                        <div class="error">
+                            <?php echo $error['name']; ?>
+                        </div>
+                    <label for="Title">Email:</label>
+                    <input type="email" name="email" placeholder="john@gmail.com" value="<?php echo $email ?>">
+                        <div class="error">
+                            <?php echo $error['email']; ?>
+                        </div>
+                    <label for="Title">Subject:</label>
+                    <input type="text" name="subject" placeholder="Event" value="<?php echo $subject ?>">
+                        <div class="error">
+                            <?php echo $error['subject']; ?>
+                        </div>
+                    <label for="Title">Message:</label>
+                    <textarea rows="8" name="message"  ></textarea>
+                        <div class="error">
+                            <?php echo $error['message']; ?>
+                        </div>
+                    <button type="submit" name="submit" class="hero-btn red-btn">Send Message</button>
                     </form> 
                 </div>
             </div>
@@ -72,8 +149,9 @@
     </section>
     
     <section class="location">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3325.640888374062!2d101.72733233555277!3d3.21611865099729!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc3843bfb6a031%3A0x2dc5e067aae3ab84!2sTunku%20Abdul%20Rahman%20University%20College!5e0!3m2!1sen!2smy!4v1627201902716!5m2!1sen!2smy" width="720" height="445" frameborder="0" style="border:0" allowfullscreen></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3325.640888374062!2d101.72733233555277!3d3.21611865099729!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc3843bfb6a031%3A0x2dc5e067aae3ab84!2sTunku%20Abdul%20Rahman%20University%20College!5e0!3m2!1sen!2smy!4v1627201902716!5m2!1sen!2smy" width="720" height="445" frameborder="0" style="border:0" allowfullscreen></iframe>
     </section>
+
 
  
     
@@ -90,7 +168,7 @@
         navLinks.style.right = "-200px";
     }
 </script> 
-    
+          
 </body>
 </html>    
 <?php require_once '../ShareDesign/footer.php'; ?>

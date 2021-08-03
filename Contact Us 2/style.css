@@ -154,6 +154,9 @@ h3{
     margin: 10px;
     margin-right: 30px;
 }
+.contact-col div img{
+    padding: 25px;
+}
     
 .contact-col div p{
     padding: 0;
