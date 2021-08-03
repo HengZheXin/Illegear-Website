@@ -28,7 +28,7 @@
         <video width="600" height="400" autoplay muted loop>
             <source src="images/igs.mp4" type="video/mp4">
         </video>
-        <p class="text">Dictum sit amet justo donec enim diam vulputate. Sociis natoque penatibus et magnis dis parturient. Molestie ac feugiat sed lectus vestibulum mattis. Vitae congue mauris rhoncus aenean vel elit scelerisque. Consequat nisl vel pretium lectus quam id leo in vitae. Dictum sit amet justo donec enim diam vulputate. Sociis natoque penatibus et magnis dis parturient. Molestie ac feugiat sed lectus vestibulum mattis.</p>
+        <p class="text"></p>
         
     </section>
 
@@ -84,44 +84,44 @@
         <div class="team1">
             <div class="team-member">
                 <div class="team-img">
-                <img src="images/potato.jpg">
+                <img src="images/abt2.jpg">
                 </div>
                 <div class="part-1">
-                <h3>Dejin</h3>
+                <h3>Bryan Soon Li Wei</h3>
                 <p class="role">President</p>
-                <p>Sample . Lorem ipsum dolor sit amet, consectetur adipiscing elit nullam nunc justo sagittis suscipit ultrices.</p>
+                <p>“I’m Commander Shepard, and this is my favorite store on the Citadel!”</p>
             </div>
             </div>
             <div class="team-member">
                 <div class="team-img">
-                <img src="images/potato.jpg">
+                <img src="images/abt1.jpg">
                 </div>
                 <div class="part-1">
-                <h3>Teng sheng</h3>
-                <p class="role">Assistant</p>
-                <p>Sample. Lorem ipsum dolor sit amet, consectetur adipiscing elit nullam nunc justo sagittis suscipit ultrices.</p>
+                <h3>Ng Jia Jun</h3>
+                <p class="role">Vice President</p>
+                <p>“It’s time to kick ass and chew bubble gum…and I’m all outta gum.”</p>
             </div>
             </div>
         </div>
         <div class="team2">
             <div class="team-member">
                 <div class="team-img">
-                <img src="images/potato.jpg">
+                <img src="images/abt4.jpg">
                 </div>
                 <div class="part-1">
-                <h3>Tony</h3>
-                <p class="role">Accountant</p>  
-                <p>Sample text. Lorem ipsum dolor sit amet, consectetur adipiscing elit nullam nunc justo sagittis suscipit ultrices.</p>
+                <h3>Grace Fui</h3>
+                <p class="role">Secretary</p>  
+                <p> “Nothing is true, everything is permitted.” </p>
             </div>
             </div>
             <div class="team-member">
                 <div class="team-img">
-                <img src="images/potato.jpg">
+                <img src="images/abt3.jpg">
                 </div>
                 <div class="part-1">
-                <h3>Justin</h3>
-                <p class="role">Secretaty</p>  
-                <p>Sample text. Lorem ipsum dolor sit amet, consectetur adipiscing elit nullam nunc justo sagittis suscipit ultrices.</p>
+                <h3>Cheong Wai Kait</h3>
+                <p class="role">Treasurer</p>  
+                <p>“The right man in the wrong place can make all the difference in the world.”</p>
             </div>
             </div>
         </div>

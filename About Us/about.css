@@ -146,9 +146,11 @@
 }
 .upper img{
     border-radius: 50%;
-    height: 220px;
+    width:200px;
+    height: 200px;
     float: left;
     padding: 20px;
+    margin:auto;
 
 }
 .upper .upper-part h1{
