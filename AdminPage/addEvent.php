@@ -16,15 +16,10 @@
   <div class="sidebar">
     <div class="logo-details">
       <i class=''></i>
-        <div class="logo_name">IGS Society</div>
+        <a href="../AdminPage/index.php"><div class="logo_name">IGS Society</div></a>
         <i class='bx bx-menu' id="btn" ></i>
     </div>
     <ul class="nav-list">
-      <li>
-          <i class='bx bx-search' ></i>
-         <input type="text" placeholder="Search...">
-         <span class="tooltip">Search</span>
-      </li>
       <li>
        <a href="userProfile.php">
          <i class='bx bx-user' ></i>

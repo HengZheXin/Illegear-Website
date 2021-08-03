@@ -16,7 +16,7 @@
             <p>IGS Society</p><br/>
             <hr class="hr-s3" style="width: 80px; margin: auto"/><br/>
             <h2>Our Events</h2><br/>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus.​</p>
+            <p>Join our community now for the latest news on all different games and discuss with a group of memebers who have the same passion in gaming. ​</p>
             <a href="">VIEW OUR EVENTS</a>
         </div>
     </div>

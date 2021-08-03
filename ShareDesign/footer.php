@@ -126,7 +126,7 @@
                 <div class="footer-col">
                     <h4>IGS</h4>
                     <ul>
-                        <li><a href="../Events/event.php">Events</a></li>
+                        <li><a href="../Events 2/index.php">Events</a></li>
                         <li><a href="../About Us/about.php">About Us</a></li>
                         <li><a href="../Contact Us/contact.php">Contact Us</a></li>
                         <li><a href="#">Gallery</a></li>
