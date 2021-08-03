@@ -31,14 +31,14 @@
                  </div>
                  
                <form id="LoginForm">
-                   <input type="text" placeholder="username">
+                   <input type="text" placeholder="Username">
                    <input type="password" placeholder="Password">
                    <button type="submit" class="btn">Login</button>
                    <a href="">Forgot password</a>
                </form>
 
                <form id="RegForm">
-                   <input type="text" placeholder="username">
+                   <input type="text" placeholder="Username">
                    <input type="email" placeholder="Email">
                    <input type="password" placeholder="Password">
                    <button type="submit" class="btn">Register</button>

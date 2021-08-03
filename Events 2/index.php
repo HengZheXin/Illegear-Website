@@ -31,7 +31,7 @@
             <div class="content-left">
             <h1>Players Recruitment</h1>
                 <p>With the upcoming showdown, opportunities are now given to those who think they will fit the roster perfectly. Each categories' team leader will filter and select those who had the minimum requirements then will be notified of a tryout.</p>
-                <a href="#">Join Event</a>
+                <a href="../Contact Us 2/contact.php">Join Event</a>
             </div>
             <div class="content-right">
                 <img src="images/3.jpg">
@@ -42,7 +42,7 @@
             <div class="content-left">
                 <h1>TARUC Mobile Festival (TMF)</h1>
                 <p>TARUC Interactive Gaming Society is back by introducing a new tournament called TARUC MOBILE FESTIVAL (TMF)!! This event is focused on mobile games such as Mobile Legend, PUBG Mobile and 王者荣耀.</p>
-                <a href="#">Join Event</a>
+                <a href="../Contact Us 2/contact.php">Join Event</a>
             </div>
             <div class="content-right">
                 <img src="images/15.jpg">
