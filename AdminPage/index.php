@@ -6,21 +6,17 @@
     <link rel="stylesheet" href="style.css">
     <!-- Boxicons CDN Link -->
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="indexstyle.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    </head>
 <body>
   <div class="sidebar">
     <div class="logo-details">
       <i class=''></i>
-        <div class="logo_name">IGS Society</div>
+      <a href="../AdminPage/index.php"><div class="logo_name">IGS Society</div></a>
         <i class='bx bx-menu' id="btn" ></i>
     </div>
     <ul class="nav-list">
-      <li>
-          <i class='bx bx-search' ></i>
-         <input type="text" placeholder="Search...">
-         <span class="tooltip">Search</span>
-      </li>
       <li>
        <a href="userProfile.php">
          <i class='bx bx-user' ></i>
@@ -64,10 +60,37 @@
     </ul>
   </div>
   <section class="home-section">
-      <div class="text">Dashboard</div>
+
+      <div class="hero">
+        <div class="content">
+            <small>Welcome Admin</small>
+            <h1>Interactive<br>Gaming Society</h1>
+            <a href="../Home/home.php"><button type="button">Back to Home</button></a>
+        </div>
+       
+        
+        
+        <div class="bubbles">
+            <img src="images/bubble.png">
+            <img src="images/bubble.png">
+            <img src="images/bubble.png">
+            <img src="images/bubble.png">
+            <img src="images/bubble.png">
+            <img src="images/bubble.png">
+            <img src="images/bubble.png">
+        </div>
+        
+        
+    </div>
+
+  
+    </div>
   </section>
 
   <script src="script.js"></script>
 
+
+
+  
 </body>
 </html>

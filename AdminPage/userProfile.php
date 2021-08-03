@@ -17,11 +17,6 @@
     </div>
     <ul class="nav-list">
       <li>
-          <i class='bx bx-search' ></i>
-         <input type="text" placeholder="Search...">
-         <span class="tooltip">Search</span>
-      </li>
-      <li>
        <a href="userProfile.php">
          <i class='bx bx-user' ></i>
          <span class="links_name">User</span>
