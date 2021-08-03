@@ -74,9 +74,9 @@ header .navbar-nav a:hover:before {
     visibility: visible;
     -webkit-transform: scaleX(1);
     transform: scaleX(1);
-    //background-color: transparent;
-    //color: #bdc3c7;
-    //border-bottom: 3px solid #ecf0f1;
+    background-color: transparent;
+    color: #bdc3c7;
+    border-bottom: 3px solid #ecf0f1;
 }
 
 header .navbar-nav .btnlogout a:hover:before {
@@ -272,7 +272,7 @@ header .modal-body .loginbtn:hover {
 }
 
 header .modal-body .rgsterbtn:hover {
-    background: red;
+    background: #2196F3;
     color: #E3F2FD;
 }
 
@@ -284,10 +284,8 @@ header .modal-body .rgsterbtn:hover {
 
 /*text color for error messages in forms*/
 .error {
-    text-align: center;
     color: #EF5350;
 }
-
 /*---*/
 
 /*date and time style, placed within the jumbotron*/
@@ -308,4 +306,3 @@ header .modal-body .rgsterbtn:hover {
 textarea {
     resize: none;
 }
-/*---*/
