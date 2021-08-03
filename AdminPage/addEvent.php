@@ -72,11 +72,6 @@
   </div>
 
 
-
-
-  
-
-
  
   <section class="home-section">
       <div class="text">Add Events<br>
@@ -91,6 +86,62 @@
         $eSeats = '';
 
         
+
+
+          if (!empty($_POST)) // Something posted back.
+          {
+              $eName    = trim($_POST['eName']);
+              $eDate    = trim($_POST['eDate']);
+              $eDesc    = trim($_POST['eDesc']);
+              $eImage   = trim($_POST['eImage']);
+              $eSeats   = trim($_POST['eSeats']);
+
+              $error['eName']    = validateName($eName);
+              $error['eDate']    = validateDate($eDate);
+              $error['eDesc']    = validateDesc($eDesc);
+              $error['eImage']   = validateImage($eImage);
+              $error['eSeats']   = validateSeats($eSeats);
+              $error = array_filter($error); // Remove null values.
+
+
+            if (empty($error)) // If no error.
+            {
+                $con = new mysqli(DB_HOST, DB_USER, DB_PASS, DB_NAME);
+                                    
+                $sql = '
+                    INSERT INTO eventpanel (Title, Date, Description, Image, Seats)
+                    VALUES (?, ?, ?, ?, ?)
+                ';
+                $stm = $con->prepare($sql);
+                $stm->bind_param('sssbi', $eName, $eDate, $eDesc, $eImage, $eSeats);
+                $stm->execute();
+
+                if ($stm->affected_rows > 0)
+                {
+                    printf('
+                        <div class="info">
+                        Event <strong>%s</strong> has been inserted.
+                        [ <a href="../Event 2/addEvent.php">Back to list</a> ]
+                        </div>',
+                        $name);
+
+                    // Reset fields.
+                    $eName = $eDate = $eDesc = $eImage = $eSeats = null;
+                }
+                else
+                {
+                    // Something goes wrong.
+                    echo '
+                        <div class="error">
+                        Opps. Database issue. Record not inserted.
+                        </div>
+                        ';
+                }
+                $stm->close();
+                $con->close();
+            }
+          
+        }
 
       ?>
 
@@ -118,8 +169,10 @@
                             <div class="hero2">
                                 <label for="eDate">Event date</label>
                                 </br>
-                                <?php dateCheck('eDate', $eDate); 
+                                <?php dateCheck('eDate', $eDate);
+                                if (!empty($_POST)){
                                 validateDate($eDate);
+                                }
                                 ?>
                                 
                             </div>
@@ -132,7 +185,10 @@
                                 <label for="eDesc">Event description</label>
                                 </br>
                                 <?php descCheck('eDesc', $eDesc, 400, 10, 50);
-                                 validateDesc($eDesc); ?>
+                                if (!empty($_POST)){
+                                 validateDesc($eDesc); 
+                                }
+                                 ?>
                             </div> 
                         </td>
                     </tr>
@@ -145,14 +201,18 @@
                                 <label for="eImage">Event image</label>
                                 </br>
                                 <?php imgCheck('eImage');
-                                 validateImage($eImage); ?>
+                                if (!empty($_POST)){
+                                  validateImage($eImage);
+                                }
+                                 ?>
                             </div>
 
                             <div class="hero4">
                                 <label for="eSeats">Seat Availability</label>
                                 </br>
                                 <?php seatsCheck('eSeats', $eSeats, 1, 999);
-                                 validateSeats($eSeats); ?>
+                                if (!empty($_POST)){
+                                 validateSeats($eSeats); } ?>
                             </div>
                         
                         </td>
