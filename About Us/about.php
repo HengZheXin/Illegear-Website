@@ -1,9 +1,8 @@
+<?php error_reporting(0);?>
 <!DOCTYPE html>
 <head>
     <link rel="stylesheet" href="about.css" type="text/css">
     <link rel="stylesheet" href="heading.css" type="text/css">
-    <?php require '../ShareDesign/styles.php'; ?><!--css links. file found in utils folder-->
-    <?php require '../ShareDesign/scripts.php'; ?><!--js links. file found in utils folder-->
 </head>
 
 
@@ -17,7 +16,7 @@
             <hr class="hr-s3" style="width: 80px; margin: auto"/><br/>
             <h2>About Us</h2><br/>
             <p>Let's Meet Our IGS Society.</p>
-            <a href="../Events/event.php">VIEW OUR EVENTS</a>
+            <a href="../Events 2/index.php">VIEW OUR EVENTS</a>
         </div>
     </div>
 
@@ -28,16 +27,14 @@
         <video width="600" height="400" autoplay muted loop>
             <source src="images/igs.mp4" type="video/mp4">
         </video>
-        <p class="text"></p>
+        <p class="text">Our Society is founded in 2004 by Eric Bong, his mission and vision of creating this society is to Improve the perception of students towards games and its industry. Besides that, Eric hope that this can  add variety to the student's campus experience and to  develop good relationship with other student organizations of the University and other tertiary institutions. </p>
         
     </section>
 
 
 
     <section class="section-3">
-        <div class="pic-1">
-            <img src="images/11.jpg" width="320" height="200">
-        </div>
+        
         <div class="pic-2">
             <img src="images/15.png" width="80" height="60">
         </div>
@@ -51,7 +48,7 @@
             <p>Casual and fun society in KL TARUC. We want you to enjoy your college life.</p>
         </div>
         <div class="pic-5">
-            <img src="images/14.jpg" width="290" height="400">
+            <img src="images/14.jpg" width="290" height="370">
         </div> 
         <div class="text-2">
             <p><b>Obejective:</b></br></br>-To establish an environment where students sharing interests in games can:
@@ -61,16 +58,19 @@
             </br></br>-To add variety to the student's campus expericence</p>
         </div>
         <div class="address">
-            <p><b><a href="igs.taruc.society@gmail.com" target="_blank">igs.taruc.society@gmail.com</a></b></p>
+            <p><b><a href="igs.taruc.society@gmail.com" target="_blank"></a></b></p>
         </div>
         <div class="fb">
             <p><a href="https://www.facebook.com/taruc.igs">
             <img src="images/fb.png">
             </a></p>
-        </div><div class="insta">
+        </div>
+        
+        <div class="insta">
             <p><a href="https://www.instagram.com/taruc.igs/">
             <img src="images/insta.png"width="42"height="42">
             </a></p>
+            
         </div>
     </section>
   

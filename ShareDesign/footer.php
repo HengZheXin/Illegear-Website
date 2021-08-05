@@ -50,7 +50,7 @@
             position: absolute;
             left: 0;
             bottom: -10px;
-            background-color: #e91e63;
+            background-color: white;
             height: 2px;
             box-sizing: border-box;
             width: 50px;
@@ -126,9 +126,9 @@
                 <div class="footer-col">
                     <h4>IGS</h4>
                     <ul>
-                        <li><a href="../Events 2/index.php">Events</a></li>
                         <li><a href="../About Us/about.php">About Us</a></li>
-                        <li><a href="../Contact Us/contact.php">Contact Us</a></li>
+                        <li><a href="../Events 2/index.php">Events</a></li>
+                        <li><a href="../Contact Us 2/contact.php">Contact Us</a></li>
                         <li><a href="#">Gallery</a></li>
                     </ul>
                 </div>
