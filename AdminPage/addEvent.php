@@ -91,12 +91,7 @@
               $eImage   = trim($_POST['eImage']);
               $eSeats   = trim($_POST['eSeats']);
 
-              $error['eName']    = validateName($eName);
-              $error['eDate']    = validateDate($eDate);
-              $error['eDesc']    = validateDesc($eDesc);
-              $error['eImage']   = validateImage($eImage);
-              $error['eSeats']   = validateSeats($eSeats);
-              $error = array_filter($error); // Remove null values.
+              
 
 
             if (empty($error)) // If no error.
