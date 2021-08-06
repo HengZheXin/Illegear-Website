@@ -3,6 +3,7 @@
 <head>
     <link rel="stylesheet" href="about.css" type="text/css">
     <link rel="stylesheet" href="heading.css" type="text/css">
+    <title>About | IGS Website</title>
 </head>
 
 
