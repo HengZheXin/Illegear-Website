@@ -25,7 +25,7 @@
         <div class="class-2">
         <h2>About IGS</h2>
         </div>
-        <video width="800" height="500" autoplay muted loop>
+        <video width="700" height="400" autoplay muted loop>
             <source src="images/igs.mp4" type="video/mp4">
         </video>
         <p class="text">Our Society is founded in 2004 by Eric Bong, his mission and vision of creating this society is to Improve the perception of students towards games and its industry. Besides that, Eric hope that this can  add variety to the student's campus experience and to  develop good relationship with other student organizations of the University and other tertiary institutions. </p>
