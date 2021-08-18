@@ -12,7 +12,6 @@
        
 <?php require_once '../ShareDesign/header2.php'; ?>
        
-<!--------------Cart Items details--------------->
 <div class="accout-page">
 
     <div class="container">
@@ -35,11 +34,11 @@
                     <input type="text" name="username" class="form-control" placeholder="Username"
                         value="<?php if (isset($formdata['username'])) echo $formdata['username']; ?>"
                     />
-                        <span class = "error"><!--error message for invalid input-->
+                        <span class = "error">
                             <?php if (isset($errors['username'])) echo $errors['username']; ?>
                         </span>
                         <input type="password" name="password" class="form-control" placeholder="Password" value=""/>
-                            <span class = "error"><!--error message for invalid input-->
+                            <span class = "error">
                                 <?php if (isset($errors['password'])) echo $errors['password']; ?>
                             </span>
                         <br><button type="submit" class="btn">Login</button>
