@@ -21,12 +21,15 @@
         </div>
     </div>
 
-    <div class="hero">
-<div class="btn-box">
-<button id="btn1" onclick="openHTML()"><i class="fa fa-calendar-plus-o"></i>Upcoming Event</button>
-<button id="btn2" onclick="openCSS()"><i class="fa fa-calendar-minus-o"></i>Past Event</button>
+<div class="zxsection1">
 
-</div>
+
+    <div class="hero">
+        <div class="btn-box">
+        <button id="btn1" onclick="openHTML()"><i class="fa fa-calendar-plus-o"></i>Upcoming Event</button>
+        <button id="btn2" onclick="openCSS()"><i class="fa fa-calendar-minus-o"></i>Past Event</button>
+    </div>
+
         <div id="content1" class="content">
             <div class="content-left">
             <h1>Players Recruitment</h1>
@@ -73,18 +76,10 @@
             content1.style.transitionDelay = "0s";
             content2.style.transitionDelay = "0.3s";
         }
-        function openJS(){
-            content1.style.transform = "translateX(100%)";
-            content2.style.transform = "translateX(100%)";
-            btn3.style.color = "#ff7846";
-            btn2.style.color = "#000";
-            btn1.style.color = "#000";
-            content1.style.transitionDelay = "0s";
-            content2.style.transitionDelay = "0s";
-        }
+        
         
     </script>
-    
+</div>  
 </body>
 </html>
 <?php require_once '../ShareDesign/footer.php'; ?>

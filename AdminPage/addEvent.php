@@ -74,7 +74,7 @@
 
 
       <?php
-        $eName = '';
+        $eName = ''; //declaration
         $eDate = '';
         $eDesc = '';
         $eImage = '';
@@ -83,9 +83,9 @@
         
 
 
-          if (!empty($_POST)) // Something posted back.
+          if (!empty($_POST)) // If the data field is not empty
           {
-              $eName    = trim($_POST['eName']);
+              $eName    = trim($_POST['eName']); //remove blank space from starting and end
               $eDate    = trim($_POST['eDate']);
               $eDesc    = trim($_POST['eDesc']);
               $eImage   = trim($_POST['eImage']);
@@ -102,28 +102,30 @@
                     INSERT INTO eventpanel (Title, Date, Description, Image, Seats)
                     VALUES (?, ?, ?, ?, ?)
                 ';
-                $stm = $con->prepare($sql);
-                $stm->bind_param('sssbi', $eName, $eDate, $eDesc, $eImage, $eSeats);
-                $stm->execute();
+                $stm = $con->prepare($sql); //declare and prepare to insert into sql
+                $stm->bind_param('sssbi', $eName, $eDate, $eDesc, $eImage, $eSeats); //insert data into sql table, s = string, b = binary large object
+                $stm->execute(); //run code
 
-                if ($stm->affected_rows > 0)
+                if ($stm->affected_rows > 0) //after all data is inserted, affected role would be 5, & show success message
                 {
                     printf('
-                        <div class="info">
-                        Event <strong>%s</strong> has been inserted.
-                        [ <a href="../Event 2/addEvent.php">Back to list</a> ]
+                        <div id="correct">
+                        &nbsp; Event <strong>%s</strong> has been inserted.
                         </div>',
-                        $name);
+                        $eName);
+                       
+                    //[ <a href="../Event 2/addEvent.php">Back to list</a> ]
 
                     // Reset fields.
-                    $eName = $eDate = $eDesc = $eImage = $eSeats = null;
+                    $eName = $eDate = $eDesc = $eImage = " ";
+                    $eSeats = 1;
                 }
                 else
                 {
                     // Something goes wrong.
                     echo '
                         <div class="error">
-                        Opps. Database issue. Record not inserted.
+                        &nbsp; Opps. Database issue. Record not inserted.
                         </div>
                         ';
                 }
@@ -148,7 +150,7 @@
                                 <label for="eName">Event name</label>
                                 </br>
                                 <?php 
-                                nameCheck('eName', $eName, 30);
+                                nameCheck('eName', $eName, 30); //1st eName = Name/ID, 2nd = Value
                                   if (!empty($_POST)) {
                                   validateName($eName); 
                                   }

@@ -14,7 +14,7 @@ html {
 
 /* Section 1 */
 .banner-area{
-    background-image: url("images/12.jpg");
+    background-image: url("../Home/images/hometry.png");
     background-position: center center;
     background-size: cover;
     -webkit-background-size: cover;

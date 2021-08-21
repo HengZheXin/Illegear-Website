@@ -72,3 +72,8 @@ textarea {
     color: red;
     font-size: 13px;
 }
+
+#correct{
+    color: darkgreen;
+    font-size: 15px;
+}
