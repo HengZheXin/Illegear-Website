@@ -6,8 +6,8 @@ define('DB_USER', 'root');
 define('DB_PASS', '');
 define('DB_NAME', 'igsdb');
 
-// Input Function for TEXT
-function nameCheck($name, $value = '', $maxlength = '')
+// Input Function for TITLE
+function nameCheck($name, $value = '', $maxlength = '') //determine and check the user input in the form
 {
     printf('<input type="text" name="%s" id="%s" value="%s" maxlength="%d" />' . "\n",
            $name, $name, $value, $maxlength);
@@ -82,7 +82,7 @@ function validateSeats($eSeats){
     {
         echo '<div class = "error">'.'Please enter <strong>Seats Number</strong>.'.'</div>';
     }
-    else if(!preg_match("/^[1-999'\s]+$/",$eSeats)){
+    else if(!preg_match("/^[0-9]+(,[0-9]+)*$/",$eSeats)){
         echo '<div class = "error">'.'There are invalid letters in <strong>Seats Number</strong>.'.'</div>';
     }
 }
