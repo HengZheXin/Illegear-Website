@@ -13,13 +13,13 @@ class UserTable {
         if (!isset($user)) {
             throw new Exception("User required");
         }
-        $sql = "INSERT INTO users(username, password, role) "
-             . "VALUES (:username, :password, :role)";
+        $sql = "INSERT INTO register(username, password) "
+             . "VALUES (:username, :password)";
 
         $params = array(
             'username' => $user->getUsername(),
             'password' => $user->getPassword(),
-            'role' => $user->getRole()
+
         );
         $stmt = $this->link->prepare($sql);
         $status = $stmt->execute($params);
@@ -28,7 +28,7 @@ class UserTable {
             throw new Exception("Could not save user: " . $errorInfo[2]);
         }
 
-        $id = $this->link->lastInsertId('users');
+        $id = $this->link->lastInsertId('register');
         
         return $id;
     }
@@ -41,7 +41,7 @@ class UserTable {
         if ($id == null) {
             throw new Exception("User id required");
         }
-        $sql = "DELETE FROM users WHERE id = :id";
+        $sql = "DELETE FROM register WHERE id = :id";
         $params = array('id' => $user->getId());
         $stmt = $this->link->prepare($sql);
         $status = $stmt->execute($params);
@@ -59,7 +59,7 @@ class UserTable {
         if ($id == null) {
             throw new Exception("User id required");
         }
-        $sql = "UPDATE users SET password = :password WHERE id = :id";
+        $sql = "UPDATE register SET password = :password WHERE id = :id";
         $params = array(
             'password' => $user->getPassword(),
             'id' => $user->getId()
@@ -73,7 +73,7 @@ class UserTable {
     }
 
     public function getUserById($id) {
-        $sql = "SELECT * FROM users WHERE id = :id";
+        $sql = "SELECT * FROM register WHERE id = :id";
         $params = array('id' => $id);
         $stmt = $this->link->prepare($sql);
         $status = $stmt->execute($params);
@@ -87,14 +87,13 @@ class UserTable {
             $row = $stmt->fetch();
             $username = $row['username'];
             $pwd = $row['password'];
-            $role = $row['role'];
-            $user = new User($id, $username, $pwd, $role);
+            $user = new User($id, $username, $pwd);
         }
         return $user;
     }
 
     public function getUserByUsername($username) {
-        $sql = "SELECT * FROM users WHERE username = :username";
+        $sql = "SELECT * FROM register WHERE username = :username";
         $params = array('username' => $username);
         $stmt = $this->link->prepare($sql);
         $status = $stmt->execute($params);
@@ -108,14 +107,13 @@ class UserTable {
             $row = $stmt->fetch();
 
             $pwd = $row['password'];
-            $role = $row['role'];
-            $user = new User($username, $pwd, $role);
+            $user = new User($username, $pwd);
         }
         return $user;
     }
 
     public function getUsers() {
-        $sql = "SELECT * FROM users";
+        $sql = "SELECT * FROM register";
         $stmt = $this->link->prepare($sql);
         $status = $stmt->execute();
         if ($status != true) {
@@ -129,8 +127,7 @@ class UserTable {
             $id = $row['id'];
             $username = $row['username'];
             $pwd = $row['password'];
-            $role = $row['role'];
-            $user = new User($id, $username, $pwd, $role);
+            $user = new User($id, $username, $pwd);
             $users[$id] = $user;
 
             $row = $stmt->fetch();

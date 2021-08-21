@@ -25,7 +25,7 @@
         <div class="class-2">
         <h2>About IGS</h2>
         </div>
-        <video width="600" height="400" autoplay muted loop>
+        <video width="800" height="500" autoplay muted loop>
             <source src="images/igs.mp4" type="video/mp4">
         </video>
         <p class="text">Our Society is founded in 2004 by Eric Bong, his mission and vision of creating this society is to Improve the perception of students towards games and its industry. Besides that, Eric hope that this can  add variety to the student's campus experience and to  develop good relationship with other student organizations of the University and other tertiary institutions. </p>
@@ -36,19 +36,19 @@
 
     <section class="section-3">
         
-        <div class="pic-2">
+        <div class="pic-1">
             <img src="images/15.png" width="80" height="60">
         </div>
-        <div class="pic-3">
+        <div class="pic-2">
             <img src="images/12.jpg"width="300" height="300">
         </div>
-        <div class="pic-4">
+        <div class="pic-3">
             <img src="images/13.png"width="250">
         </div>
         <div class="text-1">
             <p>Casual and fun society in KL TARUC. We want you to enjoy your college life.</p>
         </div>
-        <div class="pic-5">
+        <div class="pic-4">
             <img src="images/14.jpg" width="290" height="370">
         </div> 
         <div class="text-2">
@@ -61,18 +61,7 @@
         <div class="address">
             <p><b><a href="igs.taruc.society@gmail.com" target="_blank"></a></b></p>
         </div>
-        <div class="fb">
-            <p><a href="https://www.facebook.com/taruc.igs">
-            <img src="images/fb.png">
-            </a></p>
-        </div>
-        
-        <div class="insta">
-            <p><a href="https://www.instagram.com/taruc.igs/">
-            <img src="images/insta.png"width="42"height="42">
-            </a></p>
-            
-        </div>
+       
     </section>
   
 

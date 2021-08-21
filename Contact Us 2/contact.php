@@ -42,12 +42,22 @@
             $error['message'] = 'Messages is required!';
         }else{
             $message = $_POST['message'];
+            if(!preg_match("/^[/'/']/",$message)){
+                $error['message'] = 'Must filled in something!';
+            }
             
         }
+        $headers = "From: IGS Society";
         //success
         if(preg_match("/^[a-zA-Z-'\s]+$/",$name) && filter_var($email, FILTER_VALIDATE_EMAIL) && preg_match("/^[a-zA-Z-'\s]+$/",$subject) && !empty($_POST['message'])){
-            header("Location: success.php?sent=success");
-            exit();
+            
+            $return = mail($email, $subject, $message, $headers);
+            if($return){
+                header("Location: success.php?sent=success");
+            }
+            else{
+                exit();
+            }
         }
     }
 ?>
