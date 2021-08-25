@@ -52,7 +52,7 @@
             <img src="images/14.jpg" width="290" height="370">
         </div> 
         <div class="text-2">
-            <p><b>Obejective:</b></br></br>-To establish an environment where students sharing interests in games can:
+            <p><b>Objective:</b></br></br>-To establish an environment where students sharing interests in games can:
             </br>a. Interact with each other
             </br>b. Cultivate personal development
             </br>c. Foster a healthy gaming lifestyle
