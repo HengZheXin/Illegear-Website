@@ -6,9 +6,26 @@
     <link rel="stylesheet" href="style.css">
     <!-- Boxicons CDN Link -->
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $("#checkAll").click(function(){
+          if($(this).is(":checked")){
+            $(".checkItem").prop('checked',true);
+          }
+          else{
+            $(".checkItem").prop('checked',false);
+          }
+        });
+      });
+    </script>
+
+
    </head>
+   
 <body>
+
   <div class="sidebar">
     <div class="logo-details">
       <i class=''></i>
@@ -65,11 +82,43 @@
      </li>
     </ul>
   </div>
+
   <section class="home-section">
       <div class="text">Inquires</div>
+      <table class ="content-table">
+      <input type="submit" name="submit" value="Delete" onlick="return comfirm('Are you sure want to delete?')" class="btn btn-danger">
+      <thead>
+      <tr>
+        <th><input type="checkbox" id="checkAll"/></th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Subject</th>
+        <th>Message</th>
+      </tr>
+      </thead>
+      <?php
+      //database connection
+      $con=mysqli_connect("localhost","root","","my_contact_db");
+
+      //select data from database using select query
+      $query=mysqli_query($con,"select * from data");
+      while($row=mysqli_fetch_array($query)){
+
+
+      ?>
+      <tbody>
+      <tr>
+        <td class="text-center"><input type="checkbox" class="checkItem" value="<?php echo $row['id']?>"/></td>
+        <td><?=$row['name'];?></td>
+        <td><?=$row['email'];?></td>
+        <td><?=$row['subject'];?></td>
+        <td><?=$row['msg'];?></td>
+      </tr>
+      </tbody>
+      <?php } ?>
+      </table>
   </section>
-
   <script src="script.js"></script>
-
+      
 </body>
 </html>
