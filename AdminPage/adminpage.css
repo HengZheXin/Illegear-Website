@@ -1,5 +1,7 @@
 
-
+.event-list{
+    text-decoration: none;
+}
 
 
 input, textarea {

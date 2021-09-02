@@ -71,7 +71,9 @@
   <section class="home-section">
       <div class="text">Add Events<br>
       <hr class="hr-s3"/></div>
-
+      <br>
+      <a class="event-list" href="modifyEvent.php">&nbsp; >> View List of Events</a>
+      <br>
 
       <?php
         $eName = ''; //declaration
