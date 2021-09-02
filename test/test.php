@@ -16,12 +16,6 @@
       color: white;
     }
     tr:nth-child(even){background-color: #f2f2f2}
-    .btn-danger{
-      color: #588c7e;
-      border-radius: 5px;
-      padding-left: 5px;
-      padding-right: 5px;
-    }
   </style>
   <head>
     <meta charset="UTF-8">
@@ -83,7 +77,8 @@
   </div>
   <section class="home-section">
     <div class="text">User Profile</div>
-    
+
+
     <div class="card_body">
         <?php 
             if(isset($_SESSION['status']) && $_SESSION['status'] != ''){
@@ -105,6 +100,7 @@
             <thead>
                 <tr>
                     <th scope="col"><button type="submit" name="del_multiple_data" class="btn btn-danger">Delete</button></th>
+                    <th scope="col">ID</th>
                     <th scope="col">Username</th>
                     <th scope="col">Email</th>
                     <th scope="col">Password</th>
@@ -117,6 +113,7 @@
                             ?>
                             <tr>
                                 <td><input type="checkbox" name="del_chk[]" value="<?php echo $row['id']; ?>"></td>
+                                <td><?php echo $row['id']; ?></td>
                                 <td><?php echo $row['username']; ?></td>
                                 <td><?php echo $row['email']; ?></td>
                                 <td><?php echo $row['password']; ?></td>
@@ -135,12 +132,6 @@
         </table>
         </form>
     </div>
-  
   </section>
-
-  
-
-  <script src="script.js"></script>
 </body>
 </html>
-
