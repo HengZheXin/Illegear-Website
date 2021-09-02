@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -7,21 +8,6 @@
     <!-- Boxicons CDN Link -->
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <script type="text/javascript">
-      $(document).ready(function(){
-        $("#checkAll").click(function(){
-          if($(this).is(":checked")){
-            $(".checkItem").prop('checked',true);
-          }
-          else{
-            $(".checkItem").prop('checked',false);
-          }
-        });
-      });
-    </script>
-
-
    </head>
    
 <body>
@@ -85,11 +71,19 @@
 
   <section class="home-section">
       <div class="text">Inquires</div>
+      <?php
+      if(isset($_SESSION['status']))
+      {
+        echo "<h4>".$_SESSION['status']."</h4>";
+        unset($_SESSION['status']);
+      }
+      ?>
+      <form action="hi.php" method="POST">
       <table class ="content-table">
-      <input type="submit" name="submit" value="Delete" onlick="return comfirm('Are you sure want to delete?')" class="btn btn-danger">
+
       <thead>
       <tr>
-        <th><input type="checkbox" id="checkAll"/></th>
+        <th><button type="submit" name="delete" class="btn">Delete</button></th>
         <th>Name</th>
         <th>Email</th>
         <th>Subject</th>
@@ -97,18 +91,16 @@
       </tr>
       </thead>
       <?php
-      //database connection
       $con=mysqli_connect("localhost","root","","my_contact_db");
 
-      //select data from database using select query
       $query=mysqli_query($con,"select * from data");
-      while($row=mysqli_fetch_array($query)){
 
+      while($row=mysqli_fetch_array($query)){
 
       ?>
       <tbody>
       <tr>
-        <td class="text-center"><input type="checkbox" class="checkItem" value="<?php echo $row['id']?>"/></td>
+        <td class="text-center"><input type="checkbox" class="input "name="delete_id[]" value="<?php echo $row['id']?>"/></td>
         <td><?=$row['name'];?></td>
         <td><?=$row['email'];?></td>
         <td><?=$row['subject'];?></td>
@@ -117,8 +109,8 @@
       </tbody>
       <?php } ?>
       </table>
+      </form>
   </section>
-  <script src="script.js"></script>
-      
+  <script src="script.js"></script>   
 </body>
 </html>

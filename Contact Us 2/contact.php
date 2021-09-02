@@ -40,8 +40,8 @@
             $error['subject'] = 'Subject is required!';
         }else{
             $subject = $_POST['subject'];
-            if(!preg_match("/^[a-zA-Z-'\s]+$/",$subject)){
-                $error['subject'] = 'Subject should be alphabet only!';
+            if(strlen($subject)>30){
+                $error['subject'] = 'Subject should not over 30 character!';
 
             }
             else{
@@ -60,17 +60,13 @@
             $error['message'] = 'Messages is required!';
         }else{
             $message = $_POST['message'];
-            if(strlen($message)>150){
-                $error['message'] = 'Maximum is 150 character!';
-            }
-            else{
-                $strings = array($message);
+            $strings = array($message);
 
-                foreach($strings as $test){
-                    if(ctype_space($test)){
-                        $error['message'] = 'Cannot consists whitespaces only!';
-                    }
+            foreach($strings as $test){
+                if(ctype_space($test)){
+                    $error['message'] = 'Cannot consists whitespaces only!';
                 }
+            }
             }
         }
         //success
@@ -96,7 +92,8 @@
                 $conn->close();
             }
         }
-    }
+    
+
 ?>
 <!DOCTYPE HTML>
 <html>
