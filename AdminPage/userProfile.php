@@ -47,7 +47,7 @@
        <span class="tooltip">User</span>
      </li>
      <li>
-       <a href="addEvent.php">
+       <a href="add-event.php">
          <i class='bx bx-pie-chart-alt-2' ></i>
          <span class="links_name">Events</span>
        </a>

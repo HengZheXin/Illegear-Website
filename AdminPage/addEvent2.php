@@ -29,7 +29,7 @@
      </li>
 
      <li>
-       <a href="addEvent.php">
+       <a href="add-event.php">
          <i class='bx bx-pie-chart-alt-2' ></i>
          <span class="links_name">Events</span>
        </a>
@@ -147,7 +147,7 @@
                 
 
                     <tr>
-                        <td colspan="">
+                        <td>
                             <div class="hero1">       
                                 <label for="eName">Event name</label>
                                 </br>
@@ -166,15 +166,13 @@
                                 <?php dateCheck('eDate', $eDate);
                                 if (!empty($_POST)){
                                 validateDate($eDate);
-                                }
-                                ?>
-                                
+                                }?>
                             </div>
                         </td>
                     </tr>
 
                     <tr>
-                        <td colspan ="1">
+                        <td>
                             <div class="hero">
                                 <label for="eDesc">Event description</label>
                                 </br>
@@ -188,7 +186,7 @@
                     </tr>
 
                     <tr>
-                        <td colspan ="1">
+                        <td>
                             
 
                             <div class="hero3">       
