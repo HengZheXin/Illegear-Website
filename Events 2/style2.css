@@ -1,0 +1,84 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+.info
+{
+    margin-left: 250px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.info h1
+{
+    font-size: 30px;
+}
+.info a
+{
+    width: 135px;
+    color: #fff !important;
+    text-decoration: none !important;
+    padding: 16px 20px;
+    margin: 5% 10px;
+    background: #292929;
+    display: inline-block;
+}
+.info .second-btn
+{
+    
+    border: 1px solid #000000 !important;
+    background: transparent !important;
+    color: #555 !important;
+    transition: 0.5s;
+}
+.info .second-btn:hover
+{
+    background: #383838 !important;
+    color: #fff !important;
+}
+
+.row
+{
+    margin: 0 !important;
+}
+
+
+
+@media only screen and (max-width:960px)
+{
+    .footer-widget
+    {
+        background-image: linear-gradient(#ff9800, #a46406);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

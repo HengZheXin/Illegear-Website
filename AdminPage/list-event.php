@@ -20,7 +20,7 @@
 <div class="sidebar">
     <div class="logo-details">
       <i class=''></i>
-      <a href="AdminPage/index.php"><div class="logo_name">IGS Society</div></a>
+      <a href="index.php"><div class="logo_name">IGS Society</div></a>
         <i class='bx bx-menu' id="btn" ></i>
     </div>
     <ul class="nav-list">
@@ -233,8 +233,8 @@
                 <td>%s</td>
                 <td>%s</td>
                 <td>%s</td>
+                <td><img src = "uploads/%s" ></td>
                 <td>%d</td>
-                <td>%s</td>
                 <td>%s</td>
                 <td>
                     <a href="edit-event.php?id=%s">Edit</a> |

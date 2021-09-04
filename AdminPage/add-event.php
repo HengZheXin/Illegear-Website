@@ -103,6 +103,7 @@ include('includes/header.php');
         $eImage   = trim($_POST['eImage']);
         $eDesc    = trim($_POST['eDesc']);
 
+
         // Validations.
         $error['id'] = validateEventID($id);
         $error['name'] = validateEventName($name);
@@ -121,8 +122,9 @@ include('includes/header.php');
                         VALUES (?, ?, ?, ?, ?, ?, ?)
                     ';
 
+
             $stm = $con->prepare($sql);
-            $stm->bind_param('ssssiss', $id, $name,$eventtype,$eDate,$eImage,$eSeats,$eDesc);
+            $stm->bind_param('sssssis', $id, $name,$eventtype,$eDate,$eImage,$eSeats,$eDesc);
             $stm->execute();
 
             if ($stm->affected_rows > 0) {
@@ -155,7 +157,7 @@ include('includes/header.php');
     }
     ?>
 
- 
+
 
     <form action="" method="post" class="aalign1">
         <table cellpadding="0" cellspacing="10" width = "40%">
@@ -194,13 +196,9 @@ include('includes/header.php');
                                 if (!empty($_POST)){
                                 validateDate($eDate);
                                 }?>  
-                
-
-
-                
                 </div>
                 </td>
-              </tr>
+            </tr>
                    
             
               <tr>
@@ -218,12 +216,11 @@ include('includes/header.php');
                 <div class="hero6">     
                 <label for="eImage">Event image</label>
                 </br>
-                
-                <?php imgCheck('eImage');
+                <?php imgcheck('eImage');
                                 if (!empty($_POST)){
-                                  validateImage($eImage);
-                                }
-                                 ?>
+                                  validateImage($eImage); } ?>
+                
+                                 
 
                 </div>  
                 </td>
