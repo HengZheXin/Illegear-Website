@@ -89,6 +89,11 @@
             background-color: #ffffff;
         }
 
+        .footer-col .social-links i{
+            margin-top: 13px;
+        }   
+
+
         @media(max-width: 767px){
             .footer-col{
                 width: 50%;
@@ -132,7 +137,7 @@
                         <li><a href="#">Gallery</a></li>
                     </ul>
                 </div>
-                <div class="footer-col">
+                <div class="footer-col"> 
                     <h4>Join Us</h4>
                     <div class="social-links">
                         <a href="https://www.facebook.com/taruc.igs"><i class="fab fa-facebook-f"></i></a>

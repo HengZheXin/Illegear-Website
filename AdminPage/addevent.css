@@ -14,36 +14,7 @@ input, textarea {
     box-sizing: border-box;
 }
 
-.hero0 {
-    width: 60%;
-    float: left;
-}
 
-.hero00 {
-    width: 38%;
-    float: right;
-}
-
-.hero1 {
-    width: 60%;
-    float: left;
-    margin-top: 6px;
-}
-
-.hero2 {
-    width: 38%;
-    float: right;
-}
-
-.hero3 {
-    width: 60%;
-    float: left;
-}
-
-.hero4 {
-    width: 38%;
-    float: right;
-}
 
 #eventType{
     width:340px; 
@@ -54,7 +25,7 @@ input, textarea {
   
 
 input[type=submit] {
-    width: 25%;
+    width: 10%;
     background-color: #11101D;
     color: white;
     padding: 14px 20px;
@@ -66,14 +37,15 @@ input[type=submit] {
 }
 
 input[type=reset] {
-    width: 25%;
+    width: 10%;
     background-color: #EFEFEF;
     color: rgb(0, 0, 0);
     padding: 14px 20px;
     margin: 8px 0;
+    margin-left: 280px;
     border-radius: 10px;
     cursor: pointer;
-    float: right;
+    float: left;
     
 }
   
@@ -97,3 +69,48 @@ textarea {
     color: darkgreen;
     font-size: 15px;
 }
+
+.hero1{
+    width: 27%;
+    float: left;
+}
+
+.hero2{
+    width: 67%;
+    float: left;
+    margin-left: 20px;
+}
+
+.hero3{
+    width: 27%;
+    float: left;
+}
+
+
+.hero4{
+    width: 67%;
+    float: left;
+    margin-left: 20px;
+}
+
+
+.hero5{
+    width: 27%;
+    float: left;
+}
+
+.hero6{
+    width: 67%;
+    float: left;
+    margin-left: 20px;
+}
+
+.hero7{
+    width: 98%;
+    float: left;
+}
+
+.size1{
+    max-width:90%;
+}
+

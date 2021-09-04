@@ -81,7 +81,7 @@
         <a href="../About Us/about.php">About</a>
         <a href="../Events 2/index.php">Events</a>
         <a href="../Contact Us 2/contact.php">Contact Us</a>
-        <a href="../Log in 2/account.php">Login</a>
+        <a href="../test2/login.php">Login</a>
         <div class="animation start-home"></div>
         <div class="animation start-about"></div>
         <div class="animation start-events"></div>
