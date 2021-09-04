@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-$connection = mysqli_connect("localhost", "root", "", "registration");
+$connection = mysqli_connect("localhost", "root", "", "igswebdb");
 
 if(isset($_POST['del_multiple_data'])){
     $all_id = $_POST['del_chk'];

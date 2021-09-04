@@ -94,7 +94,7 @@
             }
         ?>
         <?php
-        $connection = mysqli_connect("localhost", "root", "", "registration");
+        $connection = mysqli_connect("localhost", "root", "", "igswebdb");
 
         $query = "SELECT * FROM users";
         $query_run = mysqli_query($connection, $query);
