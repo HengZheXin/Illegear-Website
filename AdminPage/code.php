@@ -11,10 +11,10 @@ if(isset($_POST['del_multiple_data'])){
     $query_run = mysqli_query($connection, $query);
 
     if($query_run){
-        $_SESSION['status'] = "Deleted id is $seperate_all_id";
-        header("Location: test.php");
+        $_SESSION['status'] = "User(s) deleted successfully!";
+        header("Location: userProfile.php");
     }else{
-        $_SESSION['status'] = "Something went wrong";
-        header("Location: test.php");
+        $_SESSION['status'] = "Something went wrong!";
+        header("Location: userProfile.php");
     }
 }
