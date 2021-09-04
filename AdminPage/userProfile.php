@@ -17,7 +17,7 @@
     }
     tr:nth-child(even){background-color: #f2f2f2}
     .btn-danger{
-      color: #588c7e;
+      color: white;
       border-radius: 5px;
       padding-left: 5px;
       padding-right: 5px;
@@ -139,7 +139,7 @@
   </section>
 
   
-
+    
   <script src="script.js"></script>
 </body>
 </html>

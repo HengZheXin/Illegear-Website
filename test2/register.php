@@ -3,6 +3,7 @@
 <html>
 <head>
   <title>Registration | IGS Website</title>
+  <?php require_once '../ShareDesign/header2.php'; ?>
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
@@ -12,6 +13,10 @@
 	
   <form method="post" action="register.php">
   	<?php include('errors.php'); ?>
+	<div class="input-group">
+  	  <label>Security Code</label>
+  	  <input type="text" name="scode" value="<?php echo $scode; ?>">
+  	</div>
   	<div class="input-group">
   	  <label>Username</label>
   	  <input type="text" name="username" value="<?php echo $username; ?>">
@@ -35,5 +40,10 @@
   		Already a member? <a href="login.php">Sign in</a>
   	</p>
   </form>
+
+  	<div class="register-gif">
+        <img src="images/register.png" style="position: absolute; margin-left: 900px; margin-top: -550px" width="30%">
+    </div>
 </body>
+<?php require_once '../ShareDesign/footer.php'; ?>
 </html>

@@ -4,6 +4,8 @@ session_start();
 // initializing variables
 $username = "";
 $email    = "";
+$scode    = ""; 
+$ori_scode = "abc123";
 $errors = array(); 
 
 // connect to the database
@@ -12,6 +14,7 @@ $db = mysqli_connect('localhost', 'root', '', 'registration');
 // REGISTER USER
 if (isset($_POST['reg_user'])) {
   // receive all input values from the form
+  $scode = mysqli_real_escape_string($db, $_POST['scode']);
   $username = mysqli_real_escape_string($db, $_POST['username']);
   $email = mysqli_real_escape_string($db, $_POST['email']);
   $password_1 = mysqli_real_escape_string($db, $_POST['password_1']);
@@ -19,6 +22,10 @@ if (isset($_POST['reg_user'])) {
 
   // form validation: ensure that the form is correctly filled ...
   // by adding (array_push()) corresponding error unto $errors array
+  if (empty($scode)) { array_push($errors, "Security code required");}
+  if (!empty($scode) && $scode != $ori_scode) {
+    array_push($errors, "Invalid security code");
+    }
   if (empty($username)) { array_push($errors, "Username is required"); }
   if (empty($email)) { array_push($errors, "Email is required"); }
   if (empty($password_1)) { array_push($errors, "Password is required"); }
@@ -50,8 +57,7 @@ if (isset($_POST['reg_user'])) {
   			  VALUES('$username', '$email', '$password')";
   	mysqli_query($db, $query);
   	$_SESSION['username'] = $username;
-  	$_SESSION['success'] = "You are now logged in";
-  	header('location: index.php');
+  	header('location: ../Home/home.php');
   }
 }
 
@@ -75,8 +81,7 @@ if (isset($_POST['login_user'])) {
         $results = mysqli_query($db, $query);
         if (mysqli_num_rows($results) == 1) {
           $_SESSION['username'] = $username;
-          $_SESSION['success'] = "You are now logged in";
-          header('location: index.php');
+          header('location: ../Home/home.php');
         }else {
             array_push($errors, "Wrong username/password combination");
         }

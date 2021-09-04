@@ -3,6 +3,7 @@
 <html>
 <head>
   <title>Login | IGS Website</title>
+  <?php require_once '../ShareDesign/header2.php'; ?>
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
@@ -27,5 +28,10 @@
   		Not yet a member? <a href="register.php">Sign up</a>
   	</p>
   </form>
+	<br><br><br><br><br>
+  <div class="login-gif">
+        <img src="images/login.png" style="position: absolute; margin-left: 1000px; margin-top: -450px" width="22%">
+    </div>
 </body>
+<?php require_once '../ShareDesign/footer.php'; ?>
 </html>
