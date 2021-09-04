@@ -1,10 +1,12 @@
 <?php 
 
 session_start();
-$errors = [];
-$user_id = "";
+$errors = array();
+$email = "";
+$id = "";
+$token = "";
 // connect to database
-$db = mysqli_connect('localhost', 'root', '', 'password_recovery');
+$db = mysqli_connect('localhost', 'root', '', 'igswebdb');
 
 
 /*
@@ -33,10 +35,10 @@ if (isset($_POST['reset-password'])) {
     // Send email to user with the token in a link they can click on
     $to = $email;
     $subject = "Reset your password on examplesite.com";
-    $msg = "Hi there, click on this <a href=\"new_password.php?token=" . $token . "\">link</a> to reset your password on our site";
-    $msg = wordwrap($msg,70);
+    $error = "Hi there, click on this <a href=\"new_password.php?token=" . $token . "\">link</a> to reset your password on our site";
+    $error = wordwrap($error,70);
     $headers = "From: info@examplesite.com";
-    mail($to, $subject, $msg, $headers);
+    mail($to, $subject, $error, $headers);
     header('location: pending.php?email=' . $email);
   }
 }
@@ -57,7 +59,6 @@ if (isset($_POST['new_password'])) {
     $email = mysqli_fetch_assoc($results)['email'];
 
     if ($email) {
-      $new_pass = md5($new_pass);
       $sql = "UPDATE users SET password='$new_pass' WHERE email='$email'";
       $results = mysqli_query($db, $sql);
       header('location: index.php');

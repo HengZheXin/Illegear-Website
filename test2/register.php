@@ -42,7 +42,7 @@
   </form>
 
   	<div class="register-gif">
-        <img src="images/register.png" style="position: absolute; margin-left: 900px; margin-top: -550px" width="30%">
+        <img src="images/acc3.gif" style=" margin-left: 20px; margin-top: -750px; width:50%;">
     </div>
 </body>
 <?php require_once '../ShareDesign/footer.php'; ?>
