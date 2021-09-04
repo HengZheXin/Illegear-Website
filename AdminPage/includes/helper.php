@@ -134,12 +134,28 @@ function validateDesc($eDesc){
     }
 }
 
+
+
+
+
+
+
 function validateImage($eImage){
+
     if($eImage == NULL)
     {
         return 'Please insert <strong>Event Image</strong>.';
     }
+    
 }
+
+
+
+
+
+
+
+
 
 function validateSeats($eSeats){
     if($eSeats == NULL)

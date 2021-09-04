@@ -5,9 +5,11 @@
 }
 .hero{
     width: 80%;
-    height: 450px;
+    height: 150px;
     position: relative;
-    margin: 100px auto;
+    margin-top: 30px;
+    margin-left: 50px;
+    margin-bottom: -120px;
     overflow: hidden;
 }
 .btn-box{
@@ -71,8 +73,21 @@
     transform: translateX(0px);
 }
 #btn1{
+    color: #272727;
+}
+
+#btn2{
+    color: #000000;
+}
+
+#btn3{
     color: #ff7846;
 }
+
+#btn4{
+    color: #000000;
+}
+
 
 
 
