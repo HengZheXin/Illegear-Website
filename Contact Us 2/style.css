@@ -167,7 +167,7 @@ h3{
     color: #555;
     font-weight: 400;
     
-}
+} 
 .contact-col input, .contact-col textarea{
     width: 100%;
     padding: 15px;
@@ -175,6 +175,9 @@ h3{
     outline: none;
     border: 1px solid #ccc;
 }
+
+
+
 
 
 
