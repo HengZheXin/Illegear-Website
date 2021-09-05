@@ -7,7 +7,7 @@
 </head>
 <body>
 	<div class="container">
-	<form class="login-form" action="new_password.php" method="post">
+	<form class="login-form" action="app_logic.php" method="post">
 		<h2 class="form-title">New password</h2>
 		<!-- form validation messages -->
 		<?php include('messages.php'); ?>
