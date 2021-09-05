@@ -257,8 +257,7 @@ p.role{
     width:100%;
     background-color: rgb(39, 35, 35);
     margin-top: -30px;
-    margin-bottom: -65px;
-    height: 1100px;
+    height: 1000px;
 }
 
 
@@ -269,7 +268,7 @@ p.role{
     padding: 30px;
     padding-top: 190px;
     margin: 20px;
-    margin-left: 267px;
+    margin-left: 370px;
     height: 375px;
     font-size: 18px;
     font-family:'Times New Roman', Times, serif;
@@ -282,7 +281,7 @@ p.role{
     padding-top: 50px;
     margin: 20px;
     margin-top: -450px;
-    margin-right: 250px;
+    margin-right: 300px;
     height: 450px;
     font-size: 18px;
     font-family:'Times New Roman', Times, serif;
@@ -301,15 +300,14 @@ p.role{
 
 .section-3 .pic-1 img{
     position: absolute;
-    margin-left: 300px;
+    margin-left: 400px;
     margin-top: 55px;
     background-color: lightgrey;
 }
 .section-3 .pic-2 img{
-    margin-right: 250px;
+    margin-right: 300px;
 }
 .section-3 .pic-3 img{
-    margin-right: 45px;
     margin-top: 150px;
     background-color: black;
     width: 320px;
@@ -320,7 +318,7 @@ p.role{
     padding-bottom: 140px;
 }
 .section-3 .pic-4 img{
-    margin-left: 267px;
+    margin-left: 370px;
 }
 
 /*Section 4*/
