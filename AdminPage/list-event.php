@@ -233,7 +233,7 @@
                 <td>%s</td>
                 <td>%s</td>
                 <td>%s</td>
-                <td><img src = "uploads/%s" ></td>
+                <td><img width="100" height="100" src = "uploads/%s" ></td>
                 <td>%d</td>
                 <td>%s</td>
                 <td>
