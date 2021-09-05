@@ -125,6 +125,7 @@ $PAGE_TITLE = 'Edit Event';
     // --> Update the record.
     else
     {
+
         $id      = strtoupper(trim($_POST['id']));
         $name    = trim($_POST['name']);
         $eventtype = trim($_POST['eventtype']);
@@ -149,16 +150,18 @@ $PAGE_TITLE = 'Edit Event';
 
         $error = array_filter($error);
 
+
+
         if (empty($error))
         {
             $con = new mysqli(DB_HOST, DB_USER, DB_PASS, DB_NAME);
             $sql = '
                 UPDATE Event SET
-                EventName = ?,EventType = ?,Date = ?, Seats = ?, Image = ?, Description = ?
+                EventName = ?,EventType = ?,Date = ?, Image = ?, Seats = ?,Description = ?
                 WHERE EventID = ?
             ';
             $stm = $con->prepare($sql);
-            $stm->bind_param('ssssiss', $name,$eventtype,$eDate,$eSeats,$eImage,$eDesc,$id);
+             $stm->bind_param('sssssis', $id, $name, $eventtype, $eDate, $save_as, $eSeats, $eDesc);
 
             if($stm->execute())
             {

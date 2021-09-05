@@ -50,15 +50,15 @@
                 <div class="container banner text-center">
             
                 <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-md-10">
+                         <img width="200" height="200" src="../AdminPage/uploads/%s"/>
                     </div>
                         <div class="info">
                         
                             <h1>&nbsp;%s</h1>
                             <hr>
-                            <p>&nbsp;&nbsp;Event Types:<span>%s</span></p>
+                            <p>&nbsp;&nbsp;<span>%s</span></p>
                             <p>&nbsp;&nbsp;Date: %s</p>
-                            <p>&nbsp;&nbsp;Image: %s</p>
                             <p>&nbsp;&nbsp;Seats Available: %s</p>
                             <p>&nbsp;&nbsp;Description: %s</p>
                         
@@ -73,11 +73,10 @@
             </div>
             ',
 
-                
+            $row->Image,
                 $row->EventName,
                 $row->EventType . ' - ' .$EVENTTYPES[$row->EventType],
                 $row->Date,
-                $row->Image,
                 $row->Seats,
                 $row->Description
             );
@@ -87,14 +86,14 @@
                     <div class="container banner text-center">
                 
                     <div class="row">
-                        <div class="col-md-6">
+                        <div class="col-md-10">
+                            <img width="200" height="200" src="../AdminPage/uploads/%s"/>
                         </div>
                             <div class="info">
                                 <h1>&nbsp;%s</h1>
                                 <hr>
-                                <p>&nbsp;&nbsp;Event Types<span>%s</span></p>
+                                <p>&nbsp;&nbsp;<span>%s</span></p>
                                 <p>&nbsp;&nbsp;Date: %s</p>
-                                <p>&nbsp;&nbsp;Image: %s</p>
                                 <p>&nbsp;&nbsp;Seats Available: %s</p>
                                 <p>&nbsp;&nbsp;Description: %s</p>
     
@@ -106,11 +105,11 @@
                     </div>
                 </div>
                 ',
-    
+                $row->Image,
                 $row->EventName,
                 $row->EventType . ' - ' .$EVENTTYPES[$row->EventType],
                 $row->Date,
-                $row->Image,
+                
                 $row->Seats,
                 $row->Description
                 );

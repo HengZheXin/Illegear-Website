@@ -94,7 +94,7 @@ function descCheck($name, $value = '', $maxlength = '', $rows = '', $cols = '') 
            $name, $name, $value, $maxlength, $rows, $cols);
 }
 
-
+//accept=".png, .jpg, .jpeg" 
 //Image
 function imgCheck($name) {
     printf('<input type="file" id="%s" name="%s" />' . "\n",
@@ -146,6 +146,8 @@ function validateImage($eImage){
     {
         return 'Please insert <strong>Event Image</strong>.';
     }
+
+
     
 }
 
