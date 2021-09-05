@@ -10,15 +10,21 @@ $db = mysqli_connect('localhost', 'root', '', 'igswebdb');
 
 //Accept email of user whose password is to be reset
 if (isset($_POST['reset-password'])) {
-  
+
   $email = mysqli_real_escape_string($db, $_POST['email']);
   // ensure that the user exists on our system
   $query = "SELECT email FROM users WHERE email='$email'";
   $results = mysqli_query($db, $query);
+
   if (empty($email)) {
     array_push($errors, "Your email is required");
+    
   }else if(mysqli_num_rows($results) <= 0) {
-    array_push($errors, "Sorry, no user exists on our system with that email");
+    $errors = "Sorry, no user exists on our system with that email";
+    echo "<form method='post' action='enter_email.php'>";
+    echo "<input type='hidden' name='error' value='$errors'>";
+    echo "</form>";
+    header('location: enter_email.php');
   }else if(mysqli_num_rows($results) == 1){
     // ENTER A NEW PASSWORD
     if (isset($_POST['reset-password'])) {
@@ -38,8 +44,6 @@ if (isset($_POST['reset-password'])) {
       }
   }
 }
-
-
 
 }
 ?>
