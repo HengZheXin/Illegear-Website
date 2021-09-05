@@ -10,7 +10,8 @@ body{
 	justify-content: center;
 	align-items: center;
 	padding: 10px;
-	background: linear-gradient(135deg, #71b7e6, #9b59b6);
+	background-image: url('images/bg8.png');
+	background-size: 100%;
 }
 .container{
 	max-width: 700px;
@@ -32,7 +33,7 @@ body{
 	bottom: 0;
 	height: 3px;
 	width: 30px;
-	background: linear-gradient(135deg, #71b7e6, #9b59b6);
+	background: linear-gradient(135deg, #e48538, #df1709);
 }
 .input-box{
 	margin-bottom: 10px;
@@ -49,7 +50,7 @@ body{
 	border-bottom-width: 2px;
 }
 .input-box input:focus, .input-box input:valid{
-	border-color: #9b59b6
+	border-color: #db5a04
 }
 form button {
 	height: 45px;
@@ -62,10 +63,17 @@ form button {
 	font-weight: 500;
 	border-radius: 5px;
 	letter-spacing: 1px;
-	background: linear-gradient(135deg, #71b7e6, #9b59b6);
+	background: linear-gradient(135deg, #e48538, #df1709);
 }
 form button:hover{
-	background: linear-gradient(-135deg, #71b7e6, #9b59b6);;
+	background: linear-gradient(-135deg, #e48538, #df1709);
+}
+.success{
+	position: absolute;
+	top: 100px;
+	display: block;
+	clear: both;
+	font-size: 20px;
 }
 .error {
 	margin: 5px auto;
