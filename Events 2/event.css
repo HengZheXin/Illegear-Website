@@ -12,12 +12,12 @@
 
 /* Section 1 */
 .banner-area{
-    background-image: url("../Home/images/hometry.png");
+    background-image: url("../Events 2/images/pic1.jpeg");
     background-position: center center;
     background-size: cover;
     -webkit-background-size: cover;
     height: 100vh;
-    box-shadow:inset 0 0 0 3000px rgba(0, 0, 0, 0.479);
+    box-shadow:inset 0 0 0 3000px rgba(0, 0, 0, 0.863);
 }
 
 .banner-text{
