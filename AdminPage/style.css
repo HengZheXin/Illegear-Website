@@ -296,14 +296,55 @@
   color: #009879;
 }
 
-.btn{
+.content{
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9em;
+  min-width: 400px;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  margin-left:15px;
+  margin-right:15px;
+}
+
+.content thead tr {
+  background-color: #4142ad;
+  color: #ffffff;
+  text-align: left;
+  font-weight: bold;
+}
+
+.content th,
+.content td {
+  padding: 12px 15px;
+}
+
+.content tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.content tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.content tbody tr:last-of-type {
+  border-bottom: 2px solid #4142ad;
+}
+
+.content tbody tr.active-row {
+  font-weight: bold;
+  color: #4142ad;
+}
+
+.delete{
   width:60px;
   height:30px;
   background-color: rgb(255, 42, 42);
   border-radius: 8px;
   transition: 0.5s;
 }
-.btn:hover{
+.delete:hover{
   background-color: rgb(241, 159, 159);
 }
 

@@ -1,6 +1,6 @@
 <?php
    session_start();
-   $conn = mysqli_connect("localhost","root","","my_contact_db");
+   $conn = mysqli_connect("localhost","root","","igswebdb");
 
    if(isset($_POST['delete']))
    {

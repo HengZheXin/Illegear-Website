@@ -62,6 +62,52 @@
   </div>
   <section class="home-section">
       <div class="text">Event Participants</div>
+      <?php
+      if(isset($_SESSION['status']))
+      {
+        echo "<h4>".$_SESSION['status']."</h4>";
+        unset($_SESSION['status']);
+      }
+      ?>
+      <form action="hi.php" method="POST">
+      <table class ="content">
+
+      <thead>
+      <tr>
+        <th><button type="submit" name="delete" class="delete">Delete</button></th>
+        <th>ID</th>
+        <th>Event Name</th>
+        <th>Name</th>
+        <th>Student ID</th>
+        <th>Phone No</th>
+        <th>Email</th>
+        <th>Faculty</th>
+      </tr>
+      </thead>
+      <?php
+      $con=mysqli_connect("localhost","root","","igswebdb");
+
+      $query=mysqli_query($con,"select * from participant");
+
+      while($row=mysqli_fetch_array($query)){
+
+      ?>
+      <tbody>
+      <tr>
+        <td class="text-center"><input type="checkbox" class="input "name="delete_id[]" value="<?php echo $row['id']?>"/></td>
+        <td><?=$row['id'];?></td> 
+        <td><?=$row['event'];?></td>
+        <td><?=$row['name'];?></td>
+        <td><?=$row['studentID'];?></td>
+        <td>0<?=$row['phone'];?></td>
+        <td><?=$row['email'];?></td>
+        <td><?=$row['faculty'];?></td>
+      </tr>
+      </tbody>
+      <?php } ?>
+      </table>
+      </form>
+
   </section>
 
   

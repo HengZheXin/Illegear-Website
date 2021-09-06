@@ -8,6 +8,10 @@
     <!-- Boxicons CDN Link -->
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--JQuery CDN-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!--Sweet Alert CDN-->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
    </head>
    
 <body>
@@ -83,7 +87,7 @@
 
       <thead>
       <tr>
-        <th><button type="submit" name="delete" class="btn">Delete</button></th>
+        <th><button type="submit" name="delete" class="delete">Delete</button></th>
         <th>Name</th>
         <th>Email</th>
         <th>Subject</th>
@@ -91,7 +95,7 @@
       </tr>
       </thead>
       <?php
-      $con=mysqli_connect("localhost","root","","my_contact_db");
+      $con=mysqli_connect("localhost","root","","igswebdb");
 
       $query=mysqli_query($con,"select * from data");
 
@@ -100,7 +104,7 @@
       ?>
       <tbody>
       <tr>
-        <td class="text-center"><input type="checkbox" class="input "name="delete_id[]" value="<?php echo $row['id']?>"/></td>
+        <td class="text-center"><input type="checkbox" class="input" name="delete_id[]" value="<?php echo $row['id']?>"/></td>
         <td><?=$row['name'];?></td>
         <td><?=$row['email'];?></td>
         <td><?=$row['subject'];?></td>
@@ -112,5 +116,6 @@
       </form>
   </section>
   <script src="script.js"></script>   
+  
 </body>
 </html>
