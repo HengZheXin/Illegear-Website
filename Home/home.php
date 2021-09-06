@@ -38,6 +38,7 @@
         <div class="sec1pic">
             <img src="images/keyboardtry.png" alt="ps_controller" style="width: 23%">
         </div>
+        <br><br><br><br><br>
     </section>
 
     <!-- Section 2 -->
