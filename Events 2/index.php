@@ -72,6 +72,7 @@
                 </div>
             </div>
             ',
+            
 
             $row->Image,
                 $row->EventName,
@@ -115,6 +116,8 @@
                 );
         } 
     }
+
+
     
     ?>
         
