@@ -3,13 +3,17 @@
     padding: 0px;
   }
   body {
-    font-size: 120%;
-    background: #F8F8FF;
+    font-size: 110%;
+    background: #303030;
+    position: absolute;
+    width: 100%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   }
   
   .header {
-    width: 30%;
-    margin: 50px auto 0px;
+    position: relative;
+    width: 25%;
+    margin: 150px auto 0 1000px;
     color: white;
     background: #5F9EA0;
     text-align: center;
@@ -19,8 +23,8 @@
     padding: 20px;
   }
   form, .content {
-    width: 30%;
-    margin: 0px auto;
+    width: 25%;
+    margin: 0 auto 50px 1000px;
     padding: 20px;
     border: 1px solid #B0C4DE;
     background: white;
@@ -49,6 +53,10 @@
     background: #5F9EA0;
     border: none;
     border-radius: 5px;
+  }
+  .forgot_pwd{
+    text-decoration: none;
+    color: red;
   }
   .error {
     width: 92%; 

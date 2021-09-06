@@ -17,7 +17,7 @@
     }
     tr:nth-child(even){background-color: #f2f2f2}
     .btn-danger{
-      color: #588c7e;
+      color: white;
       border-radius: 5px;
       padding-left: 5px;
       padding-right: 5px;
@@ -94,7 +94,7 @@
             }
         ?>
         <?php
-        $connection = mysqli_connect("localhost", "root", "", "registration");
+        $connection = mysqli_connect("localhost", "root", "", "igswebdb");
 
         $query = "SELECT * FROM users";
         $query_run = mysqli_query($connection, $query);
@@ -139,7 +139,7 @@
   </section>
 
   
-
+    
   <script src="script.js"></script>
 </body>
 </html>
