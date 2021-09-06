@@ -74,6 +74,7 @@
 <!--Retrieve Data from database and display on table-->
   <section class="home-section">
       <div class="text">Inquires</div>
+      <hr class="hr-s3"  style="width:80px; margin-left:20px; margin-top:-20px; margin-bottom:40px;"/>
       <!--Display Record Status : Record Deleted Successfully/Record Not Deleted (message)-->
       <?php
       if(isset($_SESSION['status']))

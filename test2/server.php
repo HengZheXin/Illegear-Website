@@ -22,13 +22,42 @@ if (isset($_POST['reg_user'])) {
 
   // form validation: ensure that the form is correctly filled ...
   // by adding (array_push()) corresponding error unto $errors array
-  if (empty($scode)) { array_push($errors, "Security code required");}
+  if (empty($scode)) {
+     array_push($errors, "Security code required");
+    }
+    
   if (!empty($scode) && $scode != $ori_scode) {
     array_push($errors, "Invalid security code");
     }
-  if (empty($username)) { array_push($errors, "Username is required"); }
-  if (empty($email)) { array_push($errors, "Email is required"); }
-  if (empty($password_1)) { array_push($errors, "Password is required"); }
+    
+  if (empty($username)) {
+     array_push($errors, "Username is required");
+     }
+     else{
+      $strings = array($username);
+      //validation of white spaces
+      foreach($strings as $test){
+          if(ctype_space($test)){
+              $errors['username'] = 'Username cannot consists whitespaces only!';
+          }
+      }
+    }
+  if (empty($email)) {
+     array_push($errors, "Email is required"); 
+    }
+
+  if (empty($password_1)) {
+     array_push($errors, "Password is required"); 
+    }
+    else{
+      $strings = array($password_1);
+      //validation of white spaces
+      foreach($strings as $test){
+          if(ctype_space($test)){
+              $errors['password_1'] = 'Password cannot consists whitespaces only!';
+          }
+      }
+    }
   if ($password_1 != $password_2) {
 	array_push($errors, "The two passwords do not match");
   }

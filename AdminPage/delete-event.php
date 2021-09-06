@@ -25,6 +25,13 @@
         <i class='bx bx-menu' id="btn" ></i>
     </div>
     <ul class="nav-list">
+    <li>
+        <a href="index.php">
+          <i class='bx bx-grid-alt'></i>
+          <span class="links_name">Dashboard</span>
+        </a>
+         <span class="tooltip">Dashboard</span>
+      </li>
       <li>
        <a href="userProfile.php">
          <i class='bx bx-user' ></i>

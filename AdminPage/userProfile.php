@@ -48,6 +48,13 @@
     </div>
     <ul class="nav-list">
       <li>
+        <a href="index.php">
+          <i class='bx bx-grid-alt'></i>
+          <span class="links_name">Dashboard</span>
+        </a>
+         <span class="tooltip">Dashboard</span>
+      </li>
+      <li>
         <a href="userProfile.php">
           <i class='bx bx-user'></i>
           <span class="links_name">User</span>
@@ -91,6 +98,7 @@
   </div>
   <section class="home-section">
     <div class="text">User Profile</div>
+    <hr class="hr-s3"  style="width:80px; margin-left:20px; margin-top:-20px; margin-bottom:40px;"/>
 
     <div class="card_body">
       <?php

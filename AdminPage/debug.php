@@ -65,9 +65,6 @@ function validateDesc($eDesc){
     {
         echo '<div class = "error">'.'Please enter <strong>Event Description</strong>.'.'</div>';
     }
-    else if(!preg_match("/^[a-zA-Z-'\s]+$/",$eDesc)){
-        echo '<div class = "error">'.'There are invalid letters in <strong>Event Description</strong>.'.'</div>';
-    }
 }
 
 function validateImage($eImage){
