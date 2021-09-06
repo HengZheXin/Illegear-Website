@@ -641,7 +641,7 @@ p.role{
     
     /*Section 4*/
     .section-4{
-        background-color: #4d4d4d;
+        background-color: #272727;
     }
     
     .upper{
@@ -661,7 +661,7 @@ p.role{
         margin-bottom: 10px;
         text-align: center;
         color: white;
-        font-family: 'PT Sans', sans-serif;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         text-transform: uppercase;
     }
     .upper .upper-part hr{
@@ -681,7 +681,7 @@ p.role{
     }
     
     .team1 .team-member{
-        background:#4d4d4d;
+        background:#272727;
         margin:5px;
         width:500px;
         line-height: 20px;
@@ -689,7 +689,7 @@ p.role{
         position: relative;
     }
     .team2 .team-member{
-        background:#4d4d4d;
+        background:#272727;
         margin: 5px;
         width:500px;
         line-height: 20px;
@@ -712,7 +712,11 @@ p.role{
         text-transform: uppercase;
         font-size: 22px;
     
-    }   
+    }  
+    
+    .team2 .team-member .h3{
+        font-family:'Times New Roman', Times, serif;
+    }
     
     p.role{ 
         color:#ccc;

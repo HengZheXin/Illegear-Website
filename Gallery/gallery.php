@@ -45,7 +45,12 @@
     
 </script>
 
+
+
+
 <div class="hero">
+    <h2 class="gallery2">Past Events Images</h2>
+    <hr class="gallery3">
         <div class="carousel">
             <ul>
                 <li><img src="images/7.jpg"></li>
