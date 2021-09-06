@@ -7,8 +7,8 @@ session_start();
 
 <head>
 	<meta charset="UTF-8">
-	<title>Reset Password</title>
-	<link rel="shortcut icon" href="images/Asset 3.png" type="image/x-icon">
+	<title>Reset Password | IGS Website</title>
+	<link rel="shortcut icon" href="images/test1.png" type="image/x-icon">
 	<link rel="stylesheet" href="main.css">
 </head>
 

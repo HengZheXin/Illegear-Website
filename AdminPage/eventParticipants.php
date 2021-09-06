@@ -5,6 +5,7 @@
   <head>
     <meta charset="UTF-8">
     <title> Admin Console Panel  | IGS Society </title>
+    <link rel="shortcut icon" href="images/test1.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <!-- Boxicons CDN Link -->
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
@@ -81,7 +82,7 @@
 
       <thead>
       <tr>
-        <!--Delete Button : confirmation message provide-->>
+        <!--Delete Button : confirmation message provide-->
         <th><button type="submit" name="danger" class="delete" onclick="return confirm('This will delete all checked records.\nAre you sure?')">Delete</button></th>
         <th>ID</th>
         <th>Event Name</th>

@@ -5,8 +5,7 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="home.css">
     <title>Home | IGS Website</title>
-    <link rel="shortcut icon" href="images/Asset 3.png" type="image/x-icon">
-</head>
+    <link rel="shortcut icon" href="images/test1.png" type="image/x-icon"></head>
 
 <body>
 

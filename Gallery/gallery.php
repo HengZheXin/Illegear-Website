@@ -1,6 +1,7 @@
 <html>
 <head>
-    <title>Home</title>
+    <title>Gallery | IGS Website</title>
+    <link rel="shortcut icon" href="images/test1.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="gallery.css">
     <link rel="stylesheet" href="jquery.flipster.min.css">
