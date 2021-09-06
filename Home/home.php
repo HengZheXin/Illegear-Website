@@ -230,12 +230,12 @@
         </div>
         <div class="righttext">
             <h1>JOIN OUR SOCIETY</h1><br><br>
-            <p>We will be always a "house of players" at our core, are you up to the challenge?</p>
+            <p>We will be always a "house of players" at our core, are you up to the challenge? </p>
             <p> </p><br><br><br>
             <a href="../Events 2/index.php">VIEW MORE</a>
         </div>
     </section>
-    
+
 </body>
 
 </html>
