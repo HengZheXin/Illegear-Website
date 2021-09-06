@@ -226,7 +226,7 @@
 
     <section class="section6">
         <div class="leftpic">
-            <img src="images/bottomlogo.png" alt="Logo">
+            <img src="images/bottomlogo.png" alt="Logo" style="margin-left: 20px;">
         </div>
         <div class="righttext">
             <h1>JOIN OUR SOCIETY</h1><br><br>
