@@ -49,7 +49,7 @@ session_start();
 					$sql = "UPDATE users SET password='$new_pass' WHERE email='$email'";
 					$results = mysqli_query($db, $sql);
 					echo '<div class="success">
-							<p>Reset Password Successful!</p>
+							<p>>>  Reset Password Successful!  <<</p>
 							</div>';
 				}
 			}
@@ -60,7 +60,7 @@ session_start();
 	<div class="container">
 		<form class="login-form" action="" method="post">
 			<h2 class="form-title">Reset password
-				<hr style="width: 90px; margin: 10px auto; height: 2px; background-color: orange; border-color: transparent">
+				<hr style="width: 90px; margin: 10px auto; height: 2px; background-color: #555; border-color: transparent">
 			</h2>
 			<!-- form validation messages -->
 			<?php
