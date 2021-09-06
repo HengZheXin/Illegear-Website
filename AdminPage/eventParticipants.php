@@ -76,6 +76,7 @@
       <tr>
         <th><button type="submit" name="delete" class="delete">Delete</button></th>
         <th>ID</th>
+        <th>Event Name</th>
         <th>Name</th>
         <th>Student ID</th>
         <th>Phone No</th>
@@ -95,6 +96,7 @@
       <tr>
         <td class="text-center"><input type="checkbox" class="input "name="delete_id[]" value="<?php echo $row['id']?>"/></td>
         <td><?=$row['id'];?></td> 
+        <td><?=$row['event'];?></td>
         <td><?=$row['name'];?></td>
         <td><?=$row['studentID'];?></td>
         <td>0<?=$row['phone'];?></td>

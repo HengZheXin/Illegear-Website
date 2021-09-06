@@ -1,9 +1,31 @@
 <?php
 
-    $name = $phone = $studID = $email = $faculty = "";
-    $error = array('name'=>'','phone'=>'','studID'=>'','email'=>'','faculty'=>'');
+    $event = $name = $phone = $studID = $email = $faculty = "";
+    $error = array('event'=>'','name'=>'','phone'=>'','studID'=>'','email'=>'','faculty'=>'');
 
     if(isset($_POST['submit'])){
+
+        //check event
+        if(empty($_POST['event'])){
+            $error['event'] = 'Event Name is required!';
+        }else{
+            $event = $_POST['event'];
+            if(!preg_match("/^[a-zA-Z-'\s]+$/",$event)){
+                $error['event'] = 'Event name should be alphabet only!';
+            }
+            elseif(strlen($event)>80){
+                $error['event'] = 'Event Name should not over 80 character!';
+            }
+            else{
+                $strings = array($event);
+
+                foreach($strings as $test){
+                    if(ctype_space($test)){
+                        $error['event'] = 'Cannot consists whitespaces only!';
+                    }
+                }
+            }
+        }
 
         //check name
         if(empty($_POST['name'])){
@@ -84,10 +106,10 @@
             $error['faculty'] = 'Faculty is required!';
         }else{
             $faculty = $_POST['faculty'];
-            if(strlen($faculty)>50){
-                $error['faculty'] = 'Faculty should not over 50 character!';
-
+            if(strlen($faculty)>80){
+                $error['faculty'] = 'Faculty should not over 80 character!';
             }
+
             else{
                 $strings = array($faculty);
 
@@ -100,7 +122,7 @@
         }
 
         //success
-        if(preg_match("/^[a-zA-Z-'\s]+$/",$name) && preg_match("/^[0]{1}[1]{1}[0-9]{1}[0-9]{7,8}+$/",$phone) && preg_match("/^[0-9]{7}+$/",$studID) && filter_var($email, FILTER_VALIDATE_EMAIL) && !empty($_POST['faculty'])){
+        if(preg_match("/^[a-zA-Z-'\s]+$/",$event) && preg_match("/^[a-zA-Z-'\s]+$/",$name) && preg_match("/^[0]{1}[1]{1}[0-9]{1}[0-9]{7,8}+$/",$phone) && preg_match("/^[0-9]{7}+$/",$studID) && filter_var($email, FILTER_VALIDATE_EMAIL) && !empty($_POST['faculty'])){
             $host = "localhost";
             $dbUsername = "root";
             $dbPassword = "";
@@ -112,7 +134,7 @@
                 die('Connect Error('.mysqli_connect_errno().')'.mysqli_connect_error());
             }
             else{
-                $sql = "INSERT INTO participant(name, phone, studentID, email, faculty) VALUES ('$name','$phone','$studID','$email','$faculty')";
+                $sql = "INSERT INTO participant(event, name, phone, studentID, email, faculty) VALUES ('$event','$name','$phone','$studID','$email','$faculty')";
                 if($conn->query($sql)){
                     echo "<script> alert('Submitted successfully.');window.location='joinform.php' </script>";
                 }

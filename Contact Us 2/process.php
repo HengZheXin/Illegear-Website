@@ -74,7 +74,7 @@
             $host = "localhost";
             $dbUsername = "root";
             $dbPassword = "";
-            $dbname = "igswebdb";
+            $dbname = "my_contact_db";
             
             $conn = new mysqli($host, $dbUsername, $dbPassword, $dbname);
             
@@ -84,7 +84,7 @@
             else{
                 $sql = "INSERT INTO data(name, email, subject, msg) VALUES ('$name','$email','$subject','$message')";
                 if($conn->query($sql)){
-                    echo "<script> alert('Thanks , we will be in touch.');window.location='contact.php' </script>";
+                    header("Location: success.php?sent=success");
                 }
                 else{
                     echo "Error: ".$sql."<br>",$conn->error;
