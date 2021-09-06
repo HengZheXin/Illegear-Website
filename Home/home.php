@@ -226,7 +226,7 @@
 
     <section class="section6">
         <div class="leftpic">
-            <img src="../ShareDesign/images/12.jpg" alt="Logo" style="margin-left: 20px;" height="480" width="75">
+            <img src="../ShareDesign/images/tmf4.png" alt="Logo" style="margin-left: 25px;" height="450" width="375">
         </div>
         <div class="righttext">
             <h1>JOIN OUR SOCIETY</h1><br><br>
@@ -235,6 +235,7 @@
             <a href="../Events 2/index.php">VIEW MORE</a>
         </div>
     </section>
+    
 </body>
 
 </html>

@@ -117,7 +117,7 @@ if (isset($_POST["submit"])) {
             
                 <div class="row">
                     <div class="col-md-10">
-                         <img width="200" height="200" src="../AdminPage/uploads/%s"/>
+                         <img width="300" height="230" src="../AdminPage/uploads/%s"/>
                     </div>
                         <div class="info">
                         
@@ -154,7 +154,7 @@ if (isset($_POST["submit"])) {
                 
                     <div class="row">
                         <div class="col-md-10">
-                            <img width="200" height="200" src="../AdminPage/uploads/%s"/>
+                            <img width="300" height="230" src="../AdminPage/uploads/%s"/>
                         </div>
                             <div class="info">
                                 <h1>&nbsp;%s</h1>

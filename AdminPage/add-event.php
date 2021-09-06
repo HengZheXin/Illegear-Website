@@ -140,10 +140,10 @@
               $err = 'There was an error while uploading the file.';
               break;
           }
-        } else if ($eImage['size'] > 5242880) {
+        //} else if ($eImage['size'] > 5242880) {
           // Check the file size. Prevent hacks.
           // 1MB = 1024KB = 1048576B.
-          $err = 'File uploaded is too large. Maximum 5MB allowed.';
+         // $err = 'File uploaded is too large. Maximum 5MB allowed.';
         } else {
           // hello.jpg
           // Extract the file extension.
