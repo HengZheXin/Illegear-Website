@@ -4,7 +4,7 @@
 
 <head>
 	<title>Login | IGS Website</title>
-	<link rel="shortcut icon" href="images/Asset 3.png" type="image/x-icon">
+	<link rel="shortcut icon" href="images/test1.png" type="image/x-icon">
 	<?php require_once '../ShareDesign/header2.php'; ?>
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>

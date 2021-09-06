@@ -1,6 +1,7 @@
 <html>
 <head>
     <title>Events | IGS Website</title>
+    <link rel="shortcut icon" href="images/test1.png" type="image/x-icon">
     <link rel="stylesheet" href="event.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
