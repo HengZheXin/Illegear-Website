@@ -9,7 +9,7 @@
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="adminpage.css">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <?php require_once('debug.php'); error_reporting(E_ALL ^ E_NOTICE);?>
+    
    </head>
 
 <body>
