@@ -4,6 +4,7 @@
     <link rel="shortcut icon" href="images/test1.png" type="image/x-icon">
     <link rel="stylesheet" href="event.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style5.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style2.css">
@@ -12,18 +13,84 @@
 </head>
 <body>
 
+<!--
+<php
+
+$con = new PDO("mysql:host=localhost;dbname=igswebdb",'root','');
+
+if (isset($_POST["submit"])) {
+	$str = $_POST["search"];
+	$sth = $con->prepare("SELECT * FROM `event` WHERE Name = '$str'");
+
+	$sth->setFetchMode(PDO:: FETCH_OBJ);
+	$sth -> execute();
+
+	if($row = $sth->fetch())
+	{
+		?>
+		<br><br><br>
+		<table>
+			<tr>
+				<th>Name</th>
+				<th>Description</th>
+			</tr>
+			<tr>
+				<td><php echo $row->EventName; ?></td>
+			</tr>
+
+		</table>
+<php 
+	}
+		
+		
+		else{
+			echo "Name Does not exist";
+		}
+
+
+}
+
+?>
+
+
+-->
+
+
+
 
     <?php require_once '../ShareDesign/header2.php'; ?>
 
-    <div class="banner-area">
-        <div class="banner-text">
-            <p>IGS Society</p><br/>
-            <hr class="hr-s3" style="width: 80px; margin: auto"/><br/>
-            <h2>Our Events</h2><br/>
-            <p>Join our community now for the latest news on all different games and discuss with a group of members who have the same passion in gaming. ​</p>
-            <a href="">VIEW OUR EVENTS</a>
+    <div class="container5">
+        <div class="zx">
+
         </div>
+        <div class="content5">
+            <h1>Let the Games<br>Begin</h1>
+            <div class="search-box">
+                <input type="text" placeholder="Search Any Event" name="search">
+                <button type="submit" name="submit"><img src="images/search.png"></button>
+            </div>
+            <p>Millions of games to explore from</p>
+        </div>
+
+
     </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -33,8 +100,6 @@
         </div>
     </div>
         
-
-
         <?php
    require_once '../AdminPage/includes/helper.php';
     error_reporting(error_reporting() & ~E_NOTICE);
@@ -42,7 +107,7 @@
 
 
         $con = new mysqli(DB_HOST, DB_USER, DB_PASS, DB_NAME);
-        $sql = "SELECT * FROM event";
+        $sql = "SELECT * FROM event WHERE date";
         $result = $con->query($sql);
 
         if ($row = $result->fetch_object()) {
@@ -65,7 +130,7 @@
                         
                         
                         
-                            <a href="#">View Event</a>
+                            <a href="../Contact Us 2/contact.php">More Info</a>
                             <a href="../form/joinform.php" class="second-btn">Join Event</a>
                         </div>
                         
@@ -73,7 +138,7 @@
                 </div>
             </div>
             ',
-            
+
 
             $row->Image,
                 $row->EventName,
@@ -99,7 +164,7 @@
                                 <p>&nbsp;&nbsp;Seats Available: %s</p>
                                 <p>&nbsp;&nbsp;Description: %s</p>
     
-                                <a href="#">View Event</a>
+                                <a href="../Contact Us 2/contact.php">More Info</a>
                                 <a href="../form/joinform.php" class="second-btn">Join Event</a>
     
                             
@@ -122,8 +187,6 @@
     
     ?>
         
-    
-    
 </div>  
 </body>
 </html>
