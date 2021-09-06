@@ -99,7 +99,7 @@ session_start();
 			<div class="form-group">
 				<button type="submit" name="reset-password" class="login-btn">Submit</button>
 			</div>
-			<a href="../test2/login.php" style="text-decoration: none">
+			<a href="../test2/login.php" style="text-decoration: none" >
 				<< Back to Login Page</a>
 		</form>
 	</div>
