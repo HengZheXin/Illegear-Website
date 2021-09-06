@@ -140,10 +140,10 @@
               $err = 'There was an error while uploading the file.';
               break;
           }
-        } else if ($eImage['size'] > 1048576) {
+        } else if ($eImage['size'] > 5242880) {
           // Check the file size. Prevent hacks.
           // 1MB = 1024KB = 1048576B.
-          $err = 'File uploaded is too large. Maximum 1MB allowed.';
+          $err = 'File uploaded is too large. Maximum 5MB allowed.';
         } else {
           // hello.jpg
           // Extract the file extension.
@@ -245,7 +245,7 @@
               <div class="hero2">
                 <label for="name">Event Name :</label>
                 </br>
-                <?php htmlInputText('name', $name, 30) ?>
+                <?php htmlInputText('name', $name, 50) ?>
               </div>
             </td>
           </tr>
