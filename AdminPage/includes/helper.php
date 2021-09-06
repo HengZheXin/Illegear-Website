@@ -18,7 +18,6 @@ function getEventTypes()
 {
     return array(
         'UE' => 'Upcoming Events',
-        'PE' => 'Past Events',
     );
 }
 

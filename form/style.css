@@ -8,7 +8,7 @@
 .hero{
     width: 100%;
     height: 120vh;
-    background-image: linear-gradient(rgba(0,0,0,0.8), #3551b5), url(images/1.jpeg);    
+    background-image: url("../Home/images/hometry.png");
     background-position: center;
     background-size: cover;
     align-items: center;
@@ -91,10 +91,12 @@ label{
     font-family: 'poppins', sans-serif;
     box-sizing: border-box;
 }
+
+
 .hero{
     width: 100%;
     height: 140vh;
-    background-image: linear-gradient(rgba(0,0,0,0.8), #3551b5), url(images/1.jpeg);    
+    background-image: linear-gradient(rgba(29, 29, 29, 0.719), #292929c2), url(../Home/images/hometry.png);    
     background-position: center;
     background-size: cover;
     align-items: center;
