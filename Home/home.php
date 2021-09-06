@@ -42,7 +42,7 @@
     </section>
 
     <!-- Section 2 -->
-
+    <!--
     <section class="section2">
         <div class="slideshow-container">
             <br><br><br><br>
@@ -102,7 +102,7 @@
                 dots[slideIndex - 1].className += " active";
             }
         </script>
-    </section>
+    </section> -->
 
     <!-- Section 3 -->
 
@@ -117,7 +117,7 @@
             <a href="../Events 2/index.php"><b>OUR EVENTS</b></a><br><br>
             <a href="../About Us/about.php"><b>ABOUT US</b></a><br><br>
             <a href="../Contact Us 2/contact.php"><b>CONTACT US</b></a><br><br>
-            <a href="#"><b>GALLERY</b></a><br><br>
+            <a href="../Gallery/gallery.php"><b>GALLERY</b></a><br><br>
         </div>
     </section>
 
