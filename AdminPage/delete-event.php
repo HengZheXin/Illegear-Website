@@ -195,17 +195,12 @@
     if ($result = $con->query($sql)) {
       while ($row = $result->fetch_object()) {
          $igsImage = $row->Image;
-         echo $igsImage;
+         
          unlink('uploads/' . $igsImage );
       }
-
     }
 
     
-
-
-
-
         $sql = '
             DELETE FROM Event
             WHERE EventID = ?
