@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -74,7 +75,7 @@
 
       <thead>
       <tr>
-        <th><button type="submit" name="delete" class="delete">Delete</button></th>
+        <th><button type="submit" name="danger" class="delete" onclick="return confirm('This will delete all checked records.\nAre you sure?')">Delete</button></th>
         <th>ID</th>
         <th>Event Name</th>
         <th>Name</th>

@@ -136,7 +136,7 @@
             else{
                 $sql = "INSERT INTO participant(event, name, phone, studentID, email, faculty) VALUES ('$event','$name','$phone','$studID','$email','$faculty')";
                 if($conn->query($sql)){
-                    echo "<script> alert('Submitted successfully.');window.location='joinform.php' </script>";
+                    echo "<script> alert('Submitted successfully.');window.location='../Events 2/index.php' </script>";
                 }
                 else{
                     echo "Error: ".$sql."<br>",$conn->error;
