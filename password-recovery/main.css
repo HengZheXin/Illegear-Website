@@ -10,13 +10,15 @@ body{
 	justify-content: center;
 	align-items: center;
 	padding: 10px;
-	background-image: url('images/bg8.png');
+	background-image: url('images/marshmello.png');
 	background-size: 100%;
+	background-position: 30%;
 }
 .container{
 	max-width: 700px;
 	width: 100%;
-	background: lightgrey;
+	background: rgb(187, 226, 250);
+	opacity: 0.83;
 	padding: 25px 30px;
 	border-radius: 5px;
 }
@@ -33,7 +35,7 @@ body{
 	bottom: 0;
 	height: 3px;
 	width: 30px;
-	background: linear-gradient(135deg, grey, black);
+	background: linear-gradient(135deg, lightblue, blue);
 }
 .input-box{
 	margin-bottom: 10px;
@@ -63,10 +65,10 @@ form button {
 	font-weight: 500;
 	border-radius: 5px;
 	letter-spacing: 1px;
-	background-color: rgb(51, 51, 51);
+	background-color: rgb(25, 240, 168);
 }
 form button:hover{
-	background: linear-gradient(-135deg, lightgrey, #555);
+	background: linear-gradient(135deg, blue, lightblue, blue);
 }
 .success{
 	position: absolute;
