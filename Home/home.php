@@ -42,7 +42,7 @@
     </section>
 
     <!-- Section 2 -->
-
+    <!--
     <section class="section2">
         <div class="slideshow-container">
             <br><br><br><br>
@@ -102,7 +102,7 @@
                 dots[slideIndex - 1].className += " active";
             }
         </script>
-    </section>
+    </section> -->
 
     <!-- Section 3 -->
 
