@@ -28,7 +28,7 @@
 			<button type="submit" class="btn" name="login_user">Login</button>
 		</div>
 		<p>
-			Not yet a member? <a href="register.php">Sign up</a>
+			Not yet an admin? <a href="register.php">Sign up</a>
 		</p>
 		<br>
 		<a class="forgot_pwd" href="../password-recovery/enter_email.php">

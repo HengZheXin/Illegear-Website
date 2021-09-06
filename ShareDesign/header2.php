@@ -93,7 +93,7 @@
     }
 </style>
 
-<a href="../AdminPage/index.php"><img class="nav-img" src="../ShareDesign/images/Asset 2.png"></a>
+<a href="../test2/login.php"><img class="nav-img" src="../ShareDesign/images/Asset 2.png"></a>
 
 <nav>
     <a href="../Home/home.php">Home</a>
