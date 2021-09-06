@@ -130,9 +130,6 @@ function validateDesc($eDesc){
     {
         return 'Please enter <strong>Event Description</strong>.';
     }
-    else if(!preg_match("/^[a-zA-Z-'\s]+$/",$eDesc)){
-        return 'There are invalid letters in <strong>Event Description</strong>.';
-    }
 }
 
 
@@ -231,10 +228,6 @@ function validateEventName($name)
     {
         return '<strong>Event Name</strong> must not more than 30 letters.';
 
-    }
-    else if (!preg_match('/^[A-Za-z @,\'\.\-\/]+$/', $name))
-    {
-        return 'There are invalid letters in <strong>Event Name</strong>.';
     }
 }
 

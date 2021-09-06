@@ -29,6 +29,13 @@
       <i class='bx bx-menu' id="btn"></i>
     </div>
     <ul class="nav-list">
+    <li>
+        <a href="index.php">
+          <i class='bx bx-grid-alt'></i>
+          <span class="links_name">Dashboard</span>
+        </a>
+         <span class="tooltip">Dashboard</span>
+      </li>
       <li>
         <a href="userProfile.php">
           <i class='bx bx-user'></i>
@@ -165,10 +172,10 @@
               $err = 'There was an error while uploading the file.';
               break;
           }
-        } else if ($eImage['size'] > 5242880) {
+        //} else if ($eImage['size'] > 5242880) {
           // Check the file size. Prevent hacks.
           // 1MB = 1024KB = 1048576B.
-          $err = 'File uploaded is too large. Maximum 5MB allowed.';
+          //$err = 'File uploaded is too large. Maximum 5MB allowed.';
         } else {
           // hello.jpg
           // Extract the file extension.
