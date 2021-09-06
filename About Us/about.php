@@ -4,14 +4,16 @@
     <link rel="stylesheet" href="about.css" type="text/css">
     <link rel="stylesheet" href="heading.css" type="text/css">
     <title>About | IGS Website</title>
-    <link rel="shortcut icon" href="images/Asset_3.png" type="image/x-icon">
+    <link rel="shortcut icon" href="images/test1.png" type="image/x-icon">
 </head>
 
 
 
 <body>
+<!--------Header-------->
 <?php require_once '../ShareDesign/header2.php'; ?>
 
+<!------Section 1:Top Part-------->
     <div class="banner-area">
         <div class="banner-text">
             <p>IGS Society</p><br/>
@@ -21,7 +23,7 @@
             <a href="../Events 2/index.php">VIEW OUR EVENTS</a>
         </div>
     </div>
-
+<!------Section 2:IGS history-------->
     <section class="section-2">
         <div class="class-2">
         <h2>About IGS</h2>
@@ -34,7 +36,7 @@
     </section>
 
 
-
+<!------Section 3:Objective-------->
     <section class="section-3">
         
         <div class="pic-1">
@@ -65,7 +67,7 @@
        
     </section>
   
-
+<!------Section 4:Committee-------->
     <div class="section-4">
     <div class="upper">
         <div class="upper-part">
@@ -122,5 +124,5 @@
 </body> 
 
 </html>
-
+<!------Footer-------->
 <?php require_once '../ShareDesign/footer.php'; ?>

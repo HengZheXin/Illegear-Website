@@ -6,6 +6,8 @@
   box-sizing: border-box;
   font-family: "Poppins" , sans-serif;
 }
+
+/*Navigation Bar To Left*/
 .sidebar{
   position: fixed;
   left: 0;
@@ -255,6 +257,8 @@
   background-color: rgb(0, 0, 0);
 }
 
+/*Table Design For Inquires*/
+
 .content-table {
   border-collapse: collapse;
   margin: 25px 0;
@@ -295,6 +299,9 @@
   font-weight: bold;
   color: #009879;
 }
+
+
+/*Table Design For Event Participant*/
 
 .content{
   border-collapse: collapse;
@@ -337,6 +344,7 @@
   color: #4142ad;
 }
 
+/*Delete Button Design*/
 .delete{
   width:60px;
   height:30px;
@@ -348,6 +356,7 @@
   background-color: rgb(241, 159, 159);
 }
 
+/*Media Screen*/
 @media (max-width: 420px) {
   .sidebar li .tooltip{
     display: none;

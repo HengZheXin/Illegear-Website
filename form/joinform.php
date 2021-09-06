@@ -1,3 +1,4 @@
+<!--Start function on (Hi.php)-->
 <?php include('process.php')?>
 <!DOCTYPE html>
 <html lang="en">
