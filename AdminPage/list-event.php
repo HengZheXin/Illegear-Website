@@ -81,6 +81,7 @@
 
     <?php
     require_once('includes/helper.php');
+    error_reporting(E_ALL ^ E_NOTICE);
 
 
     // Multiple deletion 
@@ -117,6 +118,12 @@
             }
 
             $con->close();
+        }
+        elseif(empty($checked)){
+          printf('
+                <div class="info">
+                No records has been selected.
+                </div>');
         }
     }
     ///////////////////////////////////////////////////////////////////////////

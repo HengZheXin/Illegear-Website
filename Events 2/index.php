@@ -65,7 +65,7 @@
                         
                         
                             <a href="#">View Event</a>
-                            <a href="#" class="second-btn">Book Event</a>
+                            <a href="../form/joinform.php" class="second-btn">Join Event</a>
                         </div>
                         
                     </div>
@@ -98,7 +98,7 @@
                                 <p>&nbsp;&nbsp;Description: %s</p>
     
                                 <a href="#">View Event</a>
-                                <a href="#" class="second-btn">Book Event</a>
+                                <a href="../form/joinform.php" class="second-btn">Join Event</a>
     
                             
                         </div>

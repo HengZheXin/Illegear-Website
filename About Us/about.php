@@ -4,6 +4,7 @@
     <link rel="stylesheet" href="about.css" type="text/css">
     <link rel="stylesheet" href="heading.css" type="text/css">
     <title>About | IGS Website</title>
+    <link rel="shortcut icon" href="images/Asset_3.png" type="image/x-icon">
 </head>
 
 
