@@ -7,7 +7,6 @@
 <link rel="stylesheet" href="style.css">
 <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,600,700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="contact.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
     
@@ -91,7 +90,7 @@
                         <div class="error">
                             <?php echo $error['message']; ?>
                         </div>
-                    <button type="submit" id="submit" name="submit" class="btn btn-default">Send Message</button>
+                    <button type="submit" id="submit" name="submit" class="hero-btn red-btn">Send Message</button>
                     </form> 
                 </div>
             </div>
@@ -103,8 +102,7 @@
 
 
 
-
-
 </body>
 </html>    
 <?php require_once '../ShareDesign/footer.php'; ?>
+
