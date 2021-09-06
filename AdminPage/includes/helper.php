@@ -90,9 +90,11 @@ function dateCheck($name, $value = '') {
 
 //Textarea
 function descCheck($name, $value = '', $maxlength = '', $rows = '', $cols = '') {
-    printf('<textarea type="text" name="%s" id="%s" value="%s" maxlength="%d" rows="%d" cols="%d" /></textarea>' . "\n",
-           $name, $name, $value, $maxlength, $rows, $cols);
+    printf('<textarea type="text" name="%s" id="%s" maxlength="%d" rows="%d" cols="%d" />%s</textarea>' . "\n",
+           $name, $name, $maxlength, $rows, $cols,$value);
 }
+
+
 
 //accept=".png, .jpg, .jpeg" 
 //Image
