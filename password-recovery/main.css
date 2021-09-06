@@ -16,7 +16,7 @@ body{
 .container{
 	max-width: 700px;
 	width: 100%;
-	background: #fff;
+	background: lightgrey;
 	padding: 25px 30px;
 	border-radius: 5px;
 }
@@ -33,7 +33,7 @@ body{
 	bottom: 0;
 	height: 3px;
 	width: 30px;
-	background: linear-gradient(135deg, #e48538, #df1709);
+	background: linear-gradient(135deg, grey, black);
 }
 .input-box{
 	margin-bottom: 10px;
@@ -50,7 +50,7 @@ body{
 	border-bottom-width: 2px;
 }
 .input-box input:focus, .input-box input:valid{
-	border-color: #db5a04
+	border-color: #555
 }
 form button {
 	height: 45px;
@@ -63,17 +63,18 @@ form button {
 	font-weight: 500;
 	border-radius: 5px;
 	letter-spacing: 1px;
-	background: linear-gradient(135deg, #e48538, #df1709);
+	background-color: rgb(51, 51, 51);
 }
 form button:hover{
-	background: linear-gradient(-135deg, #e48538, #df1709);
+	background: linear-gradient(-135deg, lightgrey, #555);
 }
 .success{
 	position: absolute;
 	top: 100px;
 	display: block;
 	clear: both;
-	font-size: 20px;
+	font-size: 40px;
+	color: white;
 }
 .error {
 	margin: 5px auto;
