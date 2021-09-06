@@ -13,8 +13,9 @@ if (isset($_POST['del_multiple_data'])) {
     if ($query_run) {
         $_SESSION['status'] = "&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspUser(s) deleted successfully!";
         header("Location: userProfile.php");
-    } else {
+    }else {
         $_SESSION['status'] = "&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSomething went wrong!";
         header("Location: userProfile.php");
     }
+
 }

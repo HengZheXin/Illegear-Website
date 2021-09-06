@@ -116,6 +116,8 @@
         <div class="sec3nav">
             <a href="../Events 2/index.php"><b>OUR EVENTS</b></a><br><br>
             <a href="../About Us/about.php"><b>ABOUT US</b></a><br><br>
+            <a href="../Contact Us 2/contact.php"><b>CONTACT US</b></a><br><br>
+            <a href="#"><b>GALLERY</b></a><br><br>
         </div>
     </section>
 

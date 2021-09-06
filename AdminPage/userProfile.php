@@ -112,7 +112,7 @@
         <table class="table table-bordered">
           <thead>
             <tr>
-              <th scope="col"><button type="submit" name="del_multiple_data" class="btn btn-danger">Delete</button></th>
+              <th scope="col"><button type="submit" name="del_multiple_data" class="btn btn-danger" onclick="return confirm('This will delete all checked records.\nAre you sure?')"style="background-color: red">Delete</button></th>
               <th scope="col">Username</th>
               <th scope="col">Email</th>
               <th scope="col">Password</th>
@@ -145,7 +145,7 @@
     </div>
 
   </section>
-  
+
   <script src="script.js"></script>
 </body>
 

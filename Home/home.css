@@ -193,7 +193,7 @@ body{
 }
 
 .sec3nav a:hover{
-    color: rgb(61, 61, 61);
+    color: grey;
     transition: .8s;
 }
 
