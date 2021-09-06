@@ -1,3 +1,4 @@
+<!--Start function on (Hi.php)-->
 <?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
@@ -8,14 +9,11 @@
     <!-- Boxicons CDN Link -->
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--JQuery CDN-->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <!--Sweet Alert CDN-->
-    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
    </head>
    
 <body>
 
+<!--Back End Left Navigation bar-->
   <div class="sidebar">
     <div class="logo-details">
       <i class=''></i>
@@ -72,9 +70,10 @@
      </li>
     </ul>
   </div>
-
+<!--Retrieve Data from database and display on table-->
   <section class="home-section">
       <div class="text">Inquires</div>
+      <!--Display Record Status : Record Deleted Successfully/Record Not Deleted (message)-->
       <?php
       if(isset($_SESSION['status']))
       {
@@ -82,11 +81,13 @@
         unset($_SESSION['status']);
       }
       ?>
-      <form action="hi.php" method="POST">
+      <!--Table -->
+      <form action="deleteFunction.php" method="POST">
       <table class ="content-table">
 
       <thead>
       <tr>
+        <!--Delete Button : confirmation message provide-->>
         <th><button type="submit" name="delete" class="delete" onclick="return confirm('This will delete all checked records.\nAre you sure?')" >Delete</button></th>
         <th>Name</th>
         <th>Email</th>
@@ -104,6 +105,7 @@
       ?>
       <tbody>
       <tr>
+        <!--Check Box : To select record to delete(multiple delete function)-->
         <td class="text-center"><input type="checkbox" class="input" name="delete_id[]" value="<?php echo $row['id']?>"/></td>
         <td><?=$row['name'];?></td>
         <td><?=$row['email'];?></td>
@@ -115,6 +117,7 @@
       </table>
       </form>
   </section>
+
   <script src="script.js"></script>   
   
 </body>
