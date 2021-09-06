@@ -101,34 +101,7 @@
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3325.640888374062!2d101.72733233555277!3d3.21611865099729!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc3843bfb6a031%3A0x2dc5e067aae3ab84!2sTunku%20Abdul%20Rahman%20University%20College!5e0!3m2!1sen!2smy!4v1627201902716!5m2!1sen!2smy" width="720" height="445" frameborder="0" style="border:0" allowfullscreen></iframe>
     </section>
 
-<script>
-$(document).ready(function(){
-$('#submit').click(function(){
-var na = $('#name').val();
-var em = $('#email').val();
-var sub = $('#subject').val();
-var msg = $('#message').val();
-var dataString = 'na1='+ na + '&em1=' + em + '&sub1=' + sub + '&msg=' + msg;
-if(na==''||em==''||sub==''||msg=='')
-{
-$("#display").html("div class='alert alert-warning'>Please Fill All Fields.</div>");
-}
-else
-{
-$.ajax({
-type: "POST",
-url:"process.php",
-data: dataString,
-cache: false,
-success:function(result){
-$('#display').html(result);
-}
-});
-}
-return false;
-});
-});
-</script>
+
 
 
 
