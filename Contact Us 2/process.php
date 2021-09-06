@@ -20,7 +20,7 @@
                 //validation of white spaces
                 foreach($strings as $test){
                     if(ctype_space($test)){
-                        $error['name'] = 'Cannot consists whitespaces only!';
+                        $error['name'] = 'Name cannot consists whitespaces only!';
                     }
                 }
             }
@@ -53,7 +53,7 @@
                 //validation of white spaces
                 foreach($strings as $test){
                     if(ctype_space($test)){
-                        $error['subject'] = 'Cannot consists whitespaces only!';
+                        $error['subject'] = 'Subject cannot consists whitespaces only!';
                     }
                 }
             }
@@ -68,7 +68,7 @@
             //validation of white spaces
             foreach($strings as $test){
                 if(ctype_space($test)){
-                    $error['message'] = 'Cannot consists whitespaces only!';
+                    $error['message'] = 'Message cannot consists whitespaces only!';
                 }
             }
             }

@@ -23,7 +23,7 @@
                 //validation of white spaces
                 foreach($strings as $test){
                     if(ctype_space($test)){
-                        $error['event'] = 'Cannot consists whitespaces only!';
+                        $error['event'] = 'Event name cannot consists whitespaces only!';
                     }
                 }
             }
@@ -43,7 +43,7 @@
                 //validation of white spaces
                 foreach($strings as $test){
                     if(ctype_space($test)){
-                        $error['name'] = 'Cannot consists whitespaces only!';
+                        $error['name'] = 'Name cannot consists whitespaces only!';
                     }
                 }
             }
@@ -67,7 +67,7 @@
                 //validation of white spaces
                 foreach($strings as $test){
                     if(ctype_space($test)){
-                        $error['phone'] = 'Cannot consists whitespaces only!';
+                        $error['phone'] = 'Phone no cannot consists whitespaces only!';
                     }
                 }
             }
@@ -91,7 +91,7 @@
                 //validation of white spaces
                 foreach($strings as $test){
                     if(ctype_space($test)){
-                        $error['studID'] = 'Cannot consists whitespaces only!';
+                        $error['studID'] = 'Student id cannot consists whitespaces only!';
                     }
                 }
             }
@@ -124,7 +124,7 @@
                 //validation of white spaces
                 foreach($strings as $test){
                     if(ctype_space($test)){
-                        $error['faculty'] = 'Cannot consists whitespaces only!';
+                        $error['faculty'] = 'Faculty cannot consists whitespaces only!';
                     }
                 }
             }

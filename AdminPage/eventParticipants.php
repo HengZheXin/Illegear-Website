@@ -23,6 +23,13 @@
     </div>
     <ul class="nav-list">
       <li>
+        <a href="index.php">
+          <i class='bx bx-grid-alt'></i>
+          <span class="links_name">Dashboard</span>
+        </a>
+         <span class="tooltip">Dashboard</span>
+      </li>
+      <li>
        <a href="userProfile.php">
          <i class='bx bx-user' ></i>
          <span class="links_name">User</span>
@@ -68,6 +75,7 @@
   <!--Retrieve Data from database and display on table-->
   <section class="home-section">
       <div class="text">Event Participants</div>
+      <hr class="hr-s3"  style="width:80px; margin-left:20px; margin-top:-20px; margin-bottom:40px;"/>
       <!--Display Record Status : Record Deleted Successfully/Record Not Deleted (message)-->
       <?php
       if(isset($_SESSION['status']))
