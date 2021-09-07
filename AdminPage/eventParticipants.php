@@ -92,7 +92,6 @@
       <tr>
         <!--Delete Button : confirmation message provide-->
         <th><button type="submit" name="danger" class="delete" onclick="return confirm('This will delete all checked records.\nAre you sure?')">Delete</button></th>
-        <th>ID</th>
         <th>Event Name</th>
         <th>Name</th>
         <th>Student ID</th>
@@ -113,7 +112,6 @@
       <tr>
         <!--Check Box : To select record to delete(multiple delete function)-->
         <td class="text-center"><input type="checkbox" class="input "name="delete_id[]" value="<?php echo $row['id']?>"/></td>
-        <td><?=$row['id'];?></td> 
         <td><?=$row['event'];?></td>
         <td><?=$row['name'];?></td>
         <td><?=$row['studentID'];?></td>
