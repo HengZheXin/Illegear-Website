@@ -13,12 +13,10 @@
 
     <div class="header-area">
 
-        <?php
-        require_once '../ShareDesign/header2.php';
-        ?>
+        <?php require_once '../ShareDesign/header2.php';?>
 
         <div class="header-text">
-            <h2><ins>IGS</ins> Society</h2><br />
+            <h2><ins>IGS</ins></h2><br>
             <p>Bringing the game to Everyone’s Life</p>
         </div>
     </div>
