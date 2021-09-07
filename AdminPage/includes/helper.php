@@ -1,18 +1,13 @@
 <?php
-///////////////////////////////////////////////////////////////////////////////
-// Database connection details ////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////////
-
+// Database connection details 
 // Constants. Please change accordingly.
 define('DB_HOST', 'localhost');
 define('DB_USER', 'root');
 define('DB_PASS', '');
 define('DB_NAME', 'igswebdb');
 
-///////////////////////////////////////////////////////////////////////////////
-// Lookup tables //////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////////
 
+// Lookup tables 
 // Return an array of all states.
 function getEventTypes()
 {
@@ -67,16 +62,12 @@ function htmlInputPassword($name, $value = '', $maxlength = '')
 }
 
 
-
 // Print a <input type="hidden"> element.
 function htmlInputHidden($name, $value = '')
 {
     printf('<input type="hidden" name="%s" id="%s" value="%s" />' . "\n",
            $name, $name, $value);
 }
-
-
-
 
 
 // Date

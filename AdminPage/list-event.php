@@ -96,8 +96,6 @@
     if (isset($_POST['delete'])) // If "delete" button is clicked.
     {
         $checked = $_POST['checked'];
-        // NOTE:
-        // -----
         // All checkboxes are named as "checked[]" value their value set to
         // the respective EventID. For such, $checked is an array containing
         // all of the selected EventID.
@@ -134,8 +132,7 @@
                 </div>');
         }
     }
-    ///////////////////////////////////////////////////////////////////////////
-    
+
     // Array of actual table field names and their display names.
     $headers = array(
         'EventID'   => 'Event ID',
@@ -180,16 +177,10 @@
     }
 
 
-    ///////////////////////////////////////////////////////////////////////////
-    // Generate filter options ////////////////////////////////////////////////
-    ///////////////////////////////////////////////////////////////////////////
+    // Generate filter options
 
     
-
-
-    ///////////////////////////////////////////////////////////////////////
-    // Generate clickable table headers ///////////////////////////////////
-    ///////////////////////////////////////////////////////////////////////
+    // Generate clickable table headers
     echo '<div class="filter3">';
 
     echo '<table border="1" cellpadding="5" cellspacing="0">';
@@ -227,9 +218,8 @@
 
     echo '</div>';
 
-    ///////////////////////////////////////////////////////////////////////
-    // Database select ////////////////////////////////////////////////////
-    ///////////////////////////////////////////////////////////////////////
+ 
+    // Database select
 
     $con = new mysqli(DB_HOST, DB_USER, DB_PASS, DB_NAME);
     $sql = "SELECT * FROM Event WHERE EventType LIKE '$eventtype' ORDER BY $sort $order";
@@ -282,7 +272,6 @@
 
     $result->free();
     $con->close();
-    ///////////////////////////////////////////////////////////////////////
     ?>
 
     <!-- Submit button for multiple deletion -->
