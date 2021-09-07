@@ -5,14 +5,13 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="gallery.css">
     <link rel="stylesheet" href="jquery.flipster.min.css">
-    
-
-    
 </head>
+
+
+
 <body>
 <?php require_once '../ShareDesign/header2.php'; ?>
     <div class="container1">
-
         <div class="content1">
             <div class="left-col">
                 <h2>IGS<br>Photo<br>Gallery</h1>

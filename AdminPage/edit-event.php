@@ -87,8 +87,7 @@
     $PAGE_TITLE = 'Edit Event';
     ?>
 
-    <!-- Start of content -->
-    <!-- P4Q2 -->
+   
     <div>
 
       <?php
@@ -98,7 +97,7 @@
 
       // --> Retrieve Event record based on the passed EventID.
       if ($_SERVER['REQUEST_METHOD'] == 'GET') {
-        // http://localhost/Practical5/edit-event.php?id=10abc00003
+        
         // Read query string --> EventID.
         $id = strtoupper(trim($_GET['id']));
 
