@@ -113,7 +113,7 @@
         <!--Check Box : To select record to delete(multiple delete function)-->
         <td class="text-center"><input type="checkbox" class="input "name="delete_id[]" value="<?php echo $row['id']?>"/></td>
         <td><?=$row['event'];?></td>
-        <td><?=$row['name'];?></td>
+        <td><?=$row['name'];?></td> 
         <td><?=$row['studentID'];?></td>
         <td>0<?=$row['phone'];?></td>
         <td><?=$row['email'];?></td>
