@@ -107,7 +107,7 @@ if (isset($_POST["submit"])) {
 
 
         $con = new mysqli(DB_HOST, DB_USER, DB_PASS, DB_NAME);
-        $sql = "SELECT * FROM event WHERE date";
+        $sql = "SELECT * FROM event";
         $result = $con->query($sql);
 
         if ($row = $result->fetch_object()) {
@@ -140,7 +140,7 @@ if (isset($_POST["submit"])) {
             ',
 
 
-            $row->Image,
+                $row->Image,
                 $row->EventName,
                 $row->EventType . ' - ' .$EVENTTYPES[$row->EventType],
                 $row->Date,
