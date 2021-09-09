@@ -118,12 +118,8 @@
 .zx15 .second-btn{
     border: 1px solid #000000 !important;
     background: transparent !important;
-    
     transition: 0.5s;
-    
-
     width: 135px;
-    
     text-decoration: none !important;
     padding: 16px 20px;
     margin: 5% 10px;
@@ -132,6 +128,12 @@
 
     background: #ffffff !important;
     color: #555 !important;
+}
+
+.zx15 .second-btn:hover
+{
+    background: #383838 !important;
+    color: #fff !important;
 }
 
 .zx15 .first-btn{
