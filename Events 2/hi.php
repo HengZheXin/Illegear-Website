@@ -69,14 +69,24 @@
                 <div class='row2'>
                 
                  
-                <div class='info'>
+                <div class='info2'>
                 <h1>".$row['EventName']."</h1>
+                <hr>
                 <p>UE - Upcoming Events</p>
                 <p>Date: ".$row['Date']."</p>
                 <p>Seats Available: ".$row['Seats']."</p>
                 <p>Description: ".$row['Description']."</p>
+
+                
+               
+                
+                
                 </div>
 
+                <div class='zx15'>
+                <a href='../Contact Us 2/contact.php' class='first-btn'>More Info</a>
+                <a href='../form/joinform.php' class='second-btn'>Join Event</a>
+                </div>
                 </div>
                 </div>";
             }
