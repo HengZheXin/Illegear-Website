@@ -1,3 +1,6 @@
+<?php
+    include 'header.php';
+?>
 <html>
 <head>
     <title>Events | IGS Website</title>
@@ -67,8 +70,10 @@ if (isset($_POST["submit"])) {
         <div class="content5">
             <h1>Let the Games<br>Begin</h1>
             <div class="search-box">
+                <form action="hi.php" method="POST">  
                 <input type="text" placeholder="Search Any Event" name="search">
-                <button type="submit" name="submit"><img src="images/search.png"></button>
+                <button type="submit" name="submit-search"><img src="images/search.png"></button>
+                </form>
             </div>
             <p>Millions of games to explore from</p>
         </div>
@@ -139,8 +144,7 @@ if (isset($_POST["submit"])) {
             </div>
             ',
 
-
-            $row->Image,
+                $row->Image,
                 $row->EventName,
                 $row->EventType . ' - ' .$EVENTTYPES[$row->EventType],
                 $row->Date,
