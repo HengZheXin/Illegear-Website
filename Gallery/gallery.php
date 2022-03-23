@@ -1,7 +1,7 @@
 <html>
 <head>
-    <title>Gallery | IGS Website</title>
-    <link rel="shortcut icon" href="images/illegear-logo2.png" type="image/x-icon">
+    <title>Gallery | Illegear Website</title>
+    <link rel="shortcut icon" href="images/test1.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="gallery.css">
     <link rel="stylesheet" href="jquery.flipster.min.css">
@@ -14,7 +14,7 @@
     <div class="container1">
         <div class="content1">
             <div class="left-col">
-                <h2>IGS<br>Photo<br>Gallery</h1>
+                <h2>Illegear<br>Photo<br>Gallery</h1>
             </div>
             <div class="right-col">
                 <p>Click Here for Music</p>
@@ -52,20 +52,20 @@
     <hr class="gallery3">
         <div class="carousel">
             <ul>
-                <li><img src="images/7.jpg"></li>
-                <li><img src="images/8.jpg"></li>
-                <li><img src="images/9.jpg"></li>
-                <li><img src="images/10.jpg"></li>
-                <li><img src="images/12.jpg"></li>
-                <li><img src="images/13.jpg"></li>
-                <li><img src="images/15.jpg"></li>
-                <li><img src="../ShareDesign/images/tmf.png"></li>
+                <li><img src="images2/desktop1.jpg"></li>
+                <li><img src="images2/desktop2.jpg"></li>
+                <li><img src="images2/desktop3.jpg"></li>
+                <li><img src="images2/desktop5.jpg"></li>
+                <li><img src="images2/desktop6.jpg"></li>
+                <li><img src="images2/keyboard1.jpg"></li>
+                <li><img src="images2/keyboard2.jpg"></li>
+                <!-- <li><img src="../ShareDesign/images/tmf.png"></li>
                 <li><img src="../ShareDesign/images/tmf2.png"></li>
                 <li><img src="../ShareDesign/images/tmf3.png"></li>
                 <li><img src="../ShareDesign/images/tmf4.png"></li>
                 <li><img src="../ShareDesign/images/tmf5.png"></li>
                 <li><img src="../ShareDesign/images/tmf6.png"></li>
-                <li><img src="../ShareDesign/images/roadshow2.jpg"></li>
+                <li><img src="../ShareDesign/images/roadshow2.jpg"></li> -->
                 
             </ul>
         </div>
@@ -94,7 +94,4 @@
 <?php
 require_once '../ShareDesign/footer.php';
 ?>
-
-
-
 
