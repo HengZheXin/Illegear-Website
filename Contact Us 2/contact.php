@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Contact Us | IGS Website</title>
+<title>Contact Us | Illegear Website</title>
 <link rel="shortcut icon" href="images/test1.png" type="image/x-icon">
 <link rel="stylesheet" href="style.css">
 <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,600,700&display=swap" rel="stylesheet">
@@ -18,7 +18,7 @@
 <?php require_once '../ShareDesign/header2.php'; ?>
     <div class="banner-area">
         <div class="banner-text">
-            <p>IGS Society</p><br/>
+            <p>Illegear Website</p><br/>
             <hr class="hr-s3" style="width: 80px; margin: auto"/><br/>
             <h2>Contact Us</h2><br/>
             
@@ -32,35 +32,35 @@
                     <div>
                     <img src="https://img.icons8.com/ios/50/fa314a/aclc-college.png"/>                
                         <span>
-                            <h5>Tunku Abdul Rahman University College</h5>
-                            <p>53300 Kuala Lumpur, Wilayah Persekutuan Kuala Lumpur</p>
+                            <h5>Our Address</h5>
+                            <p>Menara Oval Damansara, G3 & G3A, Ground Floor, Jalan Damansara, Taman Tun Dr Ismail, 60000 Kuala Lumpur, Federal Territory of Kuala Lumpur</p>
                         </span>
                     </div>
                     
                     <div>
                     <img src="https://img.icons8.com/ios/50/fa314a/email.png"/>                   
                         <span>
-                            <h5>igs.taruc.society@gmail.com</h5>
+                            <h5>Sales@illegear.com</h5>
                             <p>Email us your query</p>
                         </span>
                         
                     </div>
                     <div>
-                    <a href="https://www.facebook.com/taruc.igs/">
+                    <a href="https://www.facebook.com/Illegear/">
                     <img src="https://img.icons8.com/ios/50/fa314a/facebook--v1.png"/>    
                     </a>                        
                     <span>
                             <h5>TARUC Interactive Gaming Society</h5>
-                            <p>Meet up our IGS society</p>
+                            <p>Meet up our Illegear website</p>
                         </span>
                         
                     </div>
                     <div>
-                    <a href="https://www.instagram.com/taruc.igs/">
+                    <a href="https://www.instagram.com/Illegear/">
                     <img src="https://img.icons8.com/ios/50/fa314a/instagram-reel.png"/>
                     </a>
                         <span>
-                            <h5>taruc.igs</h5>
+                            <h5>Illegear</h5>
                             <p>More event poster on here</p>
                         </span>
                         
