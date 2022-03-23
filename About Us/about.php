@@ -4,7 +4,7 @@
     <link rel="stylesheet" href="about.css" type="text/css">
     <link rel="stylesheet" href="heading.css" type="text/css">
     <title>About | IGS Website</title>
-    <link rel="shortcut icon" href="images/test1.png" type="image/x-icon">
+    <link rel="shortcut icon" href="images/illegear-logo2.png" type="image/x-icon">
 </head>
 
 

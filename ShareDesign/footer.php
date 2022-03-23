@@ -132,7 +132,7 @@
         <div class="row">
 
             <div class="footer-col">
-                <img src="../ShareDesign/images/Asset 3.png" style="width:270px; padding-top: 20px; margin-left:20px;">
+                <img src="../ShareDesign/images/Illegear-Split-Where-To-Shop-Logo2.png" style="width:300px; padding-top: 20px; margin-left:20px;">
             </div>
             <div class="footer-col">
                 <h4>Social Objectives</h4>
@@ -143,7 +143,7 @@
                 <p>c. Foster a healthy gaming lifestyle</p>
             </div>
             <div class="footer-col">
-                <h4>IGS</h4>
+                <h4>Illegear</h4>
                 <ul>
                     <li><a href="../About Us/about.php">About Us</a></li>
                     <li><a href="../Events 2/index.php">Events</a></li>
@@ -153,8 +153,8 @@
             <div class="footer-col">
                 <h4>Join Us</h4>
                 <div class="social-links">
-                    <a href="https://www.facebook.com/taruc.igs" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                    <a href="https://www.instagram.com/taruc.igs/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://web.facebook.com/ILLEGEAR" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/illegear_pc/" target="_blank"><i class="fab fa-instagram"></i></a>
                     <a href="https://discord.gg/nYy5RWV3qK" target="_blank"><i class="fab fa-discord"></i></a>
                 </div>
             </div>

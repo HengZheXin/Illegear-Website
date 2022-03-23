@@ -3,9 +3,9 @@
 <style>
     .nav-img {
         position: absolute;
-        width: 8%;
-        margin-left: 100px;
-        margin-top: 30px;
+        width: 15%;
+        margin-left: 50px;
+        /* margin-top: 30px; */
     }
 
     nav {
@@ -93,7 +93,7 @@
     }
 </style>
 
-<a href="../test2/login.php"><img class="nav-img" src="../ShareDesign/images/Asset 2.png"></a>
+<a href="../test2/login.php"><img class="nav-img" src="../ShareDesign/images/illegear-logo.png"></a>
 
 <nav>
     <a href="../Home/home.php">Home</a>

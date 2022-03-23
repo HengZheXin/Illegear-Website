@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <title> Admin Console Panel  | IGS Society </title>
-    <link rel="shortcut icon" href="images/test1.png" type="image/x-icon">
+    <link rel="shortcut icon" href="images/illegear-logo2.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <!-- Boxicons CDN Link -->
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>

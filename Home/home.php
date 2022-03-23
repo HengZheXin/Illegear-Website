@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="home.css">
     <title>Home | IGS Website</title>
-    <link rel="shortcut icon" href="images/test1.png" type="image/x-icon"></head>
+    <link rel="shortcut icon" href="images/illegear-logo2.png" type="image/x-icon"></head>
 
 <body>
 
@@ -16,7 +16,7 @@
         <?php require_once '../ShareDesign/header2.php';?>
 
         <div class="header-text">
-            <h2><ins>IGS</ins></h2><br>
+            <h2><ins>ILLEGEAR</ins></h2><br>
             <p>Bringing the game to Everyone’s Life</p>
         </div>
     </div>
@@ -26,12 +26,12 @@
     <section class="section1">
         <div class="special">
             <p><b>WHAT'S SO SPECIAL ABOUT</b></p>
-            <h1>Our Society</h1>
+            <h1>ILLEGEAR</h1>
         </div>
         <div class="description">
-            <p>Casual and fun society in KL TARUC. </p>
-            <p>We want you to enjoy your college life !</p>
-            <p><b>Tunku Abdul Rahman University College</b></p>
+            <p>Perfection was the goal. </p>
+            <p>Customization was the key.</p>
+            <p><b>ILLEGEAR was born.</b></p>
         </div>
         <div class="sec1pic">
             <img src="images/keyboardtry.png" alt="ps_controller" style="width: 23%">
@@ -106,17 +106,17 @@
 
     <section class="section3">
         <div class="ps4-back">
-            <img src="images/ps4-back.png" style="width: 100%">
+            <img src="images/Thin-lightweight.png" style="width: 100%">
         </div>
-        <div class="ps4-front">
+        <!-- <div class="ps4-front">
             <img src="images/ps4-front.png" style="width: 550px; height: 670px;">
-        </div>
-        <div class="sec3nav">
+        </div> -->
+        <!-- <div class="sec3nav">
             <a href="../Events 2/index.php"><b>OUR EVENTS</b></a><br><br>
             <a href="../About Us/about.php"><b>ABOUT US</b></a><br><br>
             <a href="../Contact Us 2/contact.php"><b>CONTACT US</b></a><br><br>
             <a href="../Gallery/gallery.php"><b>GALLERY</b></a><br><br>
-        </div>
+        </div> -->
     </section>
 
     <!-- Section 4 -->
@@ -134,7 +134,7 @@
 
     <!-- Section 5 -->
 
-    <section class="section5">
+    <!-- <section class="section5">
         <div class="sec5header">
             <h1>OUR GAME COMMUNITY</h1>
             <p><i>Join Us Now!</i></p>
@@ -218,11 +218,11 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <!-- Section 6 -->
     
-    <section class="section6">
+    <!-- <section class="section6"> -->
         <!--
         <div class="leftpic">
             <img src="../ShareDesign/images/tmf4.png" alt="Logo" style="margin-left: 25px;" height="450" width="375">
@@ -234,7 +234,7 @@
             <a href="../Events 2/index.php">VIEW MORE</a>
         </div>
         -->
-    </section>
+    <!-- </section> -->
         
 </body>
 

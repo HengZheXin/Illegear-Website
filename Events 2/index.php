@@ -4,7 +4,7 @@
 <html>
 <head>
     <title>Events | IGS Website</title>
-    <link rel="shortcut icon" href="images/test1.png" type="image/x-icon">
+    <link rel="shortcut icon" href="images/illegear-logo2.png" type="image/x-icon">
     <link rel="stylesheet" href="event.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="style5.css">
