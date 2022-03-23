@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <title> Admin Console Panel | IGS Society </title>
-  <link rel="shortcut icon" href="images/test1.png" type="image/x-icon">
+  <link rel="shortcut icon" href="images/illegear-logo2.png" type="image/x-icon">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="deleteevent.css">
   <!-- Boxicons CDN Link -->
