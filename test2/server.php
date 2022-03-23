@@ -9,7 +9,7 @@ $ori_scode = "abc123";
 $errors = array(); 
 
 // connect to the database
-$db = mysqli_connect('localhost', 'root', '', 'igswebdb');
+$db = mysqli_connect('localhost', 'root', '', 'illegeardb');
 
 // REGISTER USER
 if (isset($_POST['reg_user'])) {
@@ -22,13 +22,6 @@ if (isset($_POST['reg_user'])) {
 
   // form validation: ensure that the form is correctly filled ...
   // by adding (array_push()) corresponding error unto $errors array
-  if (empty($scode)) {
-     array_push($errors, "Security code required");
-    }
-    
-  if (!empty($scode) && $scode != $ori_scode) {
-    array_push($errors, "Invalid security code");
-    }
     
   if (empty($username)) {
      array_push($errors, "Username is required");
@@ -110,7 +103,7 @@ if (isset($_POST['login_user'])) {
         $results = mysqli_query($db, $query);
         if (mysqli_num_rows($results) == 1) {
           $_SESSION['username'] = $username;
-          header('location: ../AdminPage/index.php');
+          header('location: ../Home/home.php');
         }else {
             array_push($errors, "Wrong username/password combination");
         }
