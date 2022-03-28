@@ -93,12 +93,12 @@
     }
 </style>
 
-<a href="../test2/login.php"><img class="nav-img" src="../ShareDesign/images/illegear-logo.png"></a>
+<a href="../test2/login.php"><img class="nav-img" src="../ShareDesign/images/illegear-logo.png" width="80px" height="120px"></a>
 
 <nav>
     <a href="../Home/home.php">Home</a>
     <a href="../About Us/about.php">About</a>
-    <a href="../Events 2/index.php">Events</a>
+    <a href="../Products/products.php">Products</a>
     <a href="../Gallery/gallery.php">Gallery</a>
     <a href="../Contact Us 2/contact.php">Contact Us</a>
     <div class="animation start-home"></div>
