@@ -59,8 +59,8 @@
                    <p>$5000.00</p>
                </div> 
                <div class="col-4">
-                   <img src="images/onyxvamd.png">
-                   <h4>ROGUE (TGL)</h4>
+                   <a href="product-details.php"><img src="images/onyxvamd.png"></a>
+                   <h4><a href="product-details.php">ROGUE (TGL)</a></h4>
                    <div class="rating">
                        <i class="fa fa-star"></i>
                        <i class="fa fa-star"></i>
@@ -71,8 +71,8 @@
                    <p>$4375.00</p>
                </div> 
                <div class="col-4">
-                   <img src="images/rogue.png">
-                   <h4>ONYX V (AMD)</h4>
+                   <a href="product-details.php"><img src="images/rogue.png"></a>
+                   <h4><a href="product-details.php">ONYX V (AMD)</a></h4>
                    <div class="rating">
                        <i class="fa fa-star"></i>
                        <i class="fa fa-star"></i>
@@ -83,8 +83,8 @@
                    <p>$4250.00</p>
                </div> 
                 <div class="col-4">
-                   <img src="images/onyx2.png">
-                   <h4>ROGUE (AMD)</h4>
+                   <a href="product-details.php"><img src="images/onyx2.png"></a>
+                   <h4><a href="product-details.php">ROGUE (AMD)</a></h4>
                    <div class="rating">
                        <i class="fa fa-star"></i>
                        <i class="fa fa-star"></i>
@@ -98,8 +98,8 @@
             
              <div class="row">
                <div class="col-4">
-                   <img src="images/onyx3.png">
-                   <h4>ONYX PRO (RTX30)</h4>
+                   <a href="product-details.php"><img src="images/onyx3.png"></a>
+                   <h4><a href="product-details.php">ONYX PRO (RTX30)</a></h4>
                    <div class="rating">
                        <i class="fa fa-star"></i>
                        <i class="fa fa-star"></i>
@@ -110,8 +110,8 @@
                    <p>$4695.00</p>
                </div> 
                <div class="col-4">
-                   <img src="images/onyxpro.png                                                               ">
-                   <h4>SELENITE PRO (RTX30)</h4>
+                   <a href="product-details.php"><img src="images/onyxpro.png"></a>                                                             ">
+                   <h4><a href="product-details.php">SELENITE PRO (RTX30)</a></h4>
                    <div class="rating">
                        <i class="fa fa-star"></i>
                        <i class="fa fa-star"></i>
@@ -122,8 +122,8 @@
                    <p>$5255.00</p>
                </div> 
                <div class="col-4">
-                   <img src="images/selennitepro.png">
-                   <h4>ONYX G (RTX30)</h4>
+                   <a href="product-details.php"><img src="images/selennitepro.png"></a>
+                   <h4><a href="product-details.php">ONYX G (RTX30)</a></h4>
                    <div class="rating">
                        <i class="fa fa-star"></i>
                        <i class="fa fa-star"></i>
@@ -134,8 +134,8 @@
                    <p>$3000.00</p> 
                </div> 
                 <div class="col-4">
-                   <img src="images/selennitepro2.png">
-                   <h4>SELENITE X (RTX30)</h4>
+                   <a href="product-details.php"><img src="images/selennitepro2.png"></a>
+                   <h4><a href="product-details.php">SELENITE X (RTX30)</a></h4>
                    <div class="rating">
                        <i class="fa fa-star"></i>
                        <i class="fa fa-star"></i>
