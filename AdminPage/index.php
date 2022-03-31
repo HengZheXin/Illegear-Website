@@ -18,20 +18,7 @@
         <i class='bx bx-menu' id="btn" ></i>
     </div>
     <ul class="nav-list">
-      <li>
-       <a href="userProfile.php">
-         <i class='bx bx-user' ></i>
-         <span class="links_name">User</span>
-       </a>
-       <span class="tooltip">User</span>
-     </li>
-     <li>
-       <a href="add-event.php">
-         <i class='bx bx-pie-chart-alt-2' ></i>
-         <span class="links_name">Events</span>
-       </a>
-       <span class="tooltip">Events</span>
-     </li>
+
      <li>
       <a href="inquires.php">
         <i class='bx bx-chat' ></i>
@@ -39,13 +26,6 @@
       </a>
       <span class="tooltip">Inquires</span>
     </li>
-     <li>
-       <a href="eventParticipants.php">
-         <i class='bx bx-folder' ></i>
-         <span class="links_name">Event Participants</span>
-       </a>
-       <span class="tooltip">Event Participants</span>
-     </li>
      <li class="profile">
          <div class="profile-details">
            <img class="adminlogo" src="../ShareDesign/images/SmallLogo.png" alt="profileImg">
